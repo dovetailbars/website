@@ -1,0 +1,42 @@
+
+header {
+    background: black;
+    background-size: contain;
+    background-position: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+        
+    height: contain;
+    min-height: 60vh;
+  
+    vertical-align: middle;
+    align-content: center;
+    align-items: center;  
+  
+    overflow: hidden;
+  }
+  
+  header span {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: xx-large;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  @media (max-width: 1400px) {
+    header {
+        background-size: cover;
+        background-position: center;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    header span {
+        font-size: large;
+    }
+  }
+  
+  @media (max-width: 315px) {
+    header { display: none; }
+  }
+  
