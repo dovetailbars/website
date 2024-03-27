@@ -1,6 +1,6 @@
-import { Layout } from "../components/Layout";
 import "./Home.css";
-import { Navigate, Routes, Route, Link } from "react-router-dom";
+import { Layout } from "../components/Layout";
+import { Link } from "react-router-dom";
 
 export function Hero() {
     return (<>
@@ -18,7 +18,7 @@ export function Hero() {
 
 export function Content() {
     return (<>
-        <Layout>
+        <Layout hero={Hero}>
             <section>
                 <h2>BESPOKE PRIVACY</h2>
                 <p>

@@ -1,3 +1,118 @@
+nav {
+  min-height: 100px;
+  
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 110px auto minmax(100px, 150px);
+  align-items: center;
+
+  background-color: #1B3E70;
+  position: sticky; top: 0;
+} 
+
+nav ul { 
+  padding-left: 2vw;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  align-content: left;
+}
+
+nav ul li {
+
+  padding-left: 5px;
+  padding-right: 5px;
+
+  margin-right: 2.5vw;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  font-family: oxtail, sans-serif;
+  text-transform: uppercase;
+
+  text-align: center;
+}
+
+nav a, nav a:visited {
+  display: inline-block;
+  text-decoration: none;
+  color:  white;
+  font-size: 14px;
+}
+
+nav ul li:hover {
+  background-color: white;
+}
+
+nav ul li:hover a {
+  color: black;
+}
+
+.logoLink {
+  text-align: right;
+}
+
+.buttonLink {
+  text-align: center;
+  margin: 0px 15px;
+  padding: 10px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+
+  background: black;
+  background-size: contain;
+  background-position: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+      
+  height: contain;
+
+  vertical-align: middle;
+  align-content: center;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+@media (max-width: 1400px) {
+  header {
+      background-size: cover;
+      background-position: center;
+  }
+}
+
+@media (max-width: 800px) {
+  header span {
+      font-size: large;
+  }
+}
+
+@media (max-width: 315px) {
+  header { 
+      display: none; 
+  }
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  padding-top: 25%;
+
+  font-family: oxtail, sans-serif;
+  text-transform: uppercase;
+
+  color: white;
+}
+
 
 main {
     width: 100%;
@@ -46,3 +161,25 @@ main {
     stroke: rgb(255, 255, 255);  
     stroke-width: 0.7px;
   }
+
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+    width: 100%;
+    background-color: #000000;
+    color: #999999;
+    padding-top: 2vh;
+}
+  
+footer ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+footer span {
+    color: #999999;
+    font-size: medium;
+    padding-top: 1vh;
+}
