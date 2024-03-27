@@ -101,11 +101,10 @@ header {
   display: flex;
   flex-direction: column;
 
-  justify-content: center;
   align-items: center;
   text-align: center;
 
-  padding-top: 25%;
+  padding-top: 20vh;
 
   font-family: oxtail, sans-serif;
   text-transform: uppercase;
