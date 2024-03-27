@@ -1,0 +1,15 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+  
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  
+    padding-top: 25%;
+  
+    font-family: oxtail, sans-serif;
+    text-transform: uppercase;
+  
+    color: white;
+  }

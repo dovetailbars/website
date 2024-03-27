@@ -1,0 +1,20 @@
+.hero .xx-large {  
+    font-size: xx-large;
+}
+
+.hero .large {
+    font-size: large;
+}
+  
+.hero .x-wide {
+    letter-spacing: 0.2em;
+}
+
+.hero .homeHeroLarge {
+    letter-spacing: 0.2em;
+    font-size: xx-large;
+}
+
+.hero .wide {
+    letter-spacing: 0.15em;
+}

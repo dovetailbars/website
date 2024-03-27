@@ -17,13 +17,6 @@ header {
     overflow: hidden;
   }
   
-  header span {
-    background-color: rgba(0, 0, 0, 0.6);
-    color: white;
-    font-size: xx-large;
-    font-family: "Roboto", sans-serif;
-  }
-  
   @media (max-width: 1400px) {
     header {
         background-size: cover;

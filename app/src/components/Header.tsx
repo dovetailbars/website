@@ -1,6 +1,6 @@
 import './Header.css'; 
 
-export default function Header({ children, height = "60vh" }) {
+export default function Header({ children, height }) {
    
     return (
         <header style={{ height: height }}>
