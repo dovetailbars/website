@@ -1,0 +1,21 @@
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+    width: 100%;
+    background-color: #000000;
+    color: #999999;
+    padding-top: 2vh;
+}
+  
+footer ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+footer span {
+    color: #999999;
+    font-size: medium;
+    padding-top: 1vh;
+}
