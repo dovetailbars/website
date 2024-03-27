@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Navigation() {
     return (
         <nav>            
-            <Link to="/">
+            <Link to="/" className="logoLink">
                 <img src="/images/white-logo.png" alt="Dovetail" width={100} height={80} />
             </Link>
             <ul>

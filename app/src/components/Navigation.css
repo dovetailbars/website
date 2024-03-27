@@ -1,29 +1,33 @@
 nav {
-    height: 100px;
+    min-height: 100px;
     
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 110px auto minmax(100px, 150px);
     align-items: center;
   
-    width: 100%;
     background-color: #1B3E70;
     position: sticky; top: 0;
   } 
   
   nav ul { 
+    padding-left: 2vw;
     display: flex;
     flex-wrap: wrap;
     list-style: none;
+    align-content: left;
   }
 
   nav ul li {
+    padding-right: 3vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
     font-family: oxtail, sans-serif;
     text-transform: uppercase;
   }
   
   nav a, nav a:visited {
     display: inline-block;
-    padding: 1vh 2vw;
     text-decoration: none;
     color:  white;
     font-size: 14px;
@@ -37,8 +41,14 @@ nav {
     color: black;
   }
 
+  .logoLink {
+    text-align: right;
+  }
+
   .buttonLink {
-    margin: 5px 15px;
+    text-align: center;
+    margin: 0px 15px;
+    padding: 10px;
     border: 1px solid white;
     cursor: pointer;
   }
