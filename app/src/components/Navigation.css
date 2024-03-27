@@ -19,11 +19,17 @@ nav {
   }
 
   nav ul li {
-    padding-right: 3vw;
+
+    padding-left: 5px;
+    padding-right: 5px;
+
+    margin-right: 2.5vw;
     padding-top: 1vh;
     padding-bottom: 1vh;
     font-family: oxtail, sans-serif;
     text-transform: uppercase;
+
+    text-align: center;
   }
   
   nav a, nav a:visited {
