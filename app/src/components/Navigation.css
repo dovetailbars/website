@@ -15,13 +15,18 @@ nav {
     flex-wrap: wrap;
     list-style: none;
   }
+
+  nav ul li {
+    font-family: oxtail, sans-serif;
+    text-transform: uppercase;
+  }
   
   nav a, nav a:visited {
     display: inline-block;
     padding: 1vh 2vw;
     text-decoration: none;
     color:  white;
-    font-size: 20px;
+    font-size: 14px;
   }
   
   nav ul li:hover {
@@ -30,4 +35,10 @@ nav {
   
   nav ul li:hover a {
     color: black;
+  }
+
+  .buttonLink {
+    margin: 5px 15px;
+    border: 1px solid white;
+    cursor: pointer;
   }

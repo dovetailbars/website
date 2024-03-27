@@ -13,7 +13,7 @@ export default function Navigation() {
             <li><Link to="/private-hire">Private Hire</Link></li>
             <li><Link to="/cocktail-making-class">Masterclasses</Link></li>
         </ul>
-        <li><Link to="/bookings" className="buttonLink">Book Now</Link></li>
+        <Link to="/bookings" className="buttonLink">Book Now</Link>
     </nav>
     );
 }

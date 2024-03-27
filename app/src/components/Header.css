@@ -1,4 +1,7 @@
 header {
+    display: flex;
+    flex-direction: row;
+
     background: black;
     background-size: contain;
     background-position: center;
