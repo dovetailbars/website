@@ -1,15 +1,33 @@
+import { Link } from "react-router-dom";
 import { Layout } from "../components/Layout";
+import StandardHero from "../components/StandardHero";
+
+export function Hero(): HeroData {
+    return {
+        image: "/images/DTB-Initial-Cocktail-Shoot-LR-052.jpg",
+        content: (
+            <StandardHero heading="Private Hire" subheading="Planning an event, birthday or private party with friends? We've got you covered!">
+                <Link to="/bookings" className="buttonLink">Book Now</Link>
+            </StandardHero>)
+    };
+}
 
 export function Content() {
     return (        
         <Layout>
-            <section>
-                <h2>PRIVATE HIRE</h2>
-                <p>
-                    The Dovetail Bar is available for private hire, for events of all sizes.
-                    Whether you're looking for a space for a birthday party, a corporate event, or a wedding, we can help.
-                    Get in touch to find out more about our private hire options.
-                </p>
+            <section className="secondary">                
+                <div className="centeredContent split">
+                    <div>
+                        <h2>The Venue</h2>
+                        <p>
+                            Nestled discretely away above the bustling Covent Garden Market, by the West End, The Dovetail Bar is your hideaway for all private affairs. In a hidden room, we serve creative yet unpretentious cocktails in a refined intimate environment. The ultimate hideaway from London’s busy streets, the West End’s best kept secret. 
+                        </p>
+                    </div>
+                    <div>
+                        <h2>Venue Walkthrough</h2>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/jjHQq6TpoUo?si=TLL7W-orQ4OxbyHx" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin"></iframe>
+                    </div>
+                </div>
             </section>
         </Layout>
     );
