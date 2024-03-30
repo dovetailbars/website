@@ -305,7 +305,8 @@ img .sideBySide {
   flex-flow: row;
   flex-wrap: wrap;
 
-  align-items: center;
+  vertical-align: top;
+  align-items: flex-start;
   justify-content: space-between;
   
   
