@@ -1,3 +1,20 @@
+/* setup css veriables */
+:root {
+  --primary-color: #1B3E70;
+  --secondary-color: rgb(164, 125, 45);
+  --text-color: #FFFFFF;
+}
+  
+hr {
+  height: 1px;
+  border: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
 nav {
   min-height: 100px;
   
@@ -6,57 +23,49 @@ nav {
   grid-template-columns: 110px auto minmax(100px, 150px);
   align-items: center;
 
-  background-color: #1B3E70;
+  background-color: var(--primary-color);
   position: sticky; top: 0;
-} 
 
-nav ul { 
-  padding-left: 2vw;
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  align-content: left;
-}
+  & ul { 
+    padding-left: 2vw;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    align-content: left;
 
-nav ul li {
+    & li {
 
-  padding-left: 5px;
-  padding-right: 5px;
+      padding-left: 5px;
+      padding-right: 5px;
+    
+      margin-right: 2.5vw;
+      padding-top: 1vh;
+      padding-bottom: 1vh;
+      font-family: oxtail, sans-serif;
+      text-transform: uppercase;
+    
+      text-align: center;
+    }
+  }
 
-  margin-right: 2.5vw;
-  padding-top: 1vh;
-  padding-bottom: 1vh;
-  font-family: oxtail, sans-serif;
-  text-transform: uppercase;
+  & ul li:hover {
+    background-color: white;
 
-  text-align: center;
-}
+    & a {
+      color: black;
+    }
+  }
 
-nav a, nav a:visited {
-  display: inline-block;
-  text-decoration: none;
-  color:  white;
-  font-size: 14px;
-}
+  & a, a:visited {
+    display: inline-block;
+    text-decoration: none;
+    color:  white;
+    font-size: 14px;
+  }
 
-nav ul li:hover {
-  background-color: white;
-}
-
-nav ul li:hover a {
-  color: black;
-}
-
-.logoLink {
-  text-align: right;
-}
-
-.buttonLink {
-  text-align: center;
-  margin: 0px 15px;
-  padding: 10px;
-  border: 1px solid white;
-  cursor: pointer;
+  & .buttonLink {
+    margin: 0px 15px;
+  }
 }
 
 header {
@@ -97,6 +106,20 @@ header {
   }
 }
 
+.logoLink { text-align: right; }
+
+.buttonLink {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+
+  & a, :visited, :hover { 
+    color: white;
+  }
+}
+
 .hero {
   display: flex;
   flex-direction: column;
@@ -112,73 +135,159 @@ header {
   color: white;
 }
 
+.outline {
+  color: rgba(255, 255, 255, 0);
 
-main {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-    padding-top: 3vh;
-    padding-bottom: 8vh;
-    background-color: #f6f6f6;
-  }
-  
-  main h1, main h2, main h3 {
-    font-size: xx-large;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-    color: black;
-  }
-  
-  main h4 {
-    font-size: x-large;
-    color: black;
-  }
-  
-  hr {
-    height: 1px;
-    border: 0;
-    background-color: rgba(0, 0, 0, 0.6);
-  }
-  
-  a, a:visited {
-    color: #181c93;
-    text-decoration: none;
-  }
-  
-  a, a:hover {
-    text-decoration: none;
-  }
-  
-  .outline {
-    color: rgba(255, 255, 255, 0);
-  
-    -webkit-text-stroke-color: #FFFFFF;
-    -webkit-text-stroke-width: 0.7px;
-  
-    stroke: rgb(255, 255, 255);  
-    stroke-width: 0.7px;
-  }
+  -webkit-text-stroke-color: #FFFFFF;
+  -webkit-text-stroke-width: 0.7px;
 
-  footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  
-    width: 100%;
-    background-color: #000000;
-    color: #999999;
-    padding-top: 2vh;
+  stroke: rgb(255, 255, 255);  
+  stroke-width: 0.7px;
 }
-  
-footer ul {
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  width: 100%;
+  background-color: #000000;
+  color: #999999;
+  padding-top: 2vh;
+
+  & ul { 
     padding: 0;
     list-style-type: none;
-}
+  }
 
-footer span {
+  & span {
     color: #999999;
     font-size: medium;
     padding-top: 1vh;
+  }
+}
+
+.primary {
+    background-color: var(--primary-color);
+    color: var(--text-color)
+}
+
+.secondary {
+    background-color: var(--secondary-color);
+    color: var(--text-color)
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  background-color: #f6f6f6;
+
+  & h1, h2, h3 {
+    font-size: xx-large;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    color: white;
+  }
+
+  & h4 {
+    font-size: x-large;
+    color: white;    
+  }
+
+  & section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & h2 {
+      font-family: oxtail, sans-serif;
+      text-transform: uppercase;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      font-size: x-large;
+    }
+
+    & h3 {
+      font-family: oxtail, sans-serif;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+  
+    & img {
+      max-width: 500px;
+      max-height: 333px;
+    }
+
+    & .paddedTop {
+      padding-top: 2vh;
+    }
+  }
+
+  & .centeredContent {
+    max-width: 1150px;
+    padding: 2vh;
+  }
+}
+
+.whatsOnPanel {
+
+  padding: 10px;
+  margin-bottom: 25px;
+
+  border: 2px solid var(--primary-color);
+
+  & h2 {
+    margin: 0;
+    padding: 0;
+
+    font-family: oxtail, sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    font-size: x-large;
+  }
+
+  & h3 {
+    margin: 0;
+    padding: 0;
+
+    font-family: oxtail, sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+} 
+
+.split {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+
+  align-items: center;
+  justify-content: space-between;
+  
+  
+  gap: 10px;
+
+  padding: 25px;
+
+  & div {
+    min-width: 300px;
+    width: 45%;
+  }
+
+  & img {
+    width: 100%;
+  }
+}
+
+.map {
+  min-height: 35vh;
+}
+
+.instagramFeed {
+  min-width: 60vw;
+  min-height: 60vh;
 }
