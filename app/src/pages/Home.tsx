@@ -8,7 +8,9 @@ export function Hero(): HeroData {
     return {
         image: "/images/DTB-Initial-Cocktail-Shoot-LR-012.jpg",
         content: (<>
-            <img src="/images/white-logo-textless.png" alt="Dovetail" height={180} />
+
+            <h1>Dovetail</h1>
+            <img src="/images/white-logo-textless.png" alt="Dovetail" className="hero-logo" />
             <StandardHero heading="Dovetail" subheading="Covent Garden">
                 <span className="xx-large x-wide">INTIMATE | REFINED | ELEVATED</span>
             </StandardHero>
@@ -39,12 +41,12 @@ export function Content() {
                 <div className="centeredContent split">
                     <div>
                         <h2>
-                            <span>THE PERFECT SPACE FOR YOUR</span><br/>PRIVATE HIRE
+                            <span>THE PERFECT SPACE FOR YOUR</span><br />PRIVATE HIRE
                         </h2>
                         <p>
                             Whether you're planning an intimate gathering, a celebration to remember, or a discreet corporate meeting, our hidden gem offers a unique setting that combines the charm of secrecy with the warmth of hospitality.
                         </p>
-                        <p>    
+                        <p>
                             In collaboration with RedFarm, The Dovetail Bar is more than just a venue; it's an experience waiting to be tailored to your every need. Our creative cocktails, served with a flair for the unpretentious, promise to enchant your guests, while our refined yet cozy environment ensures a memorable occasion for all.
                         </p>
                         <p className="paddedTop">
@@ -56,7 +58,7 @@ export function Content() {
                     </div>
                 </div>
             </section>
-            
+
             <WhatsOnCommon />
 
             <iframe className="map" loading="lazy" src="https://maps.google.com/maps?q=Dovetail%20Bar%2C%20covent%20garden&amp;t=m&amp;z=16&amp;output=embed&amp;iwloc=near" title="Dovetail Bar, covent garden" aria-label="Dovetail Bar, covent garden"></iframe>
@@ -64,10 +66,10 @@ export function Content() {
             <section className="primary">
                 <div className="centeredContent">
                     <h2>@DOVETAILBARS</h2>
-                    <iframe 
+                    <iframe
                         src="https://www.instagram.com/dovetailbars/embed"
                         className="instagramFeed"
-                        title="Instagram Feed" 
+                        title="Instagram Feed"
                         aria-label="Instagram Feed"
                         frameBorder="0"
                     ></iframe>
