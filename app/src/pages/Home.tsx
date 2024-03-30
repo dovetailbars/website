@@ -43,9 +43,10 @@ export function Content() {
                             <span>THE PERFECT SPACE FOR YOUR</span><br/>PRIVATE HIRE
                         </h2>
                         <p>
-                            Nestled discretely away above the bustling Covent Garden Market, by the West End, The Dovetail Bar is your hideaway for all private affairs.
-                            A joint venture with RedFarm, in a hidden room, we serve creative yet unpretentious cocktails in a refined intimate environment.
-                            The ultimate hideaway from London’s busy streets, the West End’s best kept secret.
+                            Whether you're planning an intimate gathering, a celebration to remember, or a discreet corporate meeting, our hidden gem offers a unique setting that combines the charm of secrecy with the warmth of hospitality.
+                        </p>
+                        <p>    
+                            In collaboration with RedFarm, The Dovetail Bar is more than just a venue; it's an experience waiting to be tailored to your every need. Our creative cocktails, served with a flair for the unpretentious, promise to enchant your guests, while our refined yet cozy environment ensures a memorable occasion for all.
                         </p>
                         <p className="paddedTop">
                             <Link to="/private-hire" className="buttonLink">See the space</Link>
@@ -87,9 +88,17 @@ export function Content() {
                             <h3>Masterclasses</h3>
                             <span>FUN INTIMATE CLASSES & ACTIVITIES</span>
                             <p>
-                            Want to perfect your cocktail game? We offer cocktail masterclasses for all skill levels and interests.
-                            Jump behind the bar with one of our senior mixologists, and let us take you on a cocktail journey as you learn the techniques, theory and history behind your favourite drinks.
-                            We accommodate groups of all sizes, from a great date night to a corporate team building.
+                                Looking to elevate your cocktail-making prowess?
+                            </p>
+                            <p>
+                                The Dovetail Bar invites you to immerse yourself in the art and science of mixology with our bespoke cocktail masterclasses. Tailored for enthusiasts of all expertise levels, these sessions offer a hands-on experience where you'll step behind the bar alongside our seasoned mixologists.
+                            </p>
+                            <p>
+                                Embark on a captivating journey through the intricacies of cocktail creation, from mastering foundational techniques to exploring the rich history and theory that breathe life into your favorite concoctions.
+                                Our masterclasses provide the perfect blend of education and entertainment for a memorable date night or an engaging corporate team-building activity.
+                            </p>
+                            <p>
+                                Join us at The Dovetail Bar, where every sip tells a story, and discover the secrets to crafting the perfect drink.
                             </p>
                             <p className="paddedTop">
                                 <Link to="/bookings" className="buttonLink">Book Now</Link>
