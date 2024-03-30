@@ -35,9 +35,36 @@ export function Layout({ children, height = "78vh", hero = null }) {
         </main>
 
         <footer>
-            <span>
+            <div className="logos">
+                <img src="/images/white-logo-textless.png" alt="Dovetail" width={160} /><br/>
+                <span>Dovetail</span>
+            </div>
+            <div className="footerDetails centeredContent">
+                <section>
+                    <h2>Opening Hours</h2>
+                    <p>
+                        5pm – 12.30am – Monday to Friday<br />
+                        2pm – 12:30 am – Saturday<br />
+                        5pm – 11:30 pm – Sunday
+                    </p>
+                </section>
+                <section>
+                    <h2>Location</h2>
+                    <p>
+                        2nd Floor, 9 Russell St, London WC2B 5HZ
+                    </p>
+                </section>
+                <section>
+                    <h2>Contact Us</h2>
+                    <p>
+                        info@dovetailbars.co.uk<br/>
+                        +44 7544 523423
+                    </p>
+                </section>
+            </div>            
+            <div className="copyright">
                 © Dovetail Bar | Company No. 14991262
-            </span>
+            </div>
         </footer>
     </>);
 }

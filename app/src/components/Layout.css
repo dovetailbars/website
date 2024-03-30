@@ -147,12 +147,15 @@ header {
 
 footer {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+
+  background-color: var(--primary-color);
 
   width: 100%;
-  background-color: #000000;
-  color: #999999;
+  color: #cccccc;
   padding-top: 2vh;
 
   & ul { 
@@ -160,10 +163,34 @@ footer {
     list-style-type: none;
   }
 
-  & span {
+  & .footerDetails {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: top;
+    gap: 10px;
+  }
+
+  & .copyright {
+    width: 100%;
+    text-align: center;
+    background-color: #0C2549;
     color: #999999;
     font-size: medium;
     padding-top: 1vh;
+  }
+
+  & .logos {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: x-large;    
+
+    color: white;
+    font-family: oxtail, sans-serif;
+    text-transform: uppercase;
   }
 }
 
@@ -226,10 +253,11 @@ main {
     }
   }
 
-  & .centeredContent {
-    max-width: 1150px;
-    padding: 2vh;
-  }
+}
+
+.centeredContent {
+  max-width: 1150px;
+  padding: 2vh;
 }
 
 .whatsOnPanel {
@@ -259,6 +287,10 @@ main {
     text-transform: uppercase;
   }
 } 
+
+.alternate {
+  background-color: var(--primary-color);
+}
 
 .split {
   display: flex;

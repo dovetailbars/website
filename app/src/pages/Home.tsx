@@ -11,8 +11,7 @@ export function Hero() {
             <span className="x-wide">Covent Garden</span>
         </p>
         <p>
-            <span className="xx-large x-wide">A PRIVATE AFFAIR</span><br />
-            <span className="large wide">INTIMATE | REFINED | ELEVATED</span>
+            <span className="xx-large x-wide">INTIMATE | REFINED | ELEVATED</span>
         </p> 
     </>);
 }
@@ -23,11 +22,16 @@ export function Content() {
         <Layout hero={Hero}>
             <section className="primary">
                 <div className="centeredContent">
-                    <h2>BESPOKE PRIVACY</h2>
+                    <h2>Discover The Dovetail Bar</h2>
                     <p>
-                        Nestled discretely away above the bustling Covent Garden Market, by the West End, The Dovetail Bar is your hideaway for all private affairs.
-                        A joint venture with RedFarm, in a hidden room, we serve creative yet unpretentious cocktails in a refined intimate environment.
-                        The ultimate hideaway from London’s busy streets, the West End’s best kept secret.
+                        Tucked away above the lively Covent Garden Market, right in the heart of London's West End, you'll find The Dovetail Bar - a cozy secret just waiting to be shared.
+                    </p>
+                    <p>
+                        In partnership with RedFarm, this hidden spot is where creativity meets cocktails, offering a unique blend of innovation and charm in a welcoming, intimate setting.
+                        It's your escape from the city's frenzy, a place where everyone is invited to enjoy the simplicity of good company and great drinks.
+                    </p>
+                    <p>
+                        Discover The Dovetail Bar, the West End’s best kept secret.
                     </p>
                 </div>
             </section>
@@ -75,16 +79,22 @@ export function Content() {
                         </div>
                     </div>
 
-                    <div className="whatsOnPanel">
-                        <h3>Masterclasses</h3>
-                        <span>FUN INTIMATE CLASSES & ACTIVITIES</span>
-                        <p>
-                            Join us on Mondays where some of the worlds best brands takeover our bar with speciality cocktails made to impress.                            
-                            From Scotch brands to gin, agave and more, join us to discover new delights in our private bar.
-                        </p>
-                        <p className="paddedTop">
-                            <Link to="/bookings" className="buttonLink">Book Mondays</Link>
-                        </p>
+                    <div className="whatsOnPanel alternate split">                     
+                        <div>
+                            <img src="/images/Dovetail-X-Ferrand-67-Large.jpg" alt="Private Hire" />
+                        </div>
+                        <div>
+                            <h3>Masterclasses</h3>
+                            <span>FUN INTIMATE CLASSES & ACTIVITIES</span>
+                            <p>
+                            Want to perfect your cocktail game? We offer cocktail masterclasses for all skill levels and interests.
+                            Jump behind the bar with one of our senior mixologists, and let us take you on a cocktail journey as you learn the techniques, theory and history behind your favourite drinks.
+                            We accommodate groups of all sizes, from a great date night to a corporate team building.
+                            </p>
+                            <p className="paddedTop">
+                                <Link to="/bookings" className="buttonLink">Book Now</Link>
+                            </p>
+                        </div>   
                     </div>
 
                 </div>
