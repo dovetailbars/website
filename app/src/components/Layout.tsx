@@ -4,9 +4,24 @@ import CarouselBackground from './CarouselBackground';
 import { Link } from "react-router-dom";
 import * as Home from '../pages/Home';
 
-export function Layout({ children, height = "78vh", hero = null }) {
+type Props = {
+    children: React.ReactNode;
+    hero?: () => HeroData;
+};
 
-    hero = hero || Home.Hero;
+export function Layout({ children, hero = null }: Props) {
+    const noHero = () => {
+        return { image: "", content: <></> };
+    }
+
+    hero = hero || noHero;
+    const isOnHomePage = hero === Home.Hero;
+    const headerClassName = isOnHomePage ? "homeHeader" : "";
+    const heroContent = hero();
+
+    const carouselItems = [
+        heroContent?.image ? { src: heroContent.image, alt: "" } : { src: "/images/DTB-Initial-Cocktail-Shoot-LR-042.jpg", alt: "" }
+    ];
 
     return (<>
         <nav>            
@@ -22,10 +37,10 @@ export function Layout({ children, height = "78vh", hero = null }) {
             <Link to="/bookings" className="buttonLink">Book Now</Link>
         </nav>
 
-        <header style={{ height: height }}>
-            <CarouselBackground items={[]}>
+        <header className={headerClassName}>
+            <CarouselBackground items={carouselItems}>
                 <div className="hero">
-                    { hero() }
+                    { heroContent.content }
                 </div>
             </CarouselBackground>
         </header>

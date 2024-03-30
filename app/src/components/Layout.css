@@ -78,13 +78,17 @@ header {
   background-position-y: center;
   background-repeat: no-repeat;
       
-  height: contain;
+  height: 40vh;
 
   vertical-align: middle;
   align-content: center;
   align-items: center;
 
   overflow: hidden;
+}
+
+.homeHeader {
+  height: 78vh;
 }
 
 @media (max-width: 1400px) {
@@ -242,17 +246,21 @@ main {
       font-weight: 500;
       text-transform: uppercase;
     }
-  
-    & img {
-      max-width: 500px;
-      max-height: 333px;
-    }
 
     & .paddedTop {
       padding-top: 2vh;
     }
   }
 
+}
+
+img .sideBySide {
+  max-width: 500px;
+  max-height: 333px;
+}
+
+.fullWidth {
+  width: 60vw;
 }
 
 .centeredContent {

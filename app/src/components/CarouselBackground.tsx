@@ -5,7 +5,7 @@ export type CarouselProps = { items: Item[]; children: React.ReactNode; height?:
 
 export default function CarouselBackground({ items, children }: CarouselProps) {
 
-    const selectedBackgroundImage = items[Math.floor(Math.random() * items.length)] ?? items[0] ?? { src: "/images/DTB-Initial-Cocktail-Shoot-LR-012.jpg", alt: "" };
+    const selectedBackgroundImage = items[Math.floor(Math.random() * items.length)] ?? items[0];
     
     return (
         <div className="carousel" style={{ backgroundImage: `url(${selectedBackgroundImage.src})` }}>

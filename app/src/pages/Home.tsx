@@ -1,23 +1,24 @@
 import "./Home.css";
 import { Layout } from "../components/Layout";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
 
-export function Hero() {
-    return (<>
-        <img src="/images/white-logo-textless.png" alt="Dovetail" height={180} />
-        <p>
-            <span className="xx-large outline">Dovetail</span><br />
-            <span className="x-wide">Covent Garden</span>
-        </p>
-        <p>
-            <span className="xx-large x-wide">INTIMATE | REFINED | ELEVATED</span>
-        </p> 
-    </>);
+export function Hero(): HeroData {
+    return {
+        image: "/images/DTB-Initial-Cocktail-Shoot-LR-012.jpg",
+        content: (<>
+            <img src="/images/white-logo-textless.png" alt="Dovetail" height={180} />
+            <p>
+                <span className="xx-large outline">Dovetail</span><br />
+                <span className="x-wide">Covent Garden</span>
+            </p>
+            <p>
+                <span className="xx-large x-wide">INTIMATE | REFINED | ELEVATED</span>
+            </p> 
+        </>)
+    };
 }
 
 export function Content() {
-
     return (<>
         <Layout hero={Hero}>
             <section className="primary">
@@ -53,7 +54,7 @@ export function Content() {
                         </p>
                     </div>
                     <div>
-                        <img src="/images/Dovetail-X-Ferrand-58-Large.jpg" alt="Private Hire" />
+                        <img src="/images/Dovetail-X-Ferrand-58-Large.jpg" alt="Private Hire" className="sideBySide" />
                     </div>
                 </div>
             </section>
@@ -76,7 +77,7 @@ export function Content() {
                             </p>
                         </div>
                         <div>
-                            <img src="/images/DTB-Initial-Cocktail-Shoot-LR-067.jpg" alt="Private Hire" />
+                            <img src="/images/DTB-Initial-Cocktail-Shoot-LR-067.jpg" alt="Private Hire" className="sideBySide" />
                         </div>
                     </div>
 
@@ -120,7 +121,6 @@ export function Content() {
                         title="Instagram Feed" 
                         aria-label="Instagram Feed"
                         frameBorder="0"
-                        allowTransparency={true}
                     ></iframe>
                 </div>
             </section>

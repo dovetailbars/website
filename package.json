@@ -3,14 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "prepare": "cd api && npm install",
-    "start": "run-p dev:api dev:server",
-    "dev:api": "npm run start --prefix api",
-    "dev:server": "npx vite serve",
-    "test": "npm run test:app && npm run test:api",
-    "test:app": "vitest run",
-    "test:api": "cd api && vitest run",
+    "start": "npx vite serve",
+    "test": "vitest run",
     "build:azure": "npx vite build"
   },
   "author": "",

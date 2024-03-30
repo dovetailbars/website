@@ -1,14 +1,22 @@
 import { Layout } from "../components/Layout";
 
+export function Hero(): HeroData {
+    return {
+        image: "/images/DTB-Initial-Cocktail-Shoot-LR-020.jpg",
+        content: (<>
+            <h1 className="xx-large x-wide">Cocktail Menu</h1> 
+        </>)
+    };
+}
+
+
 export function Content() {
     return (
-        <Layout>
-            <section>
-                <h2>COCKTAIL MENU</h2>
-                <p>
-                    Our cocktail menu is a celebration of the best of British produce, with a nod to the classics.
-                    We have a selection of cocktails that are sure to delight and surprise, with a focus on quality ingredients and expertly crafted drinks.
-                </p>
+        <Layout hero={Hero}>
+            <section className="secondary">
+                <div className="centeredContent">
+                    <img src="/images/Dovetail-Menu.jpg" alt="Cocktail Menu" className="fullWidth" />
+                </div>
             </section>
         </Layout>
     );
