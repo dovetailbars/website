@@ -16,6 +16,7 @@ export function Layout({ children, hero = null }: Props) {
 
     hero = hero || noHero;
     const isOnHomePage = hero === Home.Hero;
+    const isHomePageClassName = isOnHomePage ? "home" : "";
     const headerClassName = isOnHomePage ? "homeHeader" : "";
     const heroContent = hero();
 
@@ -24,7 +25,7 @@ export function Layout({ children, hero = null }: Props) {
     ];
 
     return (<>
-        <nav>            
+        <nav className={isHomePageClassName}>            
             <Link to="/" className="logoLink">
                 <img src="/images/white-logo.png" alt="Dovetail" width={100} height={80} />
             </Link>

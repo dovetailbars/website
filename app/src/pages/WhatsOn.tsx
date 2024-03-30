@@ -1,23 +1,23 @@
+import { Link } from "react-router-dom";
 import { Layout } from "../components/Layout";
+import StandardHero from "../components/StandardHero";
+import WhatsOnCommon from "../partials/WhatsOnCommon";
 
 export function Hero(): HeroData {
     return {
-        image: "/images/DTB-Initial-Cocktail-Shoot-LR-020.jpg",
-        content: (<>
-            <h1 className="xx-large x-wide">Cocktail Menu</h1> 
-        </>)
+        image: "/images/DTB-Initial-Cocktail-Shoot-LR-052.jpg",
+        content: (
+            <StandardHero heading="What's On" subheading="Our Upcoming Events">
+                <Link to="/bookings" className="buttonLink">Book Now</Link>
+            </StandardHero>)
     };
 }
 
 
 export function Content() {
     return (
-        <Layout hero={Hero}>
-            <section className="secondary">
-                <div className="centeredContent">
-                    <img src="/images/Dovetail-Menu.jpg" alt="Cocktail Menu" className="fullWidth" />
-                </div>
-            </section>
+        <Layout hero={Hero}>            
+            <WhatsOnCommon />
         </Layout>
     );
 }
