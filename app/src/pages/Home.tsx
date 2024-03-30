@@ -6,14 +6,11 @@ export function Hero(): HeroData {
     return {
         image: "/images/DTB-Initial-Cocktail-Shoot-LR-012.jpg",
         content: (<>
-            <img src="/images/white-logo-textless.png" alt="Dovetail" height={180} />
-            <p>
-                <span className="xx-large outline">Dovetail</span><br />
-                <span className="x-wide">Covent Garden</span>
-            </p>
-            <p>
-                <span className="xx-large x-wide">INTIMATE | REFINED | ELEVATED</span>
-            </p> 
+            <h1>Dovetail</h1>
+            <img src="/images/white-logo.png" alt="Dovetail" className="hero-logo" />
+            <h2>
+                <span className="x-wide">Covent Garden | Homerton</span>
+            </h2>
         </>)
     };
 }
@@ -41,12 +38,12 @@ export function Content() {
                 <div className="centeredContent split">
                     <div>
                         <h2>
-                            <span>THE PERFECT SPACE FOR YOUR</span><br/>PRIVATE HIRE
+                            <span>THE PERFECT SPACE FOR YOUR</span><br />PRIVATE HIRE
                         </h2>
                         <p>
                             Whether you're planning an intimate gathering, a celebration to remember, or a discreet corporate meeting, our hidden gem offers a unique setting that combines the charm of secrecy with the warmth of hospitality.
                         </p>
-                        <p>    
+                        <p>
                             In collaboration with RedFarm, The Dovetail Bar is more than just a venue; it's an experience waiting to be tailored to your every need. Our creative cocktails, served with a flair for the unpretentious, promise to enchant your guests, while our refined yet cozy environment ensures a memorable occasion for all.
                         </p>
                         <p className="paddedTop">
@@ -58,8 +55,8 @@ export function Content() {
                     </div>
                 </div>
             </section>
-            
-            <section className="secondary">                
+
+            <section className="secondary">
 
                 <div className="centeredContent">
                     <h2>What's On</h2>
@@ -69,7 +66,7 @@ export function Content() {
                             <h3>Monday Takeovers</h3>
                             <span>EVERY MONDAY FROM 5PM</span>
                             <p>
-                                Join us on Mondays where some of the worlds best brands takeover our bar with speciality cocktails made to impress.                            
+                                Join us on Mondays where some of the worlds best brands takeover our bar with speciality cocktails made to impress.
                                 From Scotch brands to gin, agave and more, join us to discover new delights in our private bar.
                             </p>
                             <p className="paddedTop">
@@ -81,7 +78,7 @@ export function Content() {
                         </div>
                     </div>
 
-                    <div className="whatsOnPanel alternate split">                     
+                    <div className="whatsOnPanel alternate split">
                         <div>
                             <img src="/images/Dovetail-X-Ferrand-67-Large.jpg" alt="Private Hire" />
                         </div>
@@ -104,7 +101,7 @@ export function Content() {
                             <p className="paddedTop">
                                 <Link to="/bookings" className="buttonLink">Book Now</Link>
                             </p>
-                        </div>   
+                        </div>
                     </div>
 
                 </div>
@@ -115,10 +112,10 @@ export function Content() {
             <section className="primary">
                 <div className="centeredContent">
                     <h2>@DOVETAILBARS</h2>
-                    <iframe 
+                    <iframe
                         src="https://www.instagram.com/dovetailbars/embed"
                         className="instagramFeed"
-                        title="Instagram Feed" 
+                        title="Instagram Feed"
                         aria-label="Instagram Feed"
                         frameBorder="0"
                     ></iframe>
