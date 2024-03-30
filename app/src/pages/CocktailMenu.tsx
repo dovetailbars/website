@@ -1,11 +1,10 @@
 import { Layout } from "../components/Layout";
+import StandardHero from "../components/StandardHero";
 
 export function Hero(): HeroData {
     return {
         image: "/images/DTB-Initial-Cocktail-Shoot-LR-020.jpg",
-        content: (<>
-            <h1 className="xx-large x-wide">Cocktail Menu</h1> 
-        </>)
+        content: <StandardHero heading="Cocktail Menu" />
     };
 }
 
