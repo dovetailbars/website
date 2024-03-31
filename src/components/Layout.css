@@ -9,7 +9,9 @@ a, a:hover {
   text-decoration: none;
 }
 
-p {max-width: 700px;}
+p {
+  max-width: 700px;
+}
 
 nav {
   display: flex;
@@ -183,6 +185,7 @@ footer {
     display: flex;
     flex-flow: row;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: top;
     gap: 10px;
@@ -252,6 +255,7 @@ main {
 }
 
 img .sideBySide {
+  width: 100%;
   max-width: 500px;
   max-height: 333px;
 }
@@ -308,26 +312,25 @@ img .sideBySide {
 
 .split {
   display: flex;
-  flex-flow: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
 
   vertical-align: top;
   align-items: flex-start;
-  justify-content: space-between;
-  
+  justify-content: space-between;  
   
   gap: 10px;
 
-  padding: 25px;
-
   & div {
-    min-width: 300px;
-    width: 45%;
+    width: 400px;
+    min-width: 45%;
+    flex-grow: 1;
+    padding: 25px;
+    
+    & img {
+      width: 100%;
+    }
   }
 
-  & img {
-    width: 100%;
-  }
 }
 
 .map {
@@ -335,7 +338,8 @@ img .sideBySide {
 }
 
 .instagramFeed {
-  min-width: 60vw;
+  width: 100%;
+  max-width: 60vw;
   min-height: 50vh;
 }
 

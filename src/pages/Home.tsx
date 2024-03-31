@@ -21,7 +21,7 @@ export function Content() {
     return (<>
         <Layout hero={Hero}>
             <section className="secondary">
-                <div className="centeredContent intro">
+                <div className="centeredContent intro centerAligned">
                     <h2>Discover Dovetail Bar</h2>
                     <p>
                         Tucked away above the lively Covent Garden Market, right in the heart of London's West End, you'll find The Dovetail Bar - a cozy secret just waiting to be shared.
@@ -61,8 +61,7 @@ export function Content() {
             <iframe className="map" loading="lazy" src="https://maps.google.com/maps?q=Dovetail%20Bar%2C%20covent%20garden&amp;t=m&amp;z=16&amp;output=embed&amp;iwloc=near" title="Dovetail Bar, covent garden" aria-label="Dovetail Bar, covent garden"></iframe>
 
             <section className="primary">
-                <div className="centeredContent">
-                    <h2>@DOVETAILBARS</h2>
+                <div className="centeredContent centerAligned">
                     <iframe
                         src="https://www.instagram.com/dovetailbars/embed"
                         className="instagramFeed"
