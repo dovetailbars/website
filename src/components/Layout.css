@@ -3,6 +3,7 @@
   --secondary-color:#ea9c2a;
   --text-color: #FFFFFF;
   --spacer: 2rem;
+  --header-height: 76vh;
 }
 
 a, a:hover {
@@ -14,31 +15,25 @@ p {
 }
 
 nav {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
   position: absolute;
   top: 0;
   min-height: 100px;
   width: 100%;
   padding: var(--spacer);
   font-family: alice, serif;
-  font-size: clamp(1rem, 2vw, 20px);
+  font-size: clamp(1.3rem, 2vw, 20px);
   text-transform: uppercase;
-  white-space: nowrap;
-
-  flex-wrap: wrap;
   
   & ul { 
     display: flex;
-    list-style: none;
-    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 0;
+    text-align: center;
+    list-style: none;
     
     & li {
-      margin: 0 var(--spacer);
+      margin: 0 1rem;
 
-      
       & a::after {
         content: "";
         display: block;
@@ -59,29 +54,19 @@ nav {
       }
     }
   }
-
-  & .buttonLink {
-    justify-self: flex-end;
-  }
-}
-
-
-@media (max-width: 1052px) {
-  nav {
-    font-size: 1.5rem;
-    align-items: center;
-    justify-content: center;
-
-    & ul {
-      align-items: center;
-      justify-content: space-evenly;
-    }
-  }
 }
 
 .home {
+  top: 54vh;
+  
   .logoLink {
     display: none;
+  }
+
+  .buttonLink {
+    display: block;
+    width: max-content;
+    margin: 2rem auto;
   }
 }
 
@@ -104,11 +89,7 @@ header {
 }
 
 .hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+  margin-top: var(--spacer);
   text-align: center;
   font-family: oxtail, sans-serif;
   text-transform: uppercase;
@@ -123,41 +104,12 @@ header {
 }
 
 .homeHeader {
-  height: 76vh;
+  height: var(--header-height);
 }
 
 .title {
   display: none;
 }
-
-@media (max-width: 1400px) {
-  header {
-      background-size: cover;
-      background-position: center;
-  }
-}
-
-@media (max-width: 1052px) {
-  nav {
-    background-color: black;
-    align-items: center;
-    justify-content: center;
-    min-height: 290px;
-  }
-
-  nav a.logoLink {
-    text-align: center;
-  }
-
-  header, header.homeHeader {
-    margin-top: 290px;
-  }
-
-  header, div .hero {
-    max-height: 450px;
-  }
-}
-
 
 .logoLink { 
   max-width: 200px;
@@ -187,8 +139,36 @@ header {
 }
 
 .intro {
+  position: relative;
+  margin: var(--spacer);
+  padding: calc(var(--spacer));
   text-align: center;
-  max-width: 700px;
+  max-width: 900px;
+
+   &::after {
+    content: "";
+    position: absolute;
+    top: calc(var(--spacer) / 2);
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 1rem + 20px);
+    height: calc(100% - 2rem);
+    border: 1px solid var(--secondary-color);
+  }
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: calc(var(--spacer) / 2 - 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 1rem);
+    height: calc(100% - 2rem + 20px);
+    border: 1px solid var(--secondary-color);
+  }
+  P {
+    margin: 1em;
+  }
 }
 
 .outline {
@@ -256,15 +236,15 @@ footer {
 }
 
 .primary {
-    background-color: var(--primary-color);
-    color: var(--text-color);
-    padding-bottom: var(--spacer);
-  }
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding-bottom: var(--spacer);
+}
   
-  .secondary {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-    padding-bottom: var(--spacer);
+.secondary {
+  padding-bottom: var(--spacer);
+  background-color: var(--primary-color);
+  color: white;
 }
 
 main {
@@ -455,3 +435,38 @@ textarea {
   box-sizing: border-box;
 }
 
+@media (min-width: 1050px) {
+  nav {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    top: 0;
+    white-space: nowrap;
+
+    & ul {
+      flex-wrap: wrap;
+    }
+
+    & .buttonLink {
+      justify-self: flex-end;
+    }
+  }
+
+  .hero {
+    display: flex;
+    margin: 0;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .home {
+    top: 0;
+  
+    & .buttonLink {
+      margin: 0;
+    }
+}
+
+}
