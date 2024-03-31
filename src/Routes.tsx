@@ -8,11 +8,14 @@ import * as PrivateHire from './pages/PrivateHire';
 import * as Bookings from './pages/Bookings';
 import * as BookingConfirmation from './pages/BookingConfirmation';
 import * as CocktailMakingClass from './pages/CocktailMakingClass';
+import ScrollToAnchor from "./components/ScrollToAnchor";
 
 export default function Routes() {
   return (
     <BrowserRouter>
+      <ScrollToAnchor />
       <ReactRoutes>
+
         <Route path="/" element={<Home.Content />} />
         <Route path="/cocktail-menu" element={<CocktailMenu.Content />} />
         <Route path="/whats-on" element={<WhatsOn.Content />} />
