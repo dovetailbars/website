@@ -19,7 +19,7 @@
       "jsx": "react-jsx"
     },
     "include": [
-      "./app/src"
+      "./src"
     ],
     "types": [
       "vitest/globals"
