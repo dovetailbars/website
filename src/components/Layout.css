@@ -121,10 +121,23 @@ header {
 @media (max-width: 1052px) {
   nav {
     background-color: var(--primary-color);
+    align-items: center;
+    justify-content: center;
   }
+
+  nav a.logoLink {
+    text-align: center;
+  }
+
   header {
-    margin-top: 200px;
+    margin-top: 300px;
   }
+
+  header.homeHeader {
+    margin-top: 200px;
+    max-height: 800px;
+  }
+
 }
 
 
