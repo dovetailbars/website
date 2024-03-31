@@ -39,17 +39,20 @@ nav {
   font-family: alice, serif;
   font-size: clamp(1rem, 2vw, 20px);
   text-transform: uppercase;
+      z-index: 2;
   
   & ul { 
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin: 0;
     padding: 0;
     text-align: center;
     list-style: none;
+    gap: 1rem;
     
     & li {
-      margin: .8rem;
+      margin: 0rem;
 
       & a::after {
         content: "";
@@ -73,9 +76,12 @@ nav {
   }
 }
 
-.home {
-  bottom: 0;
+.carousel {
+  position: relative;
+  z-index: 1;
+}
 
+.home {
   .logoLink {
     display: none;
   }
@@ -83,13 +89,22 @@ nav {
   .buttonLink {
     display: block;
     width: max-content;
-    margin: 2rem auto 0;
+    margin: 1rem auto;
+    line-height: 1rem;
   }
 }
 
 .headerTitle {
-  margin: 1rem;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  margin: 1rem auto;
   line-height: 1.4em;
+}
+
+.homeHeader .hero {
+  padding-top: 25vh;
 }
 
 .hero {

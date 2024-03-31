@@ -9,7 +9,7 @@ export function Hero(): HeroData {
         content: (<>
             <img src="/images/logo-white.png" alt="Dovetail" className="heroLogo" />
             <h1 className="title">Dovetail</h1>
-            <StandardHero heading="Covent Garden & Homerton"></StandardHero>
+            <StandardHero heading="Covent Garden | Homerton"></StandardHero>
         </>)
     };
 }
