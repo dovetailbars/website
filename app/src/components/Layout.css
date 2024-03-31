@@ -188,6 +188,7 @@ footer {
     justify-content: space-evenly;
     align-items: top;
     gap: 10px;
+    width: 100%;
   }
 
   & .copyright {
