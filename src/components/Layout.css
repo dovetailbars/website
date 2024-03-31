@@ -14,6 +14,11 @@ p {
   max-width: 700px;
 }
 
+img {
+  display: inline-block;
+  max-width: 100%;
+}
+
 header {
   position: relative;
   background-size: contain;
@@ -83,13 +88,6 @@ nav {
   .logoLink {
     display: none;
   }
-
-  .buttonLink {
-    display: block;
-    width: max-content;
-    margin: 2rem auto;
-    line-height: 1rem;
-  }
 }
 
 .headerTitle {
@@ -143,6 +141,10 @@ nav {
 }
 
 .buttonLink {
+  display: block;
+  width: max-content;
+  margin: 2rem auto;
+  line-height: 1rem;
   padding: 1rem 2rem;
   border: 1px solid var(--secondary-color);
   color: var(--secondary-color);
@@ -168,7 +170,7 @@ nav {
 .intro {
   position: relative;
   margin: var(--spacer);
-  padding: calc(var(--spacer));
+  padding: var(--spacer) var(--spacer) calc(var(--spacer) * 2);
   text-align: center;
   max-width: 900px;
 
@@ -269,7 +271,6 @@ footer {
 }
   
 .secondary {
-  padding-bottom: var(--spacer);
   background-color: var(--primary-color);
   color: white;
 }
@@ -320,6 +321,7 @@ img .sideBySide {
   width: 100%;
   max-width: 1150px;
   padding: var(--spacer);
+  text-align: center;
 }
 
 .centerAligned {
@@ -336,54 +338,14 @@ img .sideBySide {
 
   border: 2px solid var(--primary-color);
 
-  & h2 {
-    margin: 0;
-    padding: 0;
-
-    font-family: oxtail, sans-serif;
-    text-transform: uppercase;
-    font-weight: 500;
-    letter-spacing: 0.2em;
-    font-size: x-large;
-  }
-
   & h3 {
     margin: 0;
     padding: 0;
 
-    font-family: oxtail, sans-serif;
+    font-family: alice, sans-serif;
     font-weight: 500;
-    text-transform: uppercase;
   }
 } 
-
-.split {
-  display: flex;
-  flex-flow: row wrap;
-
-  vertical-align: top;
-  align-items: flex-start;
-  justify-content: space-between;  
-  
-  gap: 10px;
-
-  & div {
-    width: 400px;
-    min-width: 45%;
-    flex-grow: 1;
-    padding: 25px;
-    
-    & img {
-      width: 100%;
-    }
-  }
-}
-
-.alternate {
-  background-color: var(--primary-color);
-  color: white;
-  flex-flow: row wrap;
-}
 
 .map {
   min-height: 35vh;
@@ -472,6 +434,10 @@ textarea {
 
     & ul {
       flex-wrap: wrap;
+  
+      & li {
+        margin: 0 1rem; 
+      }
     }
 
     & .buttonLink {
@@ -480,12 +446,16 @@ textarea {
   }
 
   .hero {
-    display: flex;
     margin: 0;
-    height: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+
+  }
+  
+  .homeHeader {
+    height: 70vh;
+    
+    .hero {
+      padding-top: 160px;
+    }
   }
 
   .home {
@@ -495,6 +465,50 @@ textarea {
       margin: 0;
     }
   }
+
+  .headerTitle::after {
+    display: none;
+  }
+
+  .centeredContent {
+    text-align: left;
+
+    & h2 {
+      margin-top: 0;
+    }
+  }
+
+  .split {
+    display: flex;
+    flex-flow: row wrap;
+
+    vertical-align: top;
+    align-items: flex-start;
+    justify-content: space-between;  
+    
+    & div {
+      width: 400px;
+      min-width: 45%;
+      flex-grow: 1;
+      padding: var(--spacer);
+      
+      & img {
+        width: 100%;
+      }
+    }
+  }
+
+  .alternate {
+    background-color: var(--primary-color);
+    color: white;
+    flex-flow: row wrap;
+  }
+
+  .sectionTitle {
+    color: var(--secondary-color);
+    text-align: center;
+  }
+
 }
 
 @keyframes float {

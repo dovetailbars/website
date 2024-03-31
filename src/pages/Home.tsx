@@ -36,16 +36,14 @@ export function Content() {
             <section className="primary">
                 <div className="centeredContent split">
                     <div>
-                        <h2>The perfect space for your private hire</h2>
+                        <h2>Perfect for private hire</h2>
                         <p>
-                            Whether you're planning an intimate gathering, a celebration to remember, or a discreet corporate meeting, our hidden gem offers a unique setting that combines the charm of secrecy with the warmth of hospitality.
+                            Whether you're planning an intimate gathering, a celebration to remember, or a corporate meeting, Dovetail offers a unique setting that combines the charm of a secret speakeasy with the warmth of hospitality.
                         </p>
                         <p>
-                            In collaboration with RedFarm, The Dovetail Bar is more than just a venue; it's an experience waiting to be tailored to your every need. Our creative cocktails, served with a flair for the unpretentious, promise to enchant your guests, while our refined yet cozy environment ensures a memorable occasion for all.
+                            Dovetail is more than just a venue; it's an experience waiting to be tailored to your every need. Our creative cocktails, served with a flair for the unpretentious, promise to enchant your guests, while our refined yet cozy environment ensures a memorable occasion for all.
                         </p>
-                        <p className="paddedTop">
-                            <Link to="/private-hire" className="buttonLink">See the space</Link>
-                        </p>
+                        <Link to="/private-hire" className="buttonLink">See the space</Link>
                     </div>
                     <div>
                         <img src="/images/Dovetail-X-Ferrand-58-Large.jpg" alt="Private Hire" className="sideBySide" />

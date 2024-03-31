@@ -5,7 +5,7 @@ export default function WhatsOnCommon() {
         <section className="secondary">                
 
         <div className="centeredContent">
-            <h2>What's On</h2>
+            <h2 className="sectionTitle">What’s On</h2>
 
             <div className="whatsOnPanel split">
                 <div>
@@ -29,8 +29,7 @@ export default function WhatsOnCommon() {
                     <img src="/images/Dovetail-X-Ferrand-67-Large.jpg" alt="Private Hire" />
                 </div>
                 <div>
-                    <h3>Master classes</h3>
-                    <span>FUN INTIMATE CLASSES & ACTIVITIES</span>
+                    <h3>Cocktail Master classes</h3>
                     <p>
                         Looking to elevate your cocktail-making prowess?
                     </p>
