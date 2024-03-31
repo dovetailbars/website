@@ -24,14 +24,17 @@ nav {
   font-size: clamp(1rem, 2vw, 20px);
   text-transform: uppercase;
   white-space: nowrap;
+
   
   & ul { 
     display: flex;
     list-style: none;
     padding: 0;
+    flex-wrap: wrap;
     
     & li {
       margin: 0 var(--spacer);
+
       
       & a::after {
         content: "";
