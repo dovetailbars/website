@@ -94,13 +94,32 @@ header {
   background-position-y: center;
   background-repeat: no-repeat;
       
-  height: 40vh;
+  height: 100%;
 
   vertical-align: middle;
   align-content: center;
   align-items: center;
 
   overflow: hidden;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  font-family: oxtail, sans-serif;
+  text-transform: uppercase;
+  color: white;
+}
+
+.heroLogo {
+  min-width: 120px;
+  max-width: 60%;
+  max-height: 40vh;
+  object-fit: contain;
 }
 
 .homeHeader {
@@ -120,23 +139,23 @@ header {
 
 @media (max-width: 1052px) {
   nav {
+    background-color: black;
     align-items: center;
     justify-content: center;
+    min-height: 290px;
   }
 
   nav a.logoLink {
     text-align: center;
   }
 
-  header .hero {  
-    height: 80vh;
-    padding-top: 180px;
+  header, header.homeHeader {
+    margin-top: 290px;
   }
 
-  header.homeHeader .hero {
-    padding-top: 100px;
+  header, div .hero {
+    max-height: 450px;
   }
-
 }
 
 
@@ -165,25 +184,6 @@ header {
     box-shadow: inset 0 -3.25em 0 0 var(--primary-color);
     color: var(--secondary-color);
   }
-}
-
-.hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  text-align: center;
-  font-family: oxtail, sans-serif;
-  text-transform: uppercase;
-  color: white;
-}
-
-.heroLogo {
-  min-width: 120px;
-  max-width: 60%;
-  max-height: 40vh;
-  object-fit: contain;
 }
 
 .intro {
