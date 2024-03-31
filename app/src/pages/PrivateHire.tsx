@@ -4,9 +4,9 @@ import StandardHero from "../components/StandardHero";
 
 export function Hero(): HeroData {
     return {
-        image: "/images/DTB-Initial-Cocktail-Shoot-LR-052.jpg",
+        image: "/images/DTB-Initial-Cocktail-Shoot-LR-055.png",
         content: (
-            <StandardHero heading="Private Hire" subheading="Planning an event, birthday or private party with friends? We've got you covered!">
+            <StandardHero heading="Private Hire" subheading="Planning an event? We've got you covered!">
                 <Link to="/bookings" className="buttonLink">Book Now</Link>
             </StandardHero>)
     };
@@ -14,7 +14,7 @@ export function Hero(): HeroData {
 
 export function Content() {
     return (        
-        <Layout>
+        <Layout hero={Hero}>
             <section className="secondary">                
                 <div className="centeredContent split">
                     <div>
@@ -24,19 +24,19 @@ export function Content() {
                         </p>
                         <p>
                             Perfect for:
-                            <ul>
-                                <li>Birthdays</li>
-                                <li>Private Events</li>
-                                <li>Cocktail Masterclasses</li>
-                            </ul>
                         </p>
+                        <ul>
+                            <li>Birthdays</li>
+                            <li>Private Events</li>
+                            <li>Cocktail Masterclasses</li>
+                        </ul>
                         <p className="paddedTop">
                             <Link to="/private-hire" className="buttonLink">Hire the space</Link>
                         </p>
                     </div>
                     <div>
-                        <h2>Venue Walkthrough</h2>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/jjHQq6TpoUo?si=TLL7W-orQ4OxbyHx" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin"></iframe>
+                        <h2>Walkthrough</h2>
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/jjHQq6TpoUo?si=TLL7W-orQ4OxbyHx" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin"></iframe>
                         <p>
                             Watch the short video above that gives you an idea of the unique intimate space.
                         </p>

@@ -6,7 +6,7 @@ import StandardHero from "../components/StandardHero";
 
 export function Hero(): HeroData {
     return {
-        image: "/images/DTB-Initial-Cocktail-Shoot-LR-012.jpg",
+        image: "/images/DTB-Initial-Cocktail-Shoot-LR-012-sm.jpg",
         content: (<>
             <img src="/images/logo-white.png" alt="Dovetail" className="heroLogo" />
             <h1 className="title">Dovetail</h1>
