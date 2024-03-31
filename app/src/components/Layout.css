@@ -294,6 +294,7 @@ img .sideBySide {
 
 .alternate {
   background-color: var(--primary-color);
+  color: white;
 }
 
 .split {

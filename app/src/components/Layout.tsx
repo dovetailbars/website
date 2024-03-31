@@ -52,7 +52,7 @@ export function Layout({ children, hero = null }: Props) {
 
         <footer>
             <div className="logos">
-                <img src="/images/white-logo-textless.png" alt="Dovetail" width={160} /><br/>
+                <img src="/images/logo-notext.png" alt="Dovetail" width={160} /><br/>
                 <span>Dovetail</span>
             </div>
             <div className="footerDetails centeredContent">
