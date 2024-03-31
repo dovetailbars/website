@@ -7,21 +7,13 @@ export function Hero(): HeroData {
     return {
         image: "/images/DTB-Initial-Cocktail-Shoot-LR-055.png",
         content: (
-            <StandardHero heading="Private Hire" subheading="Planning an event? We've got you covered!">
-                <Link to="/private-hire#contact" className="buttonLink">Hire the space</Link>
-            </StandardHero>)
+            <StandardHero heading="Private Hire" subheading="Planning an event? We've got you covered!" />)
     };
 }
 
 export function Content() {
 
     const [state, handleSubmit] = useForm("mbjnzzgz");
-
-    const formSubmission = (e: any) => {
-        console.log(e);
-        e.preventDefault();
-        handleSubmit(e);
-    };
 
     return (        
         <Layout hero={Hero}>
@@ -41,7 +33,7 @@ export function Content() {
                             <li>Cocktail Masterclasses</li>
                         </ul>
                         <p className="paddedTop">
-                            <Link to="/private-hire" className="buttonLink">Hire the space</Link>
+                            <Link to="/private-hire#contact" className="buttonLink alternate">Hire the space</Link>
                         </p>
                     </div>
                     <div>

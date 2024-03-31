@@ -120,7 +120,6 @@ header {
 
 @media (max-width: 1052px) {
   nav {
-    background-color: var(--primary-color);
     align-items: center;
     justify-content: center;
   }
@@ -129,14 +128,13 @@ header {
     text-align: center;
   }
 
-  header {
-    margin-top: 300px;
+  header .hero {  
+    margin-top: 180px;
   }
 
-  header.homeHeader {  
-    height: 52vh;
-    margin-top: 200px;
-    max-height: 800px;
+  header.homeHeader .hero {
+    margin-top: 100px;
+    height: 70vh;
   }
 
 }
@@ -157,6 +155,15 @@ header {
   &:hover {
     box-shadow: inset 0 -3.25em 0 0 var(--secondary-color);
     color: var(--primary-color);
+  }
+}
+
+.buttonLink.alternate {
+  border: 1px solid var(--primary-color);
+    
+  &:hover {
+    box-shadow: inset 0 -3.25em 0 0 var(--primary-color);
+    color: var(--secondary-color);
   }
 }
 
