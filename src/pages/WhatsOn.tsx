@@ -6,10 +6,7 @@ import WhatsOnCommon from "../partials/WhatsOnCommon";
 export function Hero(): HeroData {
     return {
         image: "/images/DTB-Initial-Cocktail-Shoot-LR-052.jpg",
-        content: (
-            <StandardHero heading="What's On" subheading="Our Upcoming Events">
-                <Link to="/bookings" className="buttonLink">Book Now</Link>
-            </StandardHero>)
+        content: (<StandardHero heading="What's On" subheading="Our Upcoming Events" />)
     };
 }
 

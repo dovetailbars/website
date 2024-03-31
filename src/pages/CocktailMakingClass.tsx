@@ -5,10 +5,7 @@ import StandardHero from "../components/StandardHero";
 export function Hero(): HeroData {
     return {
         image: "/images/DTB-Masterclass-LR-01.jpg",
-        content: (
-            <StandardHero heading="Cocktail Masterclass" subheading="Bespoke Cocktail Experience In Covent Garden">
-                <Link to="/bookings" className="buttonLink">Book Now</Link>
-            </StandardHero>)
+        content: (<StandardHero heading="Cocktail Masterclass" subheading="Bespoke Cocktail Experience In Covent Garden" />)
     };
 }
 
