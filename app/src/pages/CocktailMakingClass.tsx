@@ -6,7 +6,7 @@ export function Hero(): HeroData {
     return {
         image: "/images/DTB-Masterclass-LR-01.jpg",
         content: (
-            <StandardHero heading="Private Hire" subheading="Planning an event, birthday or private party with friends? We've got you covered!">
+            <StandardHero heading="Cocktail Masterclass" subheading="Bespoke Cocktail Experience In Covent Garden">
                 <Link to="/bookings" className="buttonLink">Book Now</Link>
             </StandardHero>)
     };
@@ -14,7 +14,7 @@ export function Hero(): HeroData {
 
 export function Content() {
     return (        
-        <Layout>
+        <Layout hero={Hero}>
             <section className="secondary">                
                 <div className="centeredContent split">
                     <div>
