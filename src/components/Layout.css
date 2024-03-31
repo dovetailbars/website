@@ -89,7 +89,7 @@ nav {
   .buttonLink {
     display: block;
     width: max-content;
-    margin: 1rem auto;
+    margin: 2rem auto;
     line-height: 1rem;
   }
 }
@@ -115,9 +115,8 @@ nav {
 }
 
 .heroLogo {
-  margin-top: 2rem;
   min-width: 120px;
-  max-width: 60%;
+  max-width: 80%;
   max-height: 40vh;
   object-fit: contain;
 }
