@@ -133,7 +133,8 @@ header {
     margin-top: 300px;
   }
 
-  header.homeHeader {
+  header.homeHeader {  
+    height: 52vh;
     margin-top: 200px;
     max-height: 800px;
   }
