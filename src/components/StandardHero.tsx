@@ -4,7 +4,7 @@ export default function StandardHero({ heading = "", subheading = "", children =
     const childrenMarkup = children ? (<p>{children}</p>) : (<></>);
 
     if (subheading === "" && children === null) {
-        return (<h2 className="xx-large x-wide">{ heading }</h2>);
+        return (<h2 className="headerTitle">{ heading }</h2>);
     }
 
     return (<>

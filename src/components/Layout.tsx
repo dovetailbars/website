@@ -25,34 +25,33 @@ export function Layout({ children, hero = null }: Props) {
     ];
 
     return (<>
-        <nav className={isHomePageClassName}>            
-            <Link to="/" className="logoLink">
-                <img src="/images/logo-notext.png" alt="Dovetail" className="heroLogo"/>
-            </Link>
-            <ul>
-                <li><Link to="/cocktail-menu">Cocktail Menu</Link></li>
-                <li><Link to="/whats-on">What's On</Link></li>
-                <li><Link to="/private-hire">Private Hire</Link></li>
-                <li><Link to="/cocktail-making-class">Masterclasses</Link></li>
-            </ul>
-            <Link to="/bookings" className="buttonLink">Book Now</Link>
-        </nav>
-
         <header className={headerClassName}>
+            <nav className={isHomePageClassName}>
+                <Link to="/" className="logoLink">
+                    <img src="/images/logo-notext.png" alt="Dovetail" className="heroLogo" />
+                </Link>
+                <ul>
+                    <li><Link to="/cocktail-menu">Cocktail Menu</Link></li>
+                    <li><Link to="/whats-on">What's On</Link></li>
+                    <li><Link to="/private-hire">Private Hire</Link></li>
+                    <li><Link to="/cocktail-making-class">Masterclasses</Link></li>
+                </ul>
+                <Link to="/bookings" className="buttonLink">Book Now</Link>
+            </nav>
             <CarouselBackground items={carouselItems}>
                 <div className="hero">
-                    { heroContent.content }
+                    {heroContent.content}
                 </div>
             </CarouselBackground>
         </header>
 
         <main>
-            { children }
+            {children}
         </main>
 
         <footer>
             <div className="logos">
-                <img src="/images/logo-notext.png" alt="Dovetail" width={160} /><br/>
+                <img src="/images/logo-notext.png" alt="Dovetail" width={160} /><br />
                 <span>Dovetail</span>
             </div>
             <div className="footerDetails centeredContent">
@@ -73,11 +72,11 @@ export function Layout({ children, hero = null }: Props) {
                 <section>
                     <h2>Contact Us</h2>
                     <p>
-                        info@dovetailbars.co.uk<br/>
+                        info@dovetailbars.co.uk<br />
                         +44 7544 523423
                     </p>
                 </section>
-            </div>            
+            </div>
             <div className="copyright">
                 © Dovetail Bar | Company No. 14991262
             </div>

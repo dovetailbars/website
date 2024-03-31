@@ -1,4 +1,3 @@
-import "./Home.css";
 import { Layout } from "../components/Layout";
 import { Link } from "react-router-dom";
 import WhatsOnCommon from "../partials/WhatsOnCommon";
@@ -10,9 +9,7 @@ export function Hero(): HeroData {
         content: (<>
             <img src="/images/logo-white.png" alt="Dovetail" className="heroLogo" />
             <h1 className="title">Dovetail</h1>
-            <StandardHero heading="Covent Garden | Homerton">
-
-            </StandardHero>
+            <StandardHero heading="Covent Garden & Homerton"></StandardHero>
         </>)
     };
 }
@@ -31,7 +28,7 @@ export function Content() {
                         It's your escape from the city's frenzy, a place where everyone is invited to enjoy the simplicity of good company and great drinks.
                     </p>
                     <p>
-                        Discover The Dovetail Bar, the West End’s best kept secret.
+                        Discover Dovetail Bar, the West End’s best kept secret.
                     </p>
                 </div>
             </section>

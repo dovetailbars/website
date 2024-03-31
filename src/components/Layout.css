@@ -14,25 +14,42 @@ p {
   max-width: 700px;
 }
 
+header {
+  position: relative;
+  background-size: contain;
+  background-position: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+      
+  height: 78vh;
+
+  vertical-align: middle;
+  align-content: center;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+
 nav {
   position: absolute;
-  top: 0;
   min-height: 100px;
   width: 100%;
   padding: var(--spacer);
   font-family: alice, serif;
-  font-size: clamp(1.3rem, 2vw, 20px);
+  font-size: clamp(1rem, 2vw, 20px);
   text-transform: uppercase;
   
   & ul { 
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 0;
     text-align: center;
     list-style: none;
     
     & li {
-      margin: 0 1rem;
+      margin: .8rem;
 
       & a::after {
         content: "";
@@ -57,8 +74,8 @@ nav {
 }
 
 .home {
-  top: 54vh;
-  
+  bottom: 0;
+
   .logoLink {
     display: none;
   }
@@ -66,30 +83,16 @@ nav {
   .buttonLink {
     display: block;
     width: max-content;
-    margin: 2rem auto;
+    margin: 2rem auto 0;
   }
 }
 
-header {
-  display: flex;
-  flex-direction: row;
-
-  background-size: contain;
-  background-position: center;
-  background-position-y: center;
-  background-repeat: no-repeat;
-      
-  height: 78vh;
-
-  vertical-align: middle;
-  align-content: center;
-  align-items: center;
-
-  overflow: hidden;
+.headerTitle {
+  margin: 1rem;
+  line-height: 1.4em;
 }
 
 .hero {
-  margin-top: var(--spacer);
   text-align: center;
   font-family: oxtail, sans-serif;
   text-transform: uppercase;
@@ -97,14 +100,11 @@ header {
 }
 
 .heroLogo {
+  margin-top: 2rem;
   min-width: 120px;
   max-width: 60%;
   max-height: 40vh;
   object-fit: contain;
-}
-
-.homeHeader {
-  height: var(--header-height);
 }
 
 .title {
