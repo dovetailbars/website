@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Layout } from "../components/Layout";
 import StandardHero from "../components/StandardHero";
+import { useForm, ValidationError } from '@formspree/react';
 
 export function Hero(): HeroData {
     return {
@@ -13,6 +14,15 @@ export function Hero(): HeroData {
 }
 
 export function Content() {
+
+    const [state, handleSubmit] = useForm("mbjnzzgz");
+
+    const formSubmission = (e: any) => {
+        console.log(e);
+        e.preventDefault();
+        handleSubmit(e);
+    };
+
     return (        
         <Layout hero={Hero}>
             <section className="secondary">                
@@ -46,15 +56,50 @@ export function Content() {
 
             <section className="primary">                
                 <div className="centeredContent">
-                    <h2>Contact Us</h2>
-                    <p>
-                        Please use the form below to inquire about private hire at Dovetail.
-                    </p>
-                    <p>
-                        ...
-                    </p>
+                    <ContactForm formSubmission={handleSubmit} state={state} />
                 </div>
             </section>
         </Layout>
     );
+}
+
+
+function ContactForm({ formSubmission, state}) {
+    if (state.succeeded) {
+        return <p>Thanks - we'll get back to you as soon as we can.</p>;
+    }
+
+    return (<>
+        <form onSubmit={formSubmission}>
+            <label htmlFor="name">Name</label>
+            <input id="name" type="text" name="name" placeholder="Name" required />
+            <ValidationError prefix="Name" field="name" errors={state.errors} />
+
+            <label htmlFor="phone">Mobile</label>
+            <input id="phone" type="tel" name="phone" placeholder="Mobile" required />
+            <ValidationError prefix="Phone" field="phone" errors={state.errors} />
+
+            <label htmlFor="email">Email</label>
+            <input id="email" type="email" name="email" placeholder="Email" required />
+            <ValidationError prefix="Email" field="email" errors={state.errors} />
+
+            <label htmlFor="company">Company</label>
+            <input id="company" type="text" name="company" placeholder="Company name" />
+            <ValidationError prefix="Company" field="company" errors={state.errors} />
+
+            <label htmlFor="date">Date</label>
+            <input id="date" type="date" name="date" placeholder="Date" required />
+            <ValidationError prefix="Date" field="date" errors={state.errors} />
+
+            <label htmlFor="partySize">Party Size</label>
+            <input id="partySize" type="number" name="partySize" placeholder="Party Size" required />
+            <ValidationError prefix="Party Size" field="partySize" errors={state.errors} />
+
+            <label htmlFor="message">Message</label>
+            <textarea id="message" name="message" placeholder="Let us know details for your private hire..." required />
+            <ValidationError prefix="Message" field="message" errors={state.errors} />
+
+            <button type="submit" disabled={state.submitting}>Submit</button>
+        </form>
+    </>)
 }
