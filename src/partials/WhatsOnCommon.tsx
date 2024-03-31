@@ -29,7 +29,7 @@ export default function WhatsOnCommon() {
                     <img src="/images/Dovetail-X-Ferrand-67-Large.jpg" alt="Private Hire" />
                 </div>
                 <div>
-                    <h3>Masterclasses</h3>
+                    <h3>Master classes</h3>
                     <span>FUN INTIMATE CLASSES & ACTIVITIES</span>
                     <p>
                         Looking to elevate your cocktail-making prowess?

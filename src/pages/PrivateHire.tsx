@@ -55,7 +55,7 @@ export function Content() {
             </section>
 
             <section className="primary">                
-                <div id="contact" className="centeredContent">
+                <div id="contact" className="centeredContent centerAligned">
                     <p>
                         Please use the form below to inquire about private hire.
                     </p>

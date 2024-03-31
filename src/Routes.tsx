@@ -11,11 +11,9 @@ import * as CocktailMakingClass from './pages/CocktailMakingClass';
 import ScrollToAnchor from "./components/ScrollToAnchor";
 
 export default function Routes() {
-  return (
+  return (<>
     <BrowserRouter>
-      <ScrollToAnchor />
       <ReactRoutes>
-
         <Route path="/" element={<Home.Content />} />
         <Route path="/cocktail-menu" element={<CocktailMenu.Content />} />
         <Route path="/whats-on" element={<WhatsOn.Content />} />
@@ -25,6 +23,8 @@ export default function Routes() {
         <Route path="/bookings/confirmation" element={<BookingConfirmation.Content />} />
         <Route path="*" element={<Navigate to="/" />} />
       </ReactRoutes>
+      <ScrollToAnchor />
     </BrowserRouter>
+    </>
   );
 }

@@ -102,15 +102,9 @@ header {
   }
 }
 
-@media (max-width: 800px) {
-  header span {
-      font-size: large;
-  }
-}
-
-@media (max-width: 315px) {
-  header { 
-      display: none; 
+@media (max-width: 780px) {
+  .hero {
+      margin-top: 5vh;
   }
 }
 
@@ -234,7 +228,7 @@ main {
   
   background-color: #f6f6f6;
 
-  min-height: 40vh;
+  min-height: 30vh;
 
   & h1, h2, h3 {
     font-size: 2.6em;
@@ -266,8 +260,16 @@ img .sideBySide {
 }
 
 .centeredContent {
+  width: 100%;
   max-width: 1150px;
   padding: var(--spacer);
+}
+
+.centerAligned {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
 }
 
 .whatsOnPanel {
@@ -348,8 +350,8 @@ img .sideBySide {
 }
 
 .formSpree {
-  width: 40vw;
-  max-width: 40vw;
+  width: 100%;
+  max-width: 530px;
 
   display: flex;
   flex-direction: column;
