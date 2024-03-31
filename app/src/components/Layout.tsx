@@ -27,7 +27,7 @@ export function Layout({ children, hero = null }: Props) {
     return (<>
         <nav className={isHomePageClassName}>            
             <Link to="/" className="logoLink">
-                <img src="/images/white-logo.png" alt="Dovetail" width={100} height={80} />
+                <img src="/images/logo-notext.png" alt="Dovetail" className="heroLogo"/>
             </Link>
             <ul>
                 <li><Link to="/cocktail-menu">Cocktail Menu</Link></li>

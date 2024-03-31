@@ -1,17 +1,16 @@
-export default function StandardHero({ heading, subheading = "", children = null }) {
+export default function StandardHero({ heading = "", subheading = "", children = null }) {
 
-    const subheadMarkup = subheading != "" ? (<><br /><span className="x-wide">{subheading}</span></>) : (<></>);
+    const subheadMarkup = subheading != "" ? (<h3>{subheading}</h3>) : (<></>);
     const childrenMarkup = children ? (<p>{children}</p>) : (<></>);
 
     if (subheading === "" && children === null) {
-        return (<h1 className="xx-large x-wide">{ heading }</h1>);
+        return (<h2 className="xx-large x-wide">{ heading }</h2>);
     }
 
     return (<>
-        <p>
-            <span className="xx-large outline">{heading}</span>
+        <h2>{heading}</h2>
             { subheadMarkup }
-        </p>
+  
         { childrenMarkup }
     </>)
 }

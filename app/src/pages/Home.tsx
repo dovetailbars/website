@@ -8,11 +8,10 @@ export function Hero(): HeroData {
     return {
         image: "/images/DTB-Initial-Cocktail-Shoot-LR-012.jpg",
         content: (<>
+            <img src="/images/logo-white.png" alt="Dovetail" className="heroLogo" />
+            <h1 className="title">Dovetail</h1>
+            <StandardHero heading="Covent Garden | Homerton">
 
-            <h1>Dovetail</h1>
-            <img src="/images/white-logo-textless.png" alt="Dovetail" className="hero-logo" />
-            <StandardHero heading="Dovetail" subheading="Covent Garden">
-                <span className="xx-large x-wide">INTIMATE | REFINED | ELEVATED</span>
             </StandardHero>
         </>)
     };
@@ -21,9 +20,9 @@ export function Hero(): HeroData {
 export function Content() {
     return (<>
         <Layout hero={Hero}>
-            <section className="primary">
-                <div className="centeredContent">
-                    <h2>Discover The Dovetail Bar</h2>
+            <section className="secondary">
+                <div className="centeredContent intro">
+                    <h2>Discover Dovetail Bar</h2>
                     <p>
                         Tucked away above the lively Covent Garden Market, right in the heart of London's West End, you'll find The Dovetail Bar - a cozy secret just waiting to be shared.
                     </p>
@@ -37,12 +36,10 @@ export function Content() {
                 </div>
             </section>
 
-            <section className="secondary">
+            <section className="primary">
                 <div className="centeredContent split">
                     <div>
-                        <h2>
-                            <span>THE PERFECT SPACE FOR YOUR</span><br />PRIVATE HIRE
-                        </h2>
+                        <h2>The perfect space for your private hire</h2>
                         <p>
                             Whether you're planning an intimate gathering, a celebration to remember, or a discreet corporate meeting, our hidden gem offers a unique setting that combines the charm of secrecy with the warmth of hospitality.
                         </p>
