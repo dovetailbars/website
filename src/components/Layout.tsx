@@ -32,7 +32,7 @@ export function Layout({ children, hero = null }: Props) {
                 </Link>
                 <ul>
                     <li><Link to="/cocktail-menu">Cocktail Menu</Link></li>
-                    <li><Link to="/whats-on">What's On</Link></li>
+                    <li><a href="#whatson">What's On</a></li>
                     <li><Link to="/private-hire">Private Hire</Link></li>
                     <li><Link to="/cocktail-making-class">Masterclasses</Link></li>
                 </ul>
@@ -50,10 +50,7 @@ export function Layout({ children, hero = null }: Props) {
         </main>
 
         <footer>
-            <div className="logos">
-                <img src="/images/logo-notext.png" alt="Dovetail" width={160} /><br />
-                <span>Dovetail</span>
-            </div>
+            <img src="/images/logo-white.png" alt="Dovetail" width={160} /><br />
             <div className="footerDetails centeredContent">
                 <section>
                     <h2>Opening Hours</h2>
@@ -66,7 +63,7 @@ export function Layout({ children, hero = null }: Props) {
                 <section>
                     <h2>Location</h2>
                     <p>
-                        2nd Floor, 9 Russell St, London WC2B 5HZ
+                        <a href="#map">2nd Floor, <br/>9 Russell St, <br/>London WC2B 5HZ</a>
                     </p>
                 </section>
                 <section>

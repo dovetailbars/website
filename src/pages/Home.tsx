@@ -52,7 +52,7 @@ export function Content() {
             </section>
 
             <WhatsOnCommon />
-
+        <a id="map"></a>
             <iframe className="map" loading="lazy" src="https://maps.google.com/maps?q=Dovetail%20Bar%2C%20covent%20garden&amp;t=m&amp;z=16&amp;output=embed&amp;iwloc=near" title="Dovetail Bar, covent garden" aria-label="Dovetail Bar, covent garden"></iframe>
 
             <section className="primary">
