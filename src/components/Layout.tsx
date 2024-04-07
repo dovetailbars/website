@@ -16,8 +16,8 @@ export function Layout({ children, hero = null }: Props) {
 
     hero = hero || noHero;
     const isOnHomePage = hero === Home.Hero;
-    const isHomePageClassName = isOnHomePage ? "home" : "";
-    const headerClassName = isOnHomePage ? "homeHeader" : "";
+    const isHomePageClassName = isOnHomePage ? "home" : "nav";
+    const headerClassName = isOnHomePage ? "homeHeader" : "header";
     const heroContent = hero();
 
     const carouselItems = [
@@ -28,11 +28,11 @@ export function Layout({ children, hero = null }: Props) {
         <header className={headerClassName}>
             <nav className={isHomePageClassName}>
                 <Link to="/" className="logoLink">
-                    <img src="/images/logo-notext.png" alt="Dovetail" className="heroLogo" />
+                    <img src="/images/logo-notext.png" alt="Dovetail" className="navLogo" />
                 </Link>
-                <ul>
+                <ul className="navList">
                     <li><Link to="/cocktail-menu">Cocktail Menu</Link></li>
-                    <li><a href="#whatson">What's On</a></li>
+                    <li><a href="/#whatson">What's On</a></li>
                     <li><Link to="/private-hire">Private Hire</Link></li>
                     <li><Link to="/cocktail-making-class">Masterclasses</Link></li>
                 </ul>
@@ -63,7 +63,7 @@ export function Layout({ children, hero = null }: Props) {
                 <section>
                     <h2>Location</h2>
                     <p>
-                        <a href="#map">2nd Floor, <br/>9 Russell St, <br/>London WC2B 5HZ</a>
+                        <a href="#map">2nd Floor, <br />9 Russell St, <br />London WC2B 5HZ</a>
                     </p>
                 </section>
                 <section>
