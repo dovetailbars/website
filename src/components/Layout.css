@@ -464,6 +464,14 @@ textarea {
   box-sizing: border-box;
 }
 
+.reservation {
+  background-color: var(--primary-color);
+
+  & h2 {
+    color: white;
+  }
+}
+
 @media (min-width: 1050px) {
   nav {
     display: flex;

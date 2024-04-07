@@ -36,7 +36,7 @@ export function Content() {
 
     return (        
         <Layout hero={Hero}>
-            <section>
+            <section className="reservation">
                 <h2>Make a reservation</h2>
 
                 <link 
