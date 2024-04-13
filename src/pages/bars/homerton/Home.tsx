@@ -25,23 +25,6 @@ export function Content() {
                 </div>
             </section>
 
-            <section className="primary">
-                <div className="centeredContent split">
-                    <div>
-                        <h2>Perfect for private hire</h2>
-                        <p>
-                            Whether you're planning an intimate gathering, a celebration to remember, or a corporate meeting, Dovetail offers a unique setting that combines the charm of a secret speakeasy with the warmth of hospitality.
-                        </p>
-                        <p>
-                            Dovetail is more than just a venue; it's an experience waiting to be tailored to your every need. Our creative cocktails, served with a flair for the unpretentious, promise to enchant your guests, while our refined yet cozy environment ensures a memorable occasion for all.
-                        </p>
-                        <Link to="/private-hire" className="buttonLink">See the space</Link>
-                    </div>
-                    <div>
-                        <img src="/images/Dovetail-X-Ferrand-58-Large.jpg" alt="Private Hire" className="sideBySide" />
-                    </div>
-                </div>
-            </section>
 
             <a id="map"></a>
             <iframe className="map" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11467.132511129797!2d-0.0679031374399165!3d51.544295188452374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761d26818538eb%3A0x169c5afe1389e1fa!2sDovetail%20Bar%20-%20Clapton!5e0!3m2!1sen!2suk!4v1713003089596!5m2!1sen!2suk" title="Dovetail Bar, Hometon" aria-label="Dovetail Bar, Homerton"></iframe>
