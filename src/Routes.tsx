@@ -3,17 +3,22 @@ import { BrowserRouter, Navigate, Routes as ReactRoutes, Route } from "react-rou
 
 import * as Home from './pages/Home';
 import * as CocktailMenu from './pages/CocktailMenu';
-import * as WhatsOn from './pages/WhatsOn';
 import * as PrivateHire from './pages/PrivateHire';
 import * as Bookings from './pages/Bookings';
 import * as BookingConfirmation from './pages/BookingConfirmation';
 import * as CocktailMakingClass from './pages/CocktailMakingClass';
+import * as BarsCoventGarden from './pages/bars/covent-garden/Home';
+import * as BarsCoventGardenPrivateHire from './pages/bars/covent-garden/PrivateHire';
+import * as BarsHomerton from './pages/bars/homerton/Home';
 
 export default function Routes() {
   return (<>
     <BrowserRouter>
       <ReactRoutes>
         <Route path="/" element={<Home.Content />} />
+        <Route path="/bars/covent-garden" element={<BarsCoventGarden.Content />} />
+        <Route path="/bars/covent-garden/private-hire" element={<BarsCoventGardenPrivateHire.Content />} />
+        <Route path="/bars/homerton" element={<BarsHomerton.Content />} />
         <Route path="/cocktail-menu" element={<CocktailMenu.Content />} />
         <Route path="/private-hire" element={<PrivateHire.Content />} />
         <Route path="/cocktail-making-class" element={<CocktailMakingClass.Content />} />

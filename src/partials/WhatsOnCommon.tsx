@@ -4,7 +4,7 @@ export default function WhatsOnCommon() {
     return (
         <section className="secondary">
 
-                <a id="whatson"></a>
+            <a id="whatson"></a>
             <div className="centeredContent">
                 <h2 className="sectionTitle" >What’s On</h2>
 

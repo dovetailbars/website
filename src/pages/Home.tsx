@@ -9,7 +9,9 @@ export function Hero(): HeroData {
         content: (<>
             <img src="/images/logo-white.png" alt="Dovetail" className="heroLogo" />
             <h1 className="title">Dovetail</h1>
-            <StandardHero heading="Covent Garden | Homerton"></StandardHero>
+            <h2>
+                <Link to="/bars/covent-garden">Covent Garden</Link> | <Link to="/bars/homerton">Homerton</Link>
+            </h2>
         </>)
     };
 }
@@ -19,41 +21,68 @@ export function Content() {
         <Layout hero={Hero}>
             <section className="secondary">
                 <div className="intro">
-                    <h2>Discover Dovetail Bar</h2>
+                    <h2>Discover Dovetail</h2>
                     <p>
-                        Tucked away above the lively Covent Garden Market, right in the heart of London's West End, you'll find The Dovetail Bar - a cozy secret just waiting to be shared.
+                        Discover Dovetail Bars, a collection of hidden gems that blend innovation with libations.
+                        From the original Covent Garden spot, nestled in London’s West End, to its spirited sibling,
+                        Dovetail Homerton, each venue invites patrons to unwind, savor the art of good company,
+                        and explore unique experiences. 
                     </p>
-                    <p>
-                        In partnership with RedFarm, this hidden spot is where creativity meets cocktails, offering a unique blend of innovation and charm in a welcoming, intimate setting.
-                        It's your escape from the city's frenzy, a place where everyone is invited to enjoy the simplicity of good company and great drinks.
-                    </p>
-                    <p>
-                        Discover Dovetail Bar, the West End’s best kept secret.
+                    <p> Whether seeking refuge from the city’s frenzy or celebrating life’s moments,
+                        Dovetail Bars promise an oasis where creativity thrives and great drinks flourish.
                     </p>
                 </div>
             </section>
 
-            <section className="primary">
-                <div className="centeredContent split">
+
+            <section className="secondary">
+
+
+            <div className="centeredContent">
+                <h2 className="sectionTitle" >Our Bars</h2>
+
+                <div className="whatsOnPanel split">
                     <div>
-                        <h2>Perfect for private hire</h2>
+                        <h3>Dovetail Covent Garden</h3>
                         <p>
-                            Whether you're planning an intimate gathering, a celebration to remember, or a corporate meeting, Dovetail offers a unique setting that combines the charm of a secret speakeasy with the warmth of hospitality.
+                        Nestled in the heart of London’s West End, Dovetail Bar awaits those seeking a cozy and clandestine
+                        escape. In collaboration with RedFarm, this intimate spot harmoniously blends creativity and cocktails,
+                        inviting patrons to unwind and savor the art of good company.
                         </p>
                         <p>
-                            Dovetail is more than just a venue; it's an experience waiting to be tailored to your every need. Our creative cocktails, served with a flair for the unpretentious, promise to enchant your guests, while our refined yet cozy environment ensures a memorable occasion for all.
+                        Discover Dovetail Bar, where innovation meets charm in a welcoming setting. 
                         </p>
-                        <Link to="/private-hire" className="buttonLink">See the space</Link>
+                        <p className="paddedTop">
+                            <Link to="/bars/covent-garden" className="buttonLink">Visit Covent Gaden</Link>
+                        </p>
                     </div>
                     <div>
-                        <img src="/images/Dovetail-X-Ferrand-58-Large.jpg" alt="Private Hire" className="sideBySide" />
+                        <img src="/images/DTB-Initial-Cocktail-Shoot-LR-067.jpg" alt="Private Hire" className="sideBySide" />
                     </div>
                 </div>
-            </section>
 
-            <WhatsOnCommon />
-        <a id="map"></a>
-            <iframe className="map" loading="lazy" src="https://maps.google.com/maps?q=Dovetail%20Bar%2C%20covent%20garden&amp;t=m&amp;z=16&amp;output=embed&amp;iwloc=near" title="Dovetail Bar, covent garden" aria-label="Dovetail Bar, covent garden"></iframe>
+                <div className="whatsOnPanel alternate split">
+                    <div>
+                        <img src="/images/Dovetail-X-Ferrand-67-Large.jpg" alt="Private Hire" />
+                    </div>
+                    <div>
+                        <h3>Dovetail Homerton</h3>
+                        <p>
+                        Introducing Dovetail Homerton, a sister bar that echoes the soulful essence of the original Covent Garden hideaway.
+                        </p>
+                        <p>
+                        In the heart of Homerton, this spacious venue embraces the same intimate charm, inviting patrons to revel in
+                        creativity, camaraderie, and exceptional libations. Whether you seek refuge from the city’s frenzy or celebrate life’s
+                        moments, Dovetail Homerton promises an expansive oasis where good company and great drinks flourish. 
+                        </p>
+                        <p className="paddedTop">
+                            <Link to="/bars/homerton" className="buttonLink">Visit Homerton</Link>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            </section>
 
             <section className="primary">
                 <div className="centeredContent centerAligned">
