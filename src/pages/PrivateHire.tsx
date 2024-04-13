@@ -17,32 +17,25 @@ export function Content() {
 
     return (        
         <Layout hero={Hero}>
-            <section className="secondary">                
-                <div className="centeredContent split">
-                    <div>
-                        <h2>The Venue</h2>
-                        <p>
-                            Nestled comfortably above the bustling Covent Garden Market, by the West End, The Dovetail Bar is your hideaway for all private affairs. In a hidden room, we serve creative yet unpretentious cocktails in a refined intimate environment. The ultimate hideaway from London’s busy streets, the West End’s best kept secret. 
-                        </p>
-                        <p>
-                            Perfect for:
-                        </p>
-                        <ul>
-                            <li>Birthdays</li>
-                            <li>Private Events</li>
-                            <li>Cocktail Masterclasses</li>
-                        </ul>
-                        <p className="paddedTop">
-                            <Link to="/private-hire#contact" className="buttonLink alternate">Hire the space</Link>
-                        </p>
-                    </div>
-                    <div>
-                        <h2>Walkthrough</h2>
-                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/jjHQq6TpoUo?si=TLL7W-orQ4OxbyHx" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin"></iframe>
-                        <p>
-                            Watch the short video above that gives you an idea of the unique intimate space.
-                        </p>
-                    </div>
+            <section className="secondary">
+                <div className="intro">
+                    <h2>Private Hire</h2>
+                    <p>
+                        Looking for the perfect place to celebrate your birthday, host a private event, or master the art of cocktails?
+                        Look no further! Our venues provide the ideal setting for an event that's as special as you.
+                    </p>
+                    <p>
+                        Our venues are designed to accommodate events, ensuring your celebration is just the way you want it.
+                        You can create a unique and personal experience for birthdays, private events, and cocktail masterclasses.
+                    </p>
+                    <p>
+                        Perfect for:
+                    </p>
+                    <ul>
+                        <li>Birthdays</li>
+                        <li>Private Events</li>
+                        <li>Cocktail Masterclasses</li>
+                    </ul>
                 </div>
             </section>
 

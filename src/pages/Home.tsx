@@ -10,7 +10,7 @@ export function Hero(): HeroData {
             <img src="/images/logo-white.png" alt="Dovetail" className="heroLogo" />
             <h1 className="title">Dovetail</h1>
             <h2>
-                <Link to="/bars/covent-garden">Covent Garden</Link> | <Link to="/bars/homerton">Homerton</Link>
+                <Link to="/bars/covent-garden">Covent Garden</Link> | <Link to="/bars/Clapton">Clapton</Link>
             </h2>
         </>)
     };
@@ -25,7 +25,7 @@ export function Content() {
                     <p>
                         Discover Dovetail Bars, a collection of hidden gems that blend innovation with libations.
                         From the original Covent Garden spot, nestled in London’s West End, to its spirited sibling,
-                        Dovetail Homerton, each venue invites patrons to unwind, savor the art of good company,
+                        Dovetail Clapton, each venue invites patrons to unwind, savor the art of good company,
                         and explore unique experiences. 
                     </p>
                     <p> Whether seeking refuge from the city’s frenzy or celebrating life’s moments,
@@ -66,17 +66,17 @@ export function Content() {
                         <img src="/images/Dovetail-X-Ferrand-67-Large.jpg" alt="Private Hire" />
                     </div>
                     <div>
-                        <h3>Dovetail Homerton</h3>
+                        <h3>Dovetail Clapton</h3>
                         <p>
-                        Introducing Dovetail Homerton, a sister bar that echoes the soulful essence of the original Covent Garden hideaway.
+                        Introducing Dovetail Clapton, a sister bar that echoes the soulful essence of the original Covent Garden hideaway.
                         </p>
                         <p>
-                        In the heart of Homerton, this spacious venue embraces the same intimate charm, inviting patrons to revel in
+                        In the heart of Clapton, this spacious venue embraces the same intimate charm, inviting patrons to revel in
                         creativity, camaraderie, and exceptional libations. Whether you seek refuge from the city’s frenzy or celebrate life’s
-                        moments, Dovetail Homerton promises an expansive oasis where good company and great drinks flourish. 
+                        moments, Dovetail Clapton promises an expansive oasis where good company and great drinks flourish. 
                         </p>
                         <p className="paddedTop">
-                            <Link to="/bars/homerton" className="buttonLink">Visit Homerton</Link>
+                            <Link to="/bars/Clapton" className="buttonLink">Visit Clapton</Link>
                         </p>
                     </div>
                 </div>

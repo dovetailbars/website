@@ -32,7 +32,6 @@ export function Layout({ children, hero = null }: Props) {
                 </Link>
                 <ul className="navList">
                     <li><Link to="/cocktail-menu">Cocktail Menu</Link></li>
-                    <li><a href="/#whatson">What's On</a></li>
                     <li><Link to="/private-hire">Private Hire</Link></li>
                     <li><Link to="/cocktail-making-class">Masterclasses</Link></li>
                 </ul>
