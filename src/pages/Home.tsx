@@ -2,6 +2,7 @@ import { Layout } from "../components/Layout";
 import { Link } from "react-router-dom";
 import WhatsOnCommon from "../partials/WhatsOnCommon";
 import StandardHero from "../components/StandardHero";
+import IntroSection from "../components/IntroSection";
 
 export function Hero(): HeroData {
     return {
@@ -19,27 +20,22 @@ export function Hero(): HeroData {
 export function Content() {
     return (<>
         <Layout hero={Hero}>
-            <section className="secondary">
-                <div className="intro">
-                    <h2>Discover Dovetail</h2>
-                    <p>
-                        Discover Dovetail Bars, a collection of hidden gems that blend innovation with libations.
-                        From the original Covent Garden spot, nestled in London’s West End, to its spirited sibling,
-                        Dovetail Clapton, each venue invites patrons to unwind, savor the art of good company,
-                        and explore unique experiences. 
-                    </p>
-                    <p> Whether seeking refuge from the city’s frenzy or celebrating life’s moments,
-                        Dovetail Bars promise an oasis where creativity thrives and great drinks flourish.
-                    </p>
-                </div>
-            </section>
-
+            <IntroSection title="Discover Dovetail">
+                <p>
+                    Discover Dovetail Bars, a collection of hidden gems that blend innovation with libations.
+                    From the original Covent Garden spot, nestled in London’s West End, to its spirited sibling,
+                    Dovetail Clapton, each venue invites patrons to unwind, savor the art of good company,
+                    and explore unique experiences. 
+                </p>
+                <p> Whether seeking refuge from the city’s frenzy or celebrating life’s moments,
+                    Dovetail Bars promise an oasis where creativity thrives and great drinks flourish.
+                </p>
+            </IntroSection>
 
             <section className="secondary">
-
 
             <div className="centeredContent">
-                <h2 className="sectionTitle" >Our Bars</h2>
+                <h2 className="sectionTitle">Our Bars</h2>
 
                 <div className="whatsOnPanel split">
                     <div>
@@ -61,7 +57,7 @@ export function Content() {
                     </div>
                 </div>
 
-                <div className="whatsOnPanel alternate split">
+                <div className="whatsOnPanel split">
                     <div>
                         <img src="/images/Dovetail-X-Ferrand-67-Large.jpg" alt="Private Hire" />
                     </div>
