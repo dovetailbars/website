@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import WhatsOnCommon from "../partials/WhatsOnCommon";
 import StandardHero from "../components/StandardHero";
 import IntroSection from "../components/IntroSection";
+import SplitContent from "../components/SplitContent";
+import InstagramEmbed from "../components/InstagramEmbed";
 
 export function Hero(): HeroData {
     return {
@@ -30,14 +32,14 @@ export function Content() {
                 <p> Whether seeking refuge from the city’s frenzy or celebrating life’s moments,
                     Dovetail Bars promise an oasis where creativity thrives and great drinks flourish.
                 </p>
-            </IntroSection>
+            </IntroSection>            
 
             <section className="secondary">
 
             <div className="centeredContent">
                 <h2 id="bars" className="sectionTitle">Our Bars</h2>
 
-                <div className="whatsOnPanel split">
+                <SplitContent>                
                     <div>
                         <h3>Dovetail Covent Garden</h3>
                         <p>
@@ -53,13 +55,13 @@ export function Content() {
                         </p>
                     </div>
                     <div>
-                        <img src="/images/DTB-Initial-Cocktail-Shoot-LR-067.jpg" alt="Private Hire" className="sideBySide" />
+                        <img src="/images/Dovetail-X-Ferrand-58-Large.jpg" alt="Private Hire" className="sideBySide" />
                     </div>
-                </div>
+                </SplitContent>
 
-                <div className="whatsOnPanel split">
+                <SplitContent>
                     <div>
-                        <img src="/images/Dovetail-X-Ferrand-67-Large.jpg" alt="Private Hire" />
+                        <img src="/images/clapton.jpg" alt="Private Hire" />
                     </div>
                     <div>
                         <h3>Dovetail Clapton</h3>
@@ -75,20 +77,14 @@ export function Content() {
                             <Link to="/clapton" className="buttonLink">Visit Clapton</Link>
                         </p>
                     </div>
-                </div>
+                </SplitContent>
 
             </div>
             </section>
 
             <section className="primary">
                 <div className="centeredContent centerAligned">
-                    <iframe
-                        src="https://www.instagram.com/dovetailbars/embed"
-                        className="instagramFeed"
-                        title="Instagram Feed"
-                        aria-label="Instagram Feed"
-                        frameBorder="0"
-                    ></iframe>
+                    <InstagramEmbed handle="dovetailbars" />
                 </div>
             </section>
 
