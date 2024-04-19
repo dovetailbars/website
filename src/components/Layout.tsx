@@ -31,6 +31,7 @@ export function Layout({ children, hero = null }: Props) {
                     <img src="/images/logo-notext.png" alt="Dovetail" className="navLogo" />
                 </Link>
                 <ul className="navList">
+                    <li><Link to={{ pathname: "/", hash: "#bars" }} reloadDocument>Bars</Link></li>
                     <li><Link to="/cocktail-menu">Cocktail Menu</Link></li>
                     <li><Link to="/private-hire">Private Hire</Link></li>
                     <li><Link to="/cocktail-making-class">Masterclasses</Link></li>

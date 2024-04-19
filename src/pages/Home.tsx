@@ -11,7 +11,7 @@ export function Hero(): HeroData {
             <img src="/images/logo-white.png" alt="Dovetail" className="heroLogo" />
             <h1 className="title">Dovetail</h1>
             <h2>
-                <Link to="/bars/covent-garden">Covent Garden</Link> | <Link to="/bars/Clapton">Clapton</Link>
+                <Link to="/covent-garden">Covent Garden</Link> | <Link to="/clapton">Clapton</Link>
             </h2>
         </>)
     };
@@ -35,7 +35,7 @@ export function Content() {
             <section className="secondary">
 
             <div className="centeredContent">
-                <h2 className="sectionTitle">Our Bars</h2>
+                <h2 id="bars" className="sectionTitle">Our Bars</h2>
 
                 <div className="whatsOnPanel split">
                     <div>
@@ -49,7 +49,7 @@ export function Content() {
                         Discover Dovetail Bar, where innovation meets charm in a welcoming setting. 
                         </p>
                         <p className="paddedTop">
-                            <Link to="/bars/covent-garden" className="buttonLink">Visit Covent Gaden</Link>
+                            <Link to="/covent-garden" className="buttonLink">Visit Covent Gaden</Link>
                         </p>
                     </div>
                     <div>
@@ -72,7 +72,7 @@ export function Content() {
                         moments, Dovetail Clapton promises an expansive oasis where good company and great drinks flourish. 
                         </p>
                         <p className="paddedTop">
-                            <Link to="/bars/Clapton" className="buttonLink">Visit Clapton</Link>
+                            <Link to="/clapton" className="buttonLink">Visit Clapton</Link>
                         </p>
                     </div>
                 </div>

@@ -20,8 +20,8 @@ export function Content() {
                     Select the location you would like to book:
                 </p>
                 <p>
-                    <Link to="/bars/covent-garden/bookings" className="buttonLink">Covent Garden</Link>
-                    <Link to="/bars/clapton/bookings" className="buttonLink">Clapton</Link>
+                    <Link to="/covent-garden/bookings" className="buttonLink">Covent Garden</Link>
+                    <Link to="/clapton/bookings" className="buttonLink">Clapton</Link>
                 </p>
 
             </section>

@@ -10,9 +10,9 @@ export default function SplitContent({ children, sectionTitle }: Props) {
         <section className="primary">
             { titleElements }
 
-        <div className="centeredContent split">
-            { children }
-        </div>
+            <div className="centeredContent split">
+                { children }
+            </div>
         </section>
     );
 }

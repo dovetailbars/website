@@ -36,7 +36,7 @@ export function Content() {
             </IntroSection>
 
             <section className="primary">
-                <Link to="/bookings" className="buttonLink">Book Now</Link>
+                <Link to="bookings" className="buttonLink">Book Now</Link>
             </section>
 
             <SplitContent>
@@ -48,7 +48,7 @@ export function Content() {
                     <p>
                         Dovetail is more than just a venue; it's an experience waiting to be tailored to your every need. Our creative cocktails, served with a flair for the unpretentious, promise to enchant your guests, while our refined yet cozy environment ensures a memorable occasion for all.
                     </p>
-                    <Link to="/bars/covent-garden/private-hire" className="buttonLink">See the space</Link>
+                    <Link to="/covent-garden/private-hire" className="buttonLink">See the space</Link>
                 </div>
                 <div>
                     <img src="/images/Dovetail-X-Ferrand-58-Large.jpg" alt="Private Hire" className="sideBySide" />
