@@ -1,5 +1,6 @@
 import "./Layout.css";
 import CarouselBackground from './CarouselBackground';
+import Footer from './Footer';
 
 import { Link } from "react-router-dom";
 import * as Home from '../pages/Home';
@@ -7,9 +8,10 @@ import * as Home from '../pages/Home';
 type Props = {
     children: React.ReactNode;
     hero?: () => HeroData;
+    footerContent? : React.ReactNode;
 };
 
-export function Layout({ children, hero = null }: Props) {
+export function Layout({ children, hero = null, footerContent }: Props) {
     const noHero = () => {
         return { image: "", content: <></> };
     }
@@ -49,34 +51,8 @@ export function Layout({ children, hero = null }: Props) {
             {children}
         </main>
 
-        <footer>
-            <img src="/images/logo-white.png" alt="Dovetail" width={160} /><br />
-            <div className="footerDetails centeredContent">
-                <section>
-                    <h2>Opening Hours</h2>
-                    <p>
-                        5pm – 12.30am – Monday to Friday<br />
-                        2pm – 12:30 am – Saturday<br />
-                        5pm – 11:30 pm – Sunday
-                    </p>
-                </section>
-                <section>
-                    <h2>Location</h2>
-                    <p>
-                        <a href="#map">2nd Floor, <br />9 Russell St, <br />London WC2B 5HZ</a>
-                    </p>
-                </section>
-                <section>
-                    <h2>Contact Us</h2>
-                    <p>
-                        info@dovetailbars.co.uk<br />
-                        +44 7544 523423
-                    </p>
-                </section>
-            </div>
-            <div className="copyright">
-                © Dovetail Bar | Company No. 14991262
-            </div>
-        </footer>
+        <Footer>
+            { footerContent || <></> }
+        </Footer>
     </>);
 }

@@ -6,12 +6,13 @@ type Props = {
     children: React.ReactNode;
     hero?: () => HeroData;
     title: string;
-    googleMapsEmbedUrl: string;
+    googleMapsEmbedUrl: string;    
+    footerContent? : React.ReactNode;
 };
 
-export default function Content({ children, hero, title, googleMapsEmbedUrl }: Props) {
+export default function Content({ children, hero, title, googleMapsEmbedUrl, footerContent }: Props) {
     return (<>
-        <Layout hero={hero}>
+        <Layout hero={hero} footerContent={footerContent}>
             { children }
 
             <GoogleMaps 

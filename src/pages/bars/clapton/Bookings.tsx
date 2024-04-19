@@ -1,6 +1,6 @@
-import { useEffect, useRef } from "react";
 import { Layout } from "../../../components/Layout";
 import StandardHero from "../../../components/StandardHero";
+import DesignMyNight from "../../../components/DesignMyNight";
 
 export function Hero(): HeroData {
     return {
@@ -9,15 +9,15 @@ export function Hero(): HeroData {
     };
 }
 
-export function Content() {
+export function Content() {    
     return (        
         <Layout hero={Hero}>
-            <section className="secondary">
-                <div className="intro">
-                    <h2>Reservations Coming Soon</h2>                    
-                </div>
-            </section>
+            <section className="reservation">
+                <h2>Make a reservation</h2>
 
+                <DesignMyNight venueId="660d42467122fe5177534b13" gtmCode="GTM-MQ6Z6QJ7" returnUrl="https://dovetailbars.co.uk/bookings/confirmation" />
+                		
+            </section>
         </Layout>
     );
 }   
