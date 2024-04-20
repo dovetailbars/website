@@ -13,11 +13,6 @@ import BarPrivateHire from "./pages/bars/PrivateHire";
 
 import ScrollToTop from "./components/ScrollToTop";
 
-
-const loaderFunc = async ({ request, params }) => {
-  return { barId: params.barId };
-};
-
 export default function Routes() {
 
   return (<>
@@ -33,9 +28,9 @@ export default function Routes() {
         <Route path="/bookings" element={<Bookings />} />
         <Route path="/bookings/confirmation" element={<BookingConfirmation />} />
 
-        <Route path="/:barId" element={<BarHome />} loader={loaderFunc} />
-        <Route path="/:barId/bookings" element={<BarBookings />} loader={loaderFunc} />
-        <Route path="/:barId/private-hire" element={<BarPrivateHire />} loader={loaderFunc} />
+        <Route path="/:barId" element={<BarHome />}  />
+        <Route path="/:barId/bookings" element={<BarBookings />} />
+        <Route path="/:barId/private-hire" element={<BarPrivateHire />}  />
 
         <Route path="*" element={<Navigate to="/" />} />
       </ReactRoutes>

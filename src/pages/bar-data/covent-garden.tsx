@@ -3,8 +3,10 @@ import IntroSection from "../../components/IntroSection";
 import SplitContent from "../../components/SplitContent";
 import { ContactForm } from "../../components/ContactForm";
 
+const name = "Dovetail Covent Garden";
+
 export default {
-    name: "Dovetail Covent Garden",
+    name: name,
     googleMapsLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.047340592473!2d-0.12412972225924557!3d51.51234747181459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760544d0fcad43%3A0xc6b47b94aca920c8!2sDovetail%20Bar%20-%20Covent%20Garden!5e0!3m2!1sen!2suk!4v1713575022090!5m2!1sen!2suk",
     designMyNightConfig: {
         venueId: "64d62f0640e99c3d6732462e",
@@ -16,12 +18,12 @@ export default {
         image: "/images/DTB-Initial-Cocktail-Shoot-LR-012-sm.jpg",
         content: (<>
             <img src="/images/logo-white.png" alt="Dovetail" className="heroLogo" />
-            <h1 className="title">Dovetail Covent Garden</h1>
+            <h1 className="title">{name}</h1>
         </>)
     },
 
     overviewContent: (<>
-        <IntroSection title="Dovetail Covent Garden">
+        <IntroSection title={name}>
             <p>
                 Tucked away above the lively Covent Garden Market, right in the heart of London's West End, you'll find The Dovetail Bar - a cozy secret just waiting to be shared.
             </p>
