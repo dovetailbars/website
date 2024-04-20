@@ -29,6 +29,7 @@ export default function Routes() {
         <Route path="/cocktail-menu" element={<CocktailMenu.Content />} />
         <Route path="/private-hire" element={<PrivateHire.Content />} />
         <Route path="/cocktail-making-class" element={<CocktailMakingClass.Content />} />
+        <Route path="/masterclasses" element={<Navigate replace to="/cocktail-making-class" />} />
         <Route path="/bookings" element={<Bookings.Content />} />
         <Route path="/bookings/confirmation" element={<BookingConfirmation.Content />} />
 
