@@ -1,17 +1,14 @@
 import { Layout } from "../components/Layout";
 import StandardHero from "../components/StandardHero";
 
-export function Hero(): HeroData {
-    return {
+export function Content() {
+    const hero = {
         image: "/images/DTB-Initial-Cocktail-Shoot-LR-052.jpg",
         content: (<StandardHero heading="Bookings"/>)
     };
-}
-
-export function Content() {
 
     return (        
-        <Layout hero={Hero}>
+        <Layout hero={hero}>
             <section>
                 <h2>Booking Confirmation</h2>
                 <p>

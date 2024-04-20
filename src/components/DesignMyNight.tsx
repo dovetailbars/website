@@ -1,12 +1,6 @@
 import { useEffect, useRef } from "react";
 
-type DesignMyNightProps = {
-    venueId: string;
-    gtmCode: string;
-    returnUrl: string;
-};
-
-export default function({ venueId, gtmCode, returnUrl}: DesignMyNightProps) {
+export default function({ venueId, gtmCode, returnUrl}: DesignMyNightConfig) {
     const inputRef = useRef(null);
 
     useEffect(() => {

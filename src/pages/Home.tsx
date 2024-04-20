@@ -1,13 +1,11 @@
 import { Layout } from "../components/Layout";
 import { Link } from "react-router-dom";
-import WhatsOnCommon from "../partials/WhatsOnCommon";
-import StandardHero from "../components/StandardHero";
 import IntroSection from "../components/IntroSection";
 import SplitContent from "../components/SplitContent";
 import InstagramEmbed from "../components/InstagramEmbed";
 
-export function Hero(): HeroData {
-    return {
+export function Content() {
+    const hero = {
         image: "/images/DTB-Initial-Cocktail-Shoot-LR-012-sm.jpg",
         content: (<>
             <img src="/images/logo-white.png" alt="Dovetail" className="heroLogo" />
@@ -17,11 +15,9 @@ export function Hero(): HeroData {
             </h2>
         </>)
     };
-}
 
-export function Content() {
     return (<>
-        <Layout hero={Hero}>
+        <Layout hero={hero}>
             <IntroSection title="Discover Dovetail">
                 <p>
                     Discover Dovetail Bars, a collection of hidden gems that blend innovation with libations.

@@ -1,18 +1,15 @@
-import { useEffect, useRef } from "react";
 import { Layout } from "../components/Layout";
 import StandardHero from "../components/StandardHero";
 import { Link } from "react-router-dom";
 
-export function Hero(): HeroData {
-    return {
+export function Content() {
+    const hero = {
         image: "/images/DTB-Initial-Cocktail-Shoot-LR-052.jpg",
         content: (<StandardHero heading="Bookings"/>)
     };
-}
 
-export function Content() {
     return (        
-        <Layout hero={Hero}>
+        <Layout hero={hero}>
             <section className="secondary">
                 <h2>Make a reservation</h2>
 

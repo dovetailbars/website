@@ -1,17 +1,14 @@
 import { Layout } from "../components/Layout";
 import StandardHero from "../components/StandardHero";
 
-export function Hero(): HeroData {
-    return {
+export function Content() {
+    const hero = {
         image: "/images/DTB-Initial-Cocktail-Shoot-LR-020.jpg",
         content: <StandardHero heading="Cocktail Menu" />
     };
-}
 
-
-export function Content() {
     return (
-        <Layout hero={Hero}>
+        <Layout hero={hero}>
             <section className="secondary">
                 <div className="centeredContent centerAligned">
                     <img src="/images/Dovetail-Menu.jpg" alt="Cocktail Menu" className="fullWidth" />

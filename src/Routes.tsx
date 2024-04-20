@@ -7,29 +7,35 @@ import * as PrivateHire from './pages/PrivateHire';
 import * as Bookings from './pages/Bookings';
 import * as BookingConfirmation from './pages/BookingConfirmation';
 import * as CocktailMakingClass from './pages/CocktailMakingClass';
-import * as BarsCoventGarden from './pages/bars/covent-garden/Home';
-import * as BarsCoventGardenPrivateHire from './pages/bars/covent-garden/PrivateHire';
-import * as BarsClapton from './pages/bars/clapton/Home';
-import * as BookingsCoventGarden from './pages/bars/covent-garden/Bookings';
-import * as BookingsClapton from './pages/bars/clapton/Bookings';
+import * as BarHome from "./pages/bars/Home";
+import * as BarBookings from "./pages/bars/Bookings";
+import * as BarPrivateHire from "./pages/bars/PrivateHire";
+
 import ScrollToTop from "./components/ScrollToTop";
 
+
+const loaderFunc = async ({ request, params }) => {
+  return { barId: params.barId };
+};
+
 export default function Routes() {
+
   return (<>
     <BrowserRouter>
       <ScrollToTop />
       <ReactRoutes>
         <Route path="/" element={<Home.Content />} />
-        <Route path="/covent-garden" element={<BarsCoventGarden.Content />} />
-        <Route path="/covent-garden/bookings" element={<BookingsCoventGarden.Content />} />
-        <Route path="/covent-garden/private-hire" element={<BarsCoventGardenPrivateHire.Content />} />
-        <Route path="/clapton" element={<BarsClapton.Content />} />
-        <Route path="/clapton/bookings" element={<BookingsClapton.Content />} />
+
         <Route path="/cocktail-menu" element={<CocktailMenu.Content />} />
         <Route path="/private-hire" element={<PrivateHire.Content />} />
         <Route path="/cocktail-making-class" element={<CocktailMakingClass.Content />} />
         <Route path="/bookings" element={<Bookings.Content />} />
         <Route path="/bookings/confirmation" element={<BookingConfirmation.Content />} />
+
+        <Route path="/:barId" element={<BarHome.default />} loader={loaderFunc} />
+        <Route path="/:barId/bookings" element={<BarBookings.default />} loader={loaderFunc} />
+        <Route path="/:barId/private-hire" element={<BarPrivateHire.default />} loader={loaderFunc} />
+
         <Route path="*" element={<Navigate to="/" />} />
       </ReactRoutes>
     </BrowserRouter>

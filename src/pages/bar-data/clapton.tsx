@@ -1,21 +1,25 @@
 import { Link } from "react-router-dom";
-import BarLandingPage from "../../../components/BarLandingPage";
-import IntroSection from "../../../components/IntroSection";
-import SplitContent from "../../../components/SplitContent";
+import IntroSection from "../../components/IntroSection";
+import SplitContent from "../../components/SplitContent";
 
-export function Hero(): HeroData {
-    return {
+export default {
+    name: "Dovetail Clapton",
+    googleMapsLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11467.132511129797!2d-0.0679031374399165!3d51.544295188452374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761d26818538eb%3A0x169c5afe1389e1fa!2sDovetail%20Bar%20-%20Clapton!5e0!3m2!1sen!2suk!4v1713003089596!5m2!1sen!2suk",
+    designMyNightConfig: {
+        venueId: "660d42467122fe5177534b13",
+        gtmCode: "GTM-MQ6Z6QJ7",
+        returnUrl: "https://dovetailbars.co.uk/bookings/confirmation"
+    },
+
+    heroContent: {
         image: "/images/clapton.jpg",
         content: (<>
             <img src="/images/logo-white.png" alt="Dovetail" className="heroLogo" />
             <h1 className="title">Dovetail Clapton</h1>
-        </>)
-    };
-}
+        </>),
+    },
 
-export function Content() {
-
-    const body = (<>
+    overviewContent: (<>
         <IntroSection title="Dovetail Clapton">
             <p>Nestled in the heart of Clapton, a stone’s throw away from Hackney’s vibrant nightlife scene, you’ll discover Dovetail Clapton – a spacious bar that beckons both locals and curious wanderers alike.</p>
             <p>Whether you’re seeking refuge from the city’s hustle or celebrating life’s moments, this bar invites you to savor the art of good conversation and exceptional drinks.</p>
@@ -40,9 +44,9 @@ export function Content() {
                 <img src="/images/clapton.jpg" alt="Private Hire" className="sideBySide" />
             </div>
         </SplitContent>
-    </>);
+    </>),
 
-    const footer = (<>
+    footerContent: (<>
         <section>
         <h2>Opening Hours</h2>
         <p>
@@ -64,16 +68,5 @@ export function Content() {
                 +44 7544 523423
             </p>
         </section>
-    </>);
-
-    return (<>
-        <BarLandingPage 
-            hero={Hero}
-            footerContent={footer}
-            title="Dovetail Clapton"
-            googleMapsEmbedUrl="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11467.132511129797!2d-0.0679031374399165!3d51.544295188452374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761d26818538eb%3A0x169c5afe1389e1fa!2sDovetail%20Bar%20-%20Clapton!5e0!3m2!1sen!2suk!4v1713003089596!5m2!1sen!2suk"
-        >
-            { body }
-        </BarLandingPage>
-    </>);
-}
+    </>)
+} as BarData;

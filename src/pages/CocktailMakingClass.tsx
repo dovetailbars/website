@@ -2,16 +2,14 @@ import { Link } from "react-router-dom";
 import { Layout } from "../components/Layout";
 import StandardHero from "../components/StandardHero";
 
-export function Hero(): HeroData {
-    return {
-        image: "/images/DTB-Masterclass-LR-01.jpg",
-        content: (<StandardHero heading="Cocktail Masterclass" subheading="Bespoke Cocktail Experience In Covent Garden" />)
-    };
-}
-
 export function Content() {
+    const hero = {
+        image: "/images/DTB-Masterclass-LR-01.jpg",
+        content: (<StandardHero heading="Cocktail Masterclass" subheading="Bespoke Cocktail Experiences" />)
+    };
+
     return (        
-        <Layout hero={Hero}>
+        <Layout hero={hero}>
             <section className="secondary">                
                 <div className="centeredContent split">
                     <div>

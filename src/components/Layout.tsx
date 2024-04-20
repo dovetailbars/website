@@ -7,20 +7,20 @@ import * as Home from '../pages/Home';
 
 type Props = {
     children: React.ReactNode;
-    hero?: () => HeroData;
+    hero?: HeroData;
     footerContent? : React.ReactNode;
 };
 
 export function Layout({ children, hero = null, footerContent }: Props) {
-    const noHero = () => {
-        return { image: "", content: <></> };
-    }
+    //const noHero =  { image: "", content: <></> };    
 
-    hero = hero || noHero;
-    const isOnHomePage = hero === Home.Hero;
+    //hero = hero || noHero;
+    console.log("hero", hero)
+
+    const isOnHomePage = window.location.pathname === "/";
     const isHomePageClassName = isOnHomePage ? "home" : "nav";
     const headerClassName = isOnHomePage ? "homeHeader" : "header";
-    const heroContent = hero();
+    const heroContent = hero;
 
     const carouselItems = [
         heroContent?.image ? { src: heroContent.image, alt: "" } : { src: "/images/DTB-Initial-Cocktail-Shoot-LR-042.jpg", alt: "" }

@@ -4,7 +4,7 @@ import GoogleMaps from "./GoogleMaps";
 
 type Props = {
     children: React.ReactNode;
-    hero?: () => HeroData;
+    hero?: HeroData;
     title: string;
     googleMapsEmbedUrl: string;    
     footerContent? : React.ReactNode;
