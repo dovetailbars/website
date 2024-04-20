@@ -46,7 +46,7 @@ export function Layout({ children, hero = null, footerContent }: Props) {
         </main>
 
         <Footer>
-            { footerContent || <></> }
+            { footerContent || null }
         </Footer>
     </>);
 }
