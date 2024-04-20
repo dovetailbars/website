@@ -1,11 +1,15 @@
 import { Layout } from "../../components/Layout";
 import DesignMyNight from "../../components/DesignMyNight";
-import { useParams } from "react-router-dom";
+import { Navigate, useParams } from "react-router-dom";
 import { getBarData } from "../bar-data";
 
 export default function() {   
     const params = useParams();
     const data = getBarData(params.barId);
+    
+    if (!data) {
+        return <Navigate replace to="/" />
+    }
 
     const { name, heroContent, designMyNightConfig, footerContent } = data;
     const { venueId, gtmCode, returnUrl } = designMyNightConfig;

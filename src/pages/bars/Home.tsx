@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Navigate, useParams } from "react-router-dom";
 import { Layout } from "../../components/Layout";
 import GoogleMaps from "../../components/GoogleMaps";
 
@@ -7,6 +7,10 @@ import { getBarData} from "../bar-data";
 export default function() {
     const params = useParams();
     const data = getBarData(params.barId);
+
+    if (!data) {
+        return <Navigate replace to="/" />
+    }
 
     const { 
         name,

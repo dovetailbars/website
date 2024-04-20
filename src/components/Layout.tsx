@@ -3,7 +3,6 @@ import CarouselBackground from './CarouselBackground';
 import Footer from './Footer';
 
 import { Link } from "react-router-dom";
-import * as Home from '../pages/Home';
 
 type Props = {
     children: React.ReactNode;
@@ -12,11 +11,6 @@ type Props = {
 };
 
 export function Layout({ children, hero = null, footerContent }: Props) {
-    //const noHero =  { image: "", content: <></> };    
-
-    //hero = hero || noHero;
-    console.log("hero", hero)
-
     const isOnHomePage = window.location.pathname === "/";
     const isHomePageClassName = isOnHomePage ? "home" : "nav";
     const headerClassName = isOnHomePage ? "homeHeader" : "header";

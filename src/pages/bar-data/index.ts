@@ -6,11 +6,7 @@ const data = [
     { barId: 'covent-garden', data: CoventGardenData },
 ];
 
-export function getBarData(barId: string) {
+export function getBarData(barId: string): BarData | null {
     const result = data.find(bar => bar.barId === barId);
-    if (!result) {
-        return null;
-    }
-
-    return result.data;
+    return result?.data;
 }
