@@ -2,7 +2,7 @@ import { Layout } from "../components/Layout";
 import StandardHero from "../components/StandardHero";
 import { ContactForm } from "../components/ContactForm";
 
-export function Content() {
+export default function() {
     const hero = {
         image: "/images/DTB-Initial-Cocktail-Shoot-LR-055.png",
         content: (<StandardHero heading="Private Hire" subheading="Planning an event? We've got you covered!" />)

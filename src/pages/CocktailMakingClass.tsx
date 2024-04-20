@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Layout } from "../components/Layout";
 import StandardHero from "../components/StandardHero";
 
-export function Content() {
+export default function() {
     const hero = {
         image: "/images/DTB-Masterclass-LR-01.jpg",
         content: (<StandardHero heading="Cocktail Masterclass" subheading="Bespoke Cocktail Experiences" />)

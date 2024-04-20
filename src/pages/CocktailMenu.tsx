@@ -1,7 +1,7 @@
 import { Layout } from "../components/Layout";
 import StandardHero from "../components/StandardHero";
 
-export function Content() {
+export default function() {
     const hero = {
         image: "/images/DTB-Initial-Cocktail-Shoot-LR-020.jpg",
         content: <StandardHero heading="Cocktail Menu" />

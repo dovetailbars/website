@@ -1,7 +1,7 @@
 import { Layout } from "../components/Layout";
 import StandardHero from "../components/StandardHero";
 
-export function Content() {
+export default function() {
     const hero = {
         image: "/images/DTB-Initial-Cocktail-Shoot-LR-052.jpg",
         content: (<StandardHero heading="Bookings"/>)
@@ -20,4 +20,4 @@ export function Content() {
             </section>
         </Layout>
     );
-}   
+}

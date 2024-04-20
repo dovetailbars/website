@@ -4,7 +4,7 @@ import IntroSection from "../components/IntroSection";
 import SplitContent from "../components/SplitContent";
 import InstagramEmbed from "../components/InstagramEmbed";
 
-export function Content() {
+export default function() {
     const hero = {
         image: "/images/DTB-Initial-Cocktail-Shoot-LR-012-sm.jpg",
         content: (<>

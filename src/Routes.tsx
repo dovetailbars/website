@@ -1,15 +1,15 @@
 
 import { BrowserRouter, Navigate, Routes as ReactRoutes, Route } from "react-router-dom";
 
-import * as Home from './pages/Home';
-import * as CocktailMenu from './pages/CocktailMenu';
-import * as PrivateHire from './pages/PrivateHire';
-import * as Bookings from './pages/Bookings';
-import * as BookingConfirmation from './pages/BookingConfirmation';
-import * as CocktailMakingClass from './pages/CocktailMakingClass';
-import * as BarHome from "./pages/bars/Home";
-import * as BarBookings from "./pages/bars/Bookings";
-import * as BarPrivateHire from "./pages/bars/PrivateHire";
+import Home from './pages/Home';
+import CocktailMenu from './pages/CocktailMenu';
+import PrivateHire from './pages/PrivateHire';
+import Bookings from './pages/Bookings';
+import BookingConfirmation from './pages/BookingConfirmation';
+import CocktailMakingClass from './pages/CocktailMakingClass';
+import BarHome from "./pages/bars/Home";
+import BarBookings from "./pages/bars/Bookings";
+import BarPrivateHire from "./pages/bars/PrivateHire";
 
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -24,18 +24,18 @@ export default function Routes() {
     <BrowserRouter>
       <ScrollToTop />
       <ReactRoutes>
-        <Route path="/" element={<Home.Content />} />
+        <Route path="/" element={<Home />} />
 
-        <Route path="/cocktail-menu" element={<CocktailMenu.Content />} />
-        <Route path="/private-hire" element={<PrivateHire.Content />} />
-        <Route path="/cocktail-making-class" element={<CocktailMakingClass.Content />} />
+        <Route path="/cocktail-menu" element={<CocktailMenu />} />
+        <Route path="/private-hire" element={<PrivateHire />} />
+        <Route path="/cocktail-making-class" element={<CocktailMakingClass />} />
         <Route path="/masterclasses" element={<Navigate replace to="/cocktail-making-class" />} />
-        <Route path="/bookings" element={<Bookings.Content />} />
-        <Route path="/bookings/confirmation" element={<BookingConfirmation.Content />} />
+        <Route path="/bookings" element={<Bookings />} />
+        <Route path="/bookings/confirmation" element={<BookingConfirmation />} />
 
-        <Route path="/:barId" element={<BarHome.default />} loader={loaderFunc} />
-        <Route path="/:barId/bookings" element={<BarBookings.default />} loader={loaderFunc} />
-        <Route path="/:barId/private-hire" element={<BarPrivateHire.default />} loader={loaderFunc} />
+        <Route path="/:barId" element={<BarHome />} loader={loaderFunc} />
+        <Route path="/:barId/bookings" element={<BarBookings />} loader={loaderFunc} />
+        <Route path="/:barId/private-hire" element={<BarPrivateHire />} loader={loaderFunc} />
 
         <Route path="*" element={<Navigate to="/" />} />
       </ReactRoutes>
