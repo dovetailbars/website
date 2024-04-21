@@ -35,6 +35,38 @@ We gotchu bro (probably Tim, or Jay). Here's a quick guide to the important file
 
 Realistically, you're just going to be editing the JSON files in `data/` and dropping images in `public/`. If you need help, just ask David.
 
+The configuration in the `data/` files is pretty simple - it looks a little like this:
+
+```jsx
+const name = "Dovetail Clapton";
+
+export default {
+    name: name,
+    
+    googleMapsLink: "https://www.google.com/maps/embed?pb=!......",
+    
+    designMyNightConfig: {
+        venueId: "660d42467122fe5177534b13",
+        gtmCode: "GTM-MQ6Z6QJ7",
+        returnUrl: "https://dovetailbars.co.uk/bookings/confirmation"
+    },
+
+    openingHours: {
+        "Monday to Friday": "5pm – 12.30am",
+        "Saturday": "2pm – 12:30 am",
+        "Sunday": "5pm – 11:30 pm"
+    },
+
+    location: "11 Chatsworth Road, Clapton, London E5 0LH",
+
+    ... etc
+```
+
+Obviously this is code, so edit carefully - generally just edit the text and links and IDs between the quotes if you need to change something. Be careful not to add quotation marks inside the copy as this will break the markup.
+If you need to use quotes, you need to escape them by typing `\"` instead of `"`.
+
+It's probably self explanatory, but if you need help, yell.
+
 ## I want whole new pages and stuff
 
 Hi David, probably in the future. Quick guide for when you forget what you did.
