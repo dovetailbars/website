@@ -1,6 +1,6 @@
 import { Navigate, useParams } from "react-router-dom";
-import { Layout } from "../../components/Layout";
 import { getBarData } from "../../../data";
+import BarPageLayout from "./BarPageLayout";
 
 export default function() {
     const params = useParams();
@@ -10,11 +10,9 @@ export default function() {
         return <Navigate replace to="/" />
     }
 
-    const { heroContent, footerContent, privateHireContent } = data;
-
-    return (        
-        <Layout hero={heroContent} footerContent={footerContent}>
-            { privateHireContent }
-        </Layout>
+    return (
+        <BarPageLayout barData={data}>
+            { data.privateHireContent }
+        </BarPageLayout>
     );
 }

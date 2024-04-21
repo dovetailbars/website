@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import DovetailInfo from "../../data/dovetail-info";
 
 type Props = {
     children?: React.ReactNode;
@@ -26,8 +27,8 @@ export default function Footer({ children = null }: Props) {
         <section>
             <h2>Contact Us</h2>
             <p>
-                info@dovetailbars.co.uk<br />
-                +44 7544 523423
+                {DovetailInfo.email}<br />
+                {DovetailInfo.phone}
             </p>
         </section>
     </>);

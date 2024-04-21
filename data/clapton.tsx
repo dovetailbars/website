@@ -6,12 +6,22 @@ const name = "Dovetail Clapton";
 
 export default {
     name: name,
+    
     googleMapsLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11467.132511129797!2d-0.0679031374399165!3d51.544295188452374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761d26818538eb%3A0x169c5afe1389e1fa!2sDovetail%20Bar%20-%20Clapton!5e0!3m2!1sen!2suk!4v1713003089596!5m2!1sen!2suk",
+    
     designMyNightConfig: {
         venueId: "660d42467122fe5177534b13",
         gtmCode: "GTM-MQ6Z6QJ7",
         returnUrl: "https://dovetailbars.co.uk/bookings/confirmation"
     },
+
+    openingHours: {
+        "Monday to Friday": "5pm – 12.30am",
+        "Saturday": "2pm – 12:30 am",
+        "Sunday": "5pm – 11:30 pm"
+    },
+
+    location: "11 Chatsworth Road, Clapton, London E5 0LH",
 
     heroContent: {
         image: "/images/clapton.jpg",
@@ -46,29 +56,6 @@ export default {
                 <img src="/images/clapton.jpg" alt="Private Hire" className="sideBySide" />
             </div>
         </SplitContent>
-    </>),
-
-    footerContent: (<>
-        <section>
-        <h2>Opening Hours</h2>
-        <p>
-            5pm – 12.30am – Monday to Friday<br />
-            2pm – 12:30 am – Saturday<br />
-            5pm – 11:30 pm – Sunday
-        </p>
-        </section>
-        <section>
-            <h2>Location</h2>
-            <p>
-                <a href="#map">11 Chatsworth Road<br/>Clapton<br />London E5 0LH</a>
-            </p>
-        </section>
-        <section>
-            <h2>Contact Us</h2>
-            <p>
-                info@dovetailbars.co.uk<br />
-                +44 7544 523423
-            </p>
-        </section>
     </>)
+    
 } as BarData;

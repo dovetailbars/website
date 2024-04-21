@@ -1,8 +1,8 @@
 import { Navigate, useParams } from "react-router-dom";
-import { Layout } from "../../components/Layout";
 import GoogleMaps from "../../components/GoogleMaps";
 
 import { getBarData} from "../../../data";
+import BarPageLayout from "./BarPageLayout";
 
 export default function() {
     const params = useParams();
@@ -11,19 +11,13 @@ export default function() {
     if (!data) {
         return <Navigate replace to="/" />
     }
-
-    const { 
-        name,
-        heroContent,
-        overviewContent,
-        footerContent,
-        googleMapsLink
-    } = data;
     
-    return (<>
-        <Layout hero={heroContent} footerContent={footerContent}>
-            { overviewContent }
-            <GoogleMaps title={name} embedUrl={googleMapsLink} />
-        </Layout>
-    </>);
+    return (
+        <BarPageLayout barData={data}>
+            <>
+                { data.overviewContent }
+                <GoogleMaps title={data.name} embedUrl={data.googleMapsLink} />
+            </>
+        </BarPageLayout>
+    );
 }

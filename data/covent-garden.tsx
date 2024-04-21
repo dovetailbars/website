@@ -7,12 +7,22 @@ const name = "Dovetail Covent Garden";
 
 export default {
     name: name,
+    
     googleMapsLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.047340592473!2d-0.12412972225924557!3d51.51234747181459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760544d0fcad43%3A0xc6b47b94aca920c8!2sDovetail%20Bar%20-%20Covent%20Garden!5e0!3m2!1sen!2suk!4v1713575022090!5m2!1sen!2suk",
+    
     designMyNightConfig: {
         venueId: "64d62f0640e99c3d6732462e",
         gtmCode: "GTM-MQ6Z6QJ7",
         returnUrl: "https://dovetailbars.co.uk/bookings/confirmation"
     },
+
+    openingHours: {
+        "Monday to Friday": "5pm – 12.30am",
+        "Saturday": "2pm – 12:30 am",
+        "Sunday": "5pm – 11:30 pm"
+    },
+
+    location: "2nd Floor, 9 Russell St, London WC2B 5HZ",
 
     heroContent: {
         image: "/images/DTB-Initial-Cocktail-Shoot-LR-012-sm.jpg",
@@ -55,30 +65,6 @@ export default {
                 <img src="/images/Dovetail-X-Ferrand-58-Large.jpg" alt="Private Hire" className="sideBySide" />
             </div>
         </SplitContent>
-    </>),
-
-    footerContent: (<>
-        <section>
-        <h2>Opening Hours</h2>
-        <p>
-            5pm – 12.30am – Monday to Friday<br />
-            2pm – 12:30 am – Saturday<br />
-            5pm – 11:30 pm – Sunday
-        </p>
-        </section>
-        <section>
-            <h2>Location</h2>
-            <p>
-                <a href="#map">2nd Floor<br />9 Russell St<br />London WC2B 5HZ</a>
-            </p>
-        </section>
-        <section>
-            <h2>Contact Us</h2>
-            <p>
-                info@dovetailbars.co.uk<br />
-                +44 7544 523423
-            </p>
-        </section>
     </>),
 
     privateHireContent: (<>
