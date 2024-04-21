@@ -1,6 +1,6 @@
 import { Navigate, useParams } from "react-router-dom";
 import { Layout } from "../../components/Layout";
-import { getBarData } from "../bar-data";
+import { getBarData } from "../../../data";
 
 export default function() {
     const params = useParams();

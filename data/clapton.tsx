@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import IntroSection from "../../components/IntroSection";
-import SplitContent from "../../components/SplitContent";
+import IntroSection from "../src/components/IntroSection";
+import SplitContent from "../src/components/SplitContent";
 
 const name = "Dovetail Clapton";
 

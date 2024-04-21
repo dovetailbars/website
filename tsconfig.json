@@ -20,7 +20,7 @@
     },
     "include": [
       "./src"
-    ],
+, "data"    ],
     "types": [
       "vitest/globals"
     ]

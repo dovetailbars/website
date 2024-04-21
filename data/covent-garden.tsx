@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import IntroSection from "../../components/IntroSection";
-import SplitContent from "../../components/SplitContent";
-import { ContactForm } from "../../components/ContactForm";
+import IntroSection from "../src/components/IntroSection";
+import SplitContent from "../src/components/SplitContent";
+import { ContactForm } from "../src/components/ContactForm";
 
 const name = "Dovetail Covent Garden";
 
