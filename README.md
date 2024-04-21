@@ -19,6 +19,8 @@ npm run start
 
 This will start a local development server at `http://localhost:8080`.
 
+This site also contains configuration for `GitHub CodeSpaces` so you can develop directly in the browser.
+
 ## Deployment
 
 The site is deployed automatically when changes are pushed to the `main` branch. The deployment is managed by Azure Static Web Apps.
