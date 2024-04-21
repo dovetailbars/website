@@ -47,7 +47,7 @@ export default function() {
                         Discover Dovetail Bar, where innovation meets charm in a welcoming setting. 
                         </p>
                         <p className="paddedTop">
-                            <Link to="/covent-garden" className="buttonLink">Visit Covent Gaden</Link>
+                            <Link to="/covent-garden" className="buttonLink">Visit Covent Garden</Link>
                         </p>
                     </div>
                     <div>
