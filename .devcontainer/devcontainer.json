@@ -1,0 +1,22 @@
+{
+    "name": "Dovetail",
+    "runArgs": ["--init"],
+    "build": {
+      "dockerfile": "Dockerfile",
+      "args": {
+        // Update 'VARIANT' to pick a Node version: 16, 14, 12.
+        // Append -bullseye or -buster to pin to an OS version.
+        // Use -bullseye variants on local arm64/Apple Silicon.
+        "VARIANT": "20"
+      }
+    },
+    "forwardPorts": [8080],
+    "portsAttributes": {
+      "8080": {
+        "label": "Website",
+        "onAutoForward": "ignore"
+      }
+    },
+    "postCreateCommand": "npm run init",
+    "remoteUser": "node"
+  }
