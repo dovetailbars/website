@@ -2,7 +2,7 @@
 
 The [Dovetail](https://dovetail.co.uk) (glow up era) website.
 
-- Hosted on Azure Static Web Apps here: https://portal.azure.com/#@daviddavidwhitneyco292.onmicrosoft.com/resource/subscriptions/19148c60-3e4a-465a-bfc0-06941727ea7e/resourcegroups/StaticSites/providers/Microsoft.Web/staticSites/dovetail/staticsite
+- Hosted on [Azure Static Web Apps here](https://portal.azure.com/#@daviddavidwhitneyco292.onmicrosoft.com/resource/subscriptions/19148c60-3e4a-465a-bfc0-06941727ea7e/resourcegroups/StaticSites/providers/Microsoft.Web/staticSites/dovetail/staticsite).
 - DNS Managed by WordPress.com (with an ALIAS redirect to Azure Static WebApps).
 - Email form managed by Formspree.io (david login).
 
