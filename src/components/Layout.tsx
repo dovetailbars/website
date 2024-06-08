@@ -8,9 +8,10 @@ type Props = {
     children: React.ReactNode;
     hero?: HeroData;
     footerContent? : React.ReactNode;
+    bookNowMenuItem?: boolean;
 };
 
-export function Layout({ children, hero = null, footerContent }: Props) {
+export function Layout({ children, hero = null, footerContent, bookNowMenuItem = true }: Props) {
     const isOnHomePage = window.location.pathname === "/";
     const isHomePageClassName = isOnHomePage ? "home" : "nav";
     const headerClassName = isOnHomePage ? "homeHeader" : "header";
@@ -32,7 +33,7 @@ export function Layout({ children, hero = null, footerContent }: Props) {
                     <li><Link to="/private-hire">Private Hire</Link></li>
                     <li><Link to="/cocktail-making-class">Masterclasses</Link></li>
                 </ul>
-                <Link to="/bookings" className="buttonLink">Book Now</Link>
+                { bookNowMenuItem && <Link to="/bookings" className="buttonLink">Book Now</Link>}
             </nav>
             <CarouselBackground items={carouselItems}>
                 <div className="hero">

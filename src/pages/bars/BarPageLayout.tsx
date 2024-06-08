@@ -1,11 +1,11 @@
 import { Layout } from "../../components/Layout";
 import DovetailInfo from "../../../data/dovetail-info";
 
-export default function({ barData, children }: { barData: BarData, children: JSX.Element }) {
+export default function({ barData, children, bookNowMenuItem }: { barData: BarData, children: JSX.Element, bookNowMenuItem?: boolean}) {
     const footer = <BarFooterContent openingHours={barData.openingHours} location={barData.location} />;
 
     return (
-        <Layout hero={barData.heroContent} footerContent={footer}>
+        <Layout hero={barData.heroContent} footerContent={footer}  bookNowMenuItem={bookNowMenuItem}>
             { children }
         </Layout>
     );

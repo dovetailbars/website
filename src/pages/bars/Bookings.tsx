@@ -15,7 +15,7 @@ export default function() {
     const { venueId, gtmCode, returnUrl } = designMyNightConfig;
 
     return (
-        <BarPageLayout barData={data}>
+        <BarPageLayout barData={data} bookNowMenuItem={false}>
             <section className="reservation">
                 <h2>Make a reservation at {name}</h2>
                 <DesignMyNight venueId={venueId} gtmCode={gtmCode} returnUrl={returnUrl} />                		

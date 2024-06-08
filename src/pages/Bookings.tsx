@@ -9,7 +9,7 @@ export default function() {
     };
 
     return (        
-        <Layout hero={hero}>
+        <Layout hero={hero} bookNowMenuItem={false}>
             <section className="secondary">
                 <h2>Make a reservation</h2>
 

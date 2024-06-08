@@ -19,8 +19,9 @@
       "jsx": "react-jsx"
     },
     "include": [
-      "./src"
-, "data"    ],
+      "./src",
+      "data"
+    ],
     "types": [
       "vitest/globals"
     ]
