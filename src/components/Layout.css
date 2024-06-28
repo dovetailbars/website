@@ -622,6 +622,7 @@ textarea {
 }
 
 .gallery img:hover{
-  width:  calc(var(--s) * var(--f));
+  /*width:  calc(var(--s) * var(--f));*/
   height: calc(var(--s) * var(--f));
+  width: 98vw;  
 }
