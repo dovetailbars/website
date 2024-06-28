@@ -599,11 +599,13 @@ textarea {
   --s: 20vw; /* controls the size */
   --g: 1vw;  /* controls the gap */
 
+  --cols: 3;
+
   display: grid;
   gap: var(--g);
-  width: calc(3*var(--s) + 2*var(--g)); /* 3 times the size plus 2 times the gap */
+  width: calc(var(--cols) *var(--s) + 2*var(--g)); /* 3 times the size plus 2 times the gap */
   aspect-ratio: 1;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(var(--cols), auto);
 }
 
 .gallery > img {
