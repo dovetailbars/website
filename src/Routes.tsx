@@ -12,6 +12,7 @@ import BarBookings from "./pages/bars/Bookings";
 import BarPrivateHire from "./pages/bars/PrivateHire";
 
 import ScrollToTop from "./components/ScrollToTop";
+import Gallery from "./pages/Gallery";
 
 export default function Routes() {
 
@@ -22,6 +23,7 @@ export default function Routes() {
         <Route path="/" element={<Home />} />
 
         <Route path="/cocktail-menu" element={<CocktailMenu />} />
+        <Route path="/gallery" element={<Gallery />} />
         <Route path="/private-hire" element={<PrivateHire />} />
         <Route path="/cocktail-making-class" element={<CocktailMakingClass />} />
         <Route path="/masterclasses" element={<Navigate replace to="/cocktail-making-class" />} />

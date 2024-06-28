@@ -30,6 +30,7 @@ export function Layout({ children, hero = null, footerContent, bookNowMenuItem =
                 <ul className="navList">
                     <li><Link to={{ pathname: "/", hash: "#bars" }} reloadDocument>Bars</Link></li>
                     <li><Link to="/cocktail-menu">Cocktail Menu</Link></li>
+                    <li><Link to="/gallery">Gallery</Link></li>
                     <li><Link to="/private-hire">Private Hire</Link></li>
                     <li><Link to="/cocktail-making-class">Masterclasses</Link></li>
                 </ul>
