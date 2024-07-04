@@ -8,17 +8,10 @@ type Props = {
 export default function Footer({ children = null }: Props) {
     const defaultFooterContent = (<>
         <section>
-        <h2>Opening Hours</h2>
-        <p>
-            5pm – 12.30am – Monday to Friday<br />
-            2pm – 12:30 am – Saturday<br />
-            5pm – 11:30 pm – Sunday
-        </p>
-        </section>
-        <section>
             <h2>Locations</h2>
             <p>
-                London
+                <Link to="/covent-garden">London - Covent Garden</Link><br />
+                <Link to="/clapton">London - Clapton</Link>
             </p>
             <p>
                 <Link to={{ pathname: "/", hash: "#bars" }} reloadDocument>Visit Our Bars</Link>
