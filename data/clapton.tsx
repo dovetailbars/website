@@ -16,9 +16,11 @@ export default {
     },
 
     openingHours: {
-        "Monday to Friday": "5pm – 12.30am",
-        "Saturday": "2pm – 12:30 am",
-        "Sunday": "5pm – 11:30 pm"
+        "Monday to Tuesday": "Closed",        
+        "Wednesday to Thursday": "5pm – 11.00pm",    
+        "Friday": "4pm - 12:00am",
+        "Saturday": "2pm – 12:00am",
+        "Sunday": "1pm – 10:30 pm"
     },
 
     location: "11 Chatsworth Road, Clapton, London E5 0LH",
