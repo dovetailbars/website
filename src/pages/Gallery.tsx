@@ -23,12 +23,8 @@ export default function() {
                             <img key={index} src={image} alt={`Gallery image ${index}`} />
                         ))}
                     </div>
-
-
                 </div>
             </section>
-
-
         </Layout>
     );
 }

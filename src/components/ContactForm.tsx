@@ -28,6 +28,11 @@ export function ContactForm() {
             <ValidationError prefix="Company" field="company" errors={state.errors} />
 
             <div className="formGroup">
+                <select name="venue" id="venue" required>
+                    <option value="Covent Garden" selected>Covent Garden</option>
+                    <option value="Clapton">Clapton</option>
+                </select>
+
                 <label htmlFor="date" className="invisible">Date</label>
                 <input id="date" type="date" name="date" placeholder="Date" required />
                 <ValidationError prefix="Date" field="date" errors={state.errors} />
@@ -40,6 +45,10 @@ export function ContactForm() {
             <label htmlFor="message" className="invisible">Message</label>
             <textarea id="message" name="message" placeholder="Let us know details for your private hire..." required />
             <ValidationError prefix="Message" field="message" errors={state.errors} />
+            
+            <label htmlFor="catering" className="invisible">Catering Requirements</label>
+            <input id="catering" type="text" name="catering" placeholder="Catering Requirements?" />
+            <ValidationError prefix="Catering" field="catering" errors={state.errors} />
 
             <button type="submit" disabled={state.submitting} className="buttonLink">Send</button>
         </form>
