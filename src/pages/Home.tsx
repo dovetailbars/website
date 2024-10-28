@@ -44,11 +44,11 @@ export default function() {
                 { barSpotlightList }                
             </section>
 
-            <section className="primary">
+            {/* <section className="primary">
                 <div className="centeredContent centerAligned">
                     <InstagramEmbed handle="dovetailbars" />
                 </div>
-            </section>
+            </section> */}
 
         </Layout>
     </>);
