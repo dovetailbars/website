@@ -13,8 +13,8 @@ interface BarData {
 
     heroContent: HeroData;
 
+    homePageSpotlight: JSX.Element;
     overviewContent: JSX.Element;
-
     privateHireContent?: JSX.Element;
 }
 

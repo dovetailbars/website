@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import IntroSection from "../components/IntroSection";
 import SplitContent from "../components/SplitContent";
 import InstagramEmbed from "../components/InstagramEmbed";
+import BarSpotlight from "../components/BarSpotlight";
 
 export default function() {
     const hero = {
@@ -35,63 +36,9 @@ export default function() {
             <div className="centeredContent">
                 <h2 id="bars" className="sectionTitle">Our Bars</h2>
 
-                <SplitContent>
-                    <div>
-                        <h3>Dovetail Covent Garden</h3>
-                        <p>
-                        Nestled in the heart of London’s West End, Dovetail Bar awaits those seeking a cozy and clandestine
-                        escape. In collaboration with RedFarm, this intimate spot harmoniously blends creativity and cocktails,
-                        inviting patrons to unwind and savor the art of good company.
-                        </p>
-                        <p>
-                        Discover Dovetail Bar, where innovation meets charm in a welcoming setting. 
-                        </p>
-                        <p className="paddedTop">
-                            <Link to="/covent-garden" className="buttonLink">Visit Covent Garden</Link>
-                        </p>
-                    </div>
-                    <div>
-                        <img src="/images/Dovetail-X-Ferrand-58-Large.jpg" className="sideBySide" />
-                    </div>
-                </SplitContent>
-
-                <SplitContent>
-                    <div>
-                        <img src="/images/clapton.jpg" />
-                    </div>
-                    <div>
-                        <h3>Dovetail Clapton</h3>
-                        <p>
-                        Introducing Dovetail Clapton, a sister bar that echoes the soulful essence of the original Covent Garden hideaway.
-                        </p>
-                        <p>
-                        In the heart of Clapton, this spacious venue embraces the same intimate charm, inviting patrons to revel in
-                        creativity, camaraderie, and exceptional libations. Whether you seek refuge from the city’s frenzy or celebrate life’s
-                        moments, Dovetail Clapton promises an expansive oasis where good company and great drinks flourish. 
-                        </p>
-                        <p className="paddedTop">
-                            <Link to="/clapton" className="buttonLink">Visit Clapton</Link>
-                        </p>
-                    </div>
-                </SplitContent>
-
-                <SplitContent>                
-                    <div>
-                        <h3>Dovetail Empire Casino</h3>
-                        <p>
-                            Dovetail's newest offering is a joint venture with Empire Casino, that sees us rebranding their balcony bar in time for Summer.
-                        </p>
-                        <p>
-                            With views of the bustling crowds in Leicester Square, it's the perfect place to enjoy a spritz before coming inside for an evening of live DJs and perfectly crafted cocktails.
-                        </p>
-                        <p className="paddedTop">
-                            <Link to="/empire-casino" className="buttonLink">Visit Empire Casino</Link>
-                        </p>
-                    </div>
-                    <div>
-                        <img src="/images/empire-casino.png" className="sideBySide" />
-                    </div>
-                </SplitContent>
+                <BarSpotlight barId="covent-garden" />
+                <BarSpotlight barId="clapton" />
+                <BarSpotlight barId="empire-casino" />
 
             </div>
             </section>

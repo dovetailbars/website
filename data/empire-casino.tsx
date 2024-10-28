@@ -15,7 +15,8 @@ export default {
     },
 
     openingHours: {
-        "Monday to Sunday": "12pm – 12.00am",
+        "Sunday to Thursday": "5pm – 2.00am",
+        "Friday and Saturday": "5pm – 3.00am",
     },
 
     location: "Balcony Bar, 5-6 Leicester Square, London WC2H 7NA",
@@ -27,6 +28,25 @@ export default {
             <h1 className="title">{name}</h1>
         </>)
     },
+
+    homePageSpotlight: (
+    <>
+        <div>
+            <h3>Dovetail Empire Casino</h3>
+            <p>
+                Dovetail's newest offering is a joint venture with Empire Casino, that sees us rebranding their balcony bar in time for Summer.
+            </p>
+            <p>
+                With views of the bustling crowds in Leicester Square, it's the perfect place to enjoy a spritz before coming inside for an evening of live DJs and perfectly crafted cocktails.
+            </p>
+            <p className="paddedTop">
+                <Link to="/empire-casino" className="buttonLink">Visit Empire Casino</Link>
+            </p>
+        </div>
+        <div>
+            <img src="/images/empire-casino.png" className="sideBySide" />
+        </div>
+    </>),
 
     overviewContent: (<>
         <IntroSection title={name}>

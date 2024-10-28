@@ -33,6 +33,27 @@ export default {
         </>),
     },
 
+    homePageSpotlight: (
+    <>
+        <div>
+            <img src="/images/clapton.jpg" />
+        </div>
+        <div>
+            <h3>Dovetail Clapton</h3>
+            <p>
+            Introducing Dovetail Clapton, a sister bar that echoes the soulful essence of the original Covent Garden hideaway.
+            </p>
+            <p>
+            In the heart of Clapton, this spacious venue embraces the same intimate charm, inviting patrons to revel in
+            creativity, camaraderie, and exceptional libations. Whether you seek refuge from the city’s frenzy or celebrate life’s
+            moments, Dovetail Clapton promises an expansive oasis where good company and great drinks flourish. 
+            </p>
+            <p className="paddedTop">
+                <Link to="/clapton" className="buttonLink">Visit Clapton</Link>
+            </p>
+        </div>
+    </>),
+
     overviewContent: (<>
         <IntroSection title={name}>
             <p>Nestled in the heart of Clapton, a stone’s throw away from Hackney’s vibrant nightlife scene, you’ll discover Dovetail Clapton – a spacious bar that beckons both locals and curious wanderers alike.</p>

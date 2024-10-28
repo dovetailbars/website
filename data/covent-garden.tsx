@@ -32,6 +32,27 @@ export default {
         </>)
     },
 
+    homePageSpotlight: (
+    <>
+        <div>
+            <h3>Dovetail Covent Garden</h3>
+            <p>
+            Nestled in the heart of London’s West End, Dovetail Bar awaits those seeking a cozy and clandestine
+            escape. In collaboration with RedFarm, this intimate spot harmoniously blends creativity and cocktails,
+            inviting patrons to unwind and savor the art of good company.
+            </p>
+            <p>
+            Discover Dovetail Bar, where innovation meets charm in a welcoming setting. 
+            </p>
+            <p className="paddedTop">
+                <Link to="/covent-garden" className="buttonLink">Visit Covent Garden</Link>
+            </p>
+        </div>
+        <div>
+            <img src="/images/Dovetail-X-Ferrand-58-Large.jpg" className="sideBySide" />
+        </div>
+    </>),
+
     overviewContent: (<>
         <IntroSection title={name}>
             <p>
