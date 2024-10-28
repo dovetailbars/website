@@ -33,6 +33,7 @@ export function Layout({ children, hero = null, footerContent, bookNowMenuItem =
                     <li><Link to="/gallery">Gallery</Link></li>
                     <li><Link to="/private-hire">Private Hire</Link></li>
                     <li><Link to="/cocktail-making-class">Masterclasses</Link></li>
+                    <li><Link to="/whats-on">What's On</Link></li>
                 </ul>
                 <Link to="/bookings" className="buttonLink">Book Now</Link>
             </nav>

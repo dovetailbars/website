@@ -13,6 +13,7 @@ import BarPrivateHire from "./pages/bars/PrivateHire";
 
 import ScrollToTop from "./components/ScrollToTop";
 import Gallery from "./pages/Gallery";
+import WhatsOn from "./pages/WhatsOn";
 
 export default function Routes() {
 
@@ -29,6 +30,7 @@ export default function Routes() {
         <Route path="/masterclasses" element={<Navigate replace to="/cocktail-making-class" />} />
         <Route path="/bookings" element={<Bookings />} />
         <Route path="/bookings/confirmation" element={<BookingConfirmation />} />
+        <Route path="/whats-on" element={<WhatsOn />} />
 
         <Route path="/:barId" element={<BarHome />}  />
         <Route path="/:barId/bookings" element={<BarBookings />} />
