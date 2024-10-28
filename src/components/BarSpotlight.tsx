@@ -27,7 +27,7 @@ export default function (props: {
 
     {props.imagePosition === "right" && (
     <div>
-        <img src={spotlightImage}  className="sideBySide" />
+        <img src={spotlightImage} />
     </div>
     )}
     </SplitContent>

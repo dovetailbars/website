@@ -70,7 +70,7 @@ export default {
                 </p>
             </div>
             <div>
-                <img src="/images/clapton.jpg" alt="Private Hire" className="sideBySide" />
+                <img src="/images/clapton.jpg" alt="Private Hire" />
             </div>
         </SplitContent>
     </>)

@@ -77,7 +77,7 @@ export default {
                 <Link to="/covent-garden/private-hire" className="buttonLink">See the space</Link>
             </div>
             <div>
-                <img src="/images/Dovetail-X-Ferrand-58-Large.jpg" alt="Private Hire" className="sideBySide" />
+                <img src="/images/Dovetail-X-Ferrand-58-Large.jpg" alt="Private Hire" />
             </div>
         </SplitContent>
     </>),

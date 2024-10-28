@@ -347,12 +347,6 @@ main {
 
 }
 
-img .sideBySide {
-  width: 100%;
-  max-width: 500px;
-  max-height: 333px;
-}
-
 .fullWidth {
   width: 60vw;
 }
