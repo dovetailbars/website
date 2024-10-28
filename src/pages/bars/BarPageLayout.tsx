@@ -5,7 +5,7 @@ export default function({ barData, children, bookNowMenuItem }: { barData: BarDa
     const footer = <BarFooterContent openingHours={barData.openingHours} location={barData.location} />;
 
     return (
-        <Layout hero={barData.heroContent} footerContent={footer}  bookNowMenuItem={bookNowMenuItem}>
+        <Layout hero={barData.heroContent} footerContent={footer} bookNowMenuItem={bookNowMenuItem}>
             { children }
         </Layout>
     );

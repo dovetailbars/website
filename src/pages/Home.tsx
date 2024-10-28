@@ -11,7 +11,7 @@ export default function() {
             <img src="/images/logo-white.png" alt="Dovetail" className="heroLogo" />
             <h1 className="title">Dovetail</h1>
             <h2>
-                <Link to="/covent-garden">Covent Garden</Link> | <Link to="/clapton">Clapton</Link>
+                <Link to="/covent-garden">Covent Garden</Link> | <Link to="/clapton">Clapton</Link> | <Link to="/empire-casino">Empire Casino</Link>
             </h2>
         </>)
     };
@@ -35,7 +35,7 @@ export default function() {
             <div className="centeredContent">
                 <h2 id="bars" className="sectionTitle">Our Bars</h2>
 
-                <SplitContent>                
+                <SplitContent>
                     <div>
                         <h3>Dovetail Covent Garden</h3>
                         <p>
@@ -51,13 +51,13 @@ export default function() {
                         </p>
                     </div>
                     <div>
-                        <img src="/images/Dovetail-X-Ferrand-58-Large.jpg" alt="Private Hire" className="sideBySide" />
+                        <img src="/images/Dovetail-X-Ferrand-58-Large.jpg" className="sideBySide" />
                     </div>
                 </SplitContent>
 
                 <SplitContent>
                     <div>
-                        <img src="/images/clapton.jpg" alt="Private Hire" />
+                        <img src="/images/clapton.jpg" />
                     </div>
                     <div>
                         <h3>Dovetail Clapton</h3>
@@ -72,6 +72,24 @@ export default function() {
                         <p className="paddedTop">
                             <Link to="/clapton" className="buttonLink">Visit Clapton</Link>
                         </p>
+                    </div>
+                </SplitContent>
+
+                <SplitContent>                
+                    <div>
+                        <h3>Dovetail Empire Casino</h3>
+                        <p>
+                            Dovetail's newest offering is a joint venture with Empire Casino, that sees us rebranding their balcony bar in time for Summer.
+                        </p>
+                        <p>
+                            With views of the bustling crowds in Leicester Square, it's the perfect place to enjoy a spritz before coming inside for an evening of live DJs and perfectly crafted cocktails.
+                        </p>
+                        <p className="paddedTop">
+                            <Link to="/empire-casino" className="buttonLink">Visit Empire Casino</Link>
+                        </p>
+                    </div>
+                    <div>
+                        <img src="/images/empire-casino.png" className="sideBySide" />
                     </div>
                 </SplitContent>
 
