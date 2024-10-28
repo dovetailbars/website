@@ -18,11 +18,8 @@ export default function (props: {
     )}
 
     <div>
-        <h3>{ venueName }</h3>
+        <h3><Link to={url} className="tightButtonLink">{venueName}</Link></h3>
         {spotlightText}
-        <p className="paddedTop">
-            <Link to={url} className="buttonLink">Visit {venueName}</Link>
-        </p>
     </div>
 
     {props.imagePosition === "right" && (
