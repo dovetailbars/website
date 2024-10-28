@@ -26,6 +26,9 @@ export default function Footer({ children = null }: Props) {
                 {DovetailInfo.email}<br />
                 {DovetailInfo.phone}
             </p>
+            <p>
+                <Link to="/work-with-us">Work With Us</Link>
+            </p>
         </section>
     </>);
 

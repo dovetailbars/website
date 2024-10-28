@@ -10,10 +10,11 @@ import CocktailMakingClass from './pages/CocktailMakingClass';
 import BarHome from "./pages/bars/Home";
 import BarBookings from "./pages/bars/Bookings";
 import BarPrivateHire from "./pages/bars/PrivateHire";
-
-import ScrollToTop from "./components/ScrollToTop";
 import Gallery from "./pages/Gallery";
 import WhatsOn from "./pages/WhatsOn";
+import WorkWithUs from "./pages/WorkWithUs";
+
+import ScrollToTop from "./components/ScrollToTop";
 
 export default function Routes() {
 
@@ -31,6 +32,7 @@ export default function Routes() {
         <Route path="/bookings" element={<Bookings />} />
         <Route path="/bookings/confirmation" element={<BookingConfirmation />} />
         <Route path="/whats-on" element={<WhatsOn />} />
+        <Route path="/work-with-us" element={<WorkWithUs />} />
 
         <Route path="/:barId" element={<BarHome />}  />
         <Route path="/:barId/bookings" element={<BarBookings />} />
