@@ -20,7 +20,7 @@ export default {
         "Sunday": "5pm – 11:30 pm"
     },
 
-    location: "2nd Floor, 9 Russell St, London WC2B 5HZ",
+    location: "Balcony Bar, 5-6 Leicester Square, London WC2H 7NA",
 
     heroContent: {
         image: "/images/DTB-Initial-Cocktail-Shoot-LR-012-sm.jpg",
