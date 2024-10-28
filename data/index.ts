@@ -3,8 +3,8 @@ import CoventGardenData from './covent-garden';
 import EmpireCasinoData from './empire-casino';
 
 const data = [
-    { id: 'clapton', data: ClaptonData },
     { id: 'covent-garden', data: CoventGardenData },
+    { id: 'clapton', data: ClaptonData },
     { id: 'empire-casino', data: EmpireCasinoData },
 ];
 

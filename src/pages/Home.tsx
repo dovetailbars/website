@@ -1,11 +1,13 @@
 import { Layout } from "../components/Layout";
 import { Link } from "react-router-dom";
 import IntroSection from "../components/IntroSection";
-import SplitContent from "../components/SplitContent";
 import InstagramEmbed from "../components/InstagramEmbed";
 import BarSpotlight from "../components/BarSpotlight";
+import { getAllBars } from "../../data";
 
 export default function() {
+    const allBars = getAllBars();
+
     const hero = {
         image: "/images/DTB-Initial-Cocktail-Shoot-LR-012-sm.jpg",
         content: (<>
@@ -17,9 +19,14 @@ export default function() {
         </>)
     };
 
+    const barSpotlightList = allBars.map((barData, index) => {
+        const position = index % 2 === 0 ? "right" : "left";
+        return (<BarSpotlight key={barData.id} barId={barData.id} imagePosition={position} />);
+    });
+
     return (<>
         <Layout hero={hero}>
-            <IntroSection title="Discover Dovetail">
+            <IntroSection title="We are Dovetail">
                 <p>
                     Discover Dovetail Bars, a collection of hidden gems that blend innovation with libations.
                     From the original Covent Garden spot, nestled in London’s West End, to its spirited sibling,
@@ -34,12 +41,8 @@ export default function() {
             <section className="secondary">
 
             <div className="centeredContent">
-                <h2 id="bars" className="sectionTitle">Our Bars</h2>
-
-                <BarSpotlight barId="covent-garden" imagePosition="right" />
-                <BarSpotlight barId="clapton" imagePosition="left" />
-                <BarSpotlight barId="empire-casino" imagePosition="right" />
-
+                <h2 id="bars" className="sectionTitle">The Bars</h2>
+                { barSpotlightList }
             </div>
             </section>
 

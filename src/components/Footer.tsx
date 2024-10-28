@@ -7,7 +7,7 @@ type Props = {
 };
 
 const allBars = getAllBars();
-const allBarLinks = allBars.map(bar => <><Link key={bar.id} to={`/${bar.id}`}>London - {bar.venueName}</Link><br/></>);
+const allBarLinks = allBars.map(bar => <><Link key={'footer-link-' + bar.id} to={`/${bar.id}`}>London - {bar.venueName}</Link><br /></>);
 
 export default function Footer({ children = null }: Props) {
     const defaultFooterContent = (<>

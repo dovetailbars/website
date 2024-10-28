@@ -18,7 +18,7 @@ export default function (props: {
     )}
 
     <div>
-        <h3>{ name }</h3>
+        <h3>{ venueName }</h3>
         {spotlightText}
         <p className="paddedTop">
             <Link to={url} className="buttonLink">Visit {venueName}</Link>
