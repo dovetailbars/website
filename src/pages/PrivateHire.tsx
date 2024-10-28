@@ -1,7 +1,7 @@
 import { Layout } from "../components/Layout";
 import StandardHero from "../components/StandardHero";
 import { ContactForm } from "../components/ContactForm";
-import DesignMyNight from "../components/DesignMyNight";
+import DesignMyNight, { AllVenueDesignMyNight } from "../components/DesignMyNight";
 
 export default function() {
     const hero = {
@@ -28,14 +28,8 @@ export default function() {
                 </div>
             </section>
 
-            <section className="primary">                
-                
-            <DesignMyNight 
-                    venueId="660d42467122fe5177534b13,64d62f0640e99c3d6732462e,671909df81884a4d4032ffca" 
-                    gtmCode="GTM-MQ6Z6QJ7"
-                    returnUrl="https://dovetailbars.co.uk/bookings/confirmation"
-                />
-
+            <section className="primary">
+                <AllVenueDesignMyNight />
             </section>
         </Layout>
     );

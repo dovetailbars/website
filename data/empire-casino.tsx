@@ -15,9 +15,7 @@ export default {
     },
 
     openingHours: {
-        "Monday to Friday": "5pm – 12.30am",
-        "Saturday": "2pm – 12:30 am",
-        "Sunday": "5pm – 11:30 pm"
+        "Monday to Sunday": "12pm – 12.00am",
     },
 
     location: "Balcony Bar, 5-6 Leicester Square, London WC2H 7NA",
