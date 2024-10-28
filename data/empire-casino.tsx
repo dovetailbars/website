@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom";
 import IntroSection from "../src/components/IntroSection";
 
-const name = "Dovetail Empire Casino";
+const id = "empire-casino";
+const venueName = "Empire Casino";
+const name = "Dovetail " + venueName;
 
 export default {
-    name: name,
+    id, name, venueName,
     
     googleMapsLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.1279768651034!2d-0.1329298219507423!3d51.51086807181415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604d208c64f53%3A0x3be1912a868e5914!2sEmpire%20Casino!5e0!3m2!1sen!2suk!4v1730112526504!5m2!1sen!2suk",
     
@@ -29,23 +31,15 @@ export default {
         </>)
     },
 
-    homePageSpotlight: (
+    spotlightImage: "/images/empire-casino.png",
+    spotlightText: (
     <>
-        <div>
-            <h3>Dovetail Empire Casino</h3>
-            <p>
-                Dovetail's newest offering is a joint venture with Empire Casino, that sees us rebranding their balcony bar in time for Summer.
-            </p>
-            <p>
-                With views of the bustling crowds in Leicester Square, it's the perfect place to enjoy a spritz before coming inside for an evening of live DJs and perfectly crafted cocktails.
-            </p>
-            <p className="paddedTop">
-                <Link to="/empire-casino" className="buttonLink">Visit Empire Casino</Link>
-            </p>
-        </div>
-        <div>
-            <img src="/images/empire-casino.png" className="sideBySide" />
-        </div>
+        <p>
+            Dovetail's newest offering is a joint venture with Empire Casino, that sees us rebranding their balcony bar in time for Summer.
+        </p>
+        <p>
+            With views of the bustling crowds in Leicester Square, it's the perfect place to enjoy a spritz before coming inside for an evening of live DJs and perfectly crafted cocktails.
+        </p>
     </>),
 
     overviewContent: (<>

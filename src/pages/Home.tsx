@@ -36,9 +36,9 @@ export default function() {
             <div className="centeredContent">
                 <h2 id="bars" className="sectionTitle">Our Bars</h2>
 
-                <BarSpotlight barId="covent-garden" />
-                <BarSpotlight barId="clapton" />
-                <BarSpotlight barId="empire-casino" />
+                <BarSpotlight barId="covent-garden" imagePosition="right" />
+                <BarSpotlight barId="clapton" imagePosition="left" />
+                <BarSpotlight barId="empire-casino" imagePosition="right" />
 
             </div>
             </section>

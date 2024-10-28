@@ -3,10 +3,12 @@ import IntroSection from "../src/components/IntroSection";
 import SplitContent from "../src/components/SplitContent";
 import { ContactForm } from "../src/components/ContactForm";
 
-const name = "Dovetail Covent Garden";
+const id = "covent-garden";
+const venueName = "Covent Garden";
+const name = "Dovetail " + venueName;
 
 export default {
-    name: name,
+    id, name, venueName,
     
     googleMapsLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.047340592473!2d-0.12412972225924557!3d51.51234747181459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760544d0fcad43%3A0xc6b47b94aca920c8!2sDovetail%20Bar%20-%20Covent%20Garden!5e0!3m2!1sen!2suk!4v1713575022090!5m2!1sen!2suk",
     
@@ -32,25 +34,17 @@ export default {
         </>)
     },
 
-    homePageSpotlight: (
+    spotlightImage: "/images/Dovetail-X-Ferrand-58-Large.jpg",
+    spotlightText: (
     <>
-        <div>
-            <h3>Dovetail Covent Garden</h3>
-            <p>
+        <p>
             Nestled in the heart of London’s West End, Dovetail Bar awaits those seeking a cozy and clandestine
             escape. In collaboration with RedFarm, this intimate spot harmoniously blends creativity and cocktails,
             inviting patrons to unwind and savor the art of good company.
-            </p>
-            <p>
+        </p>
+        <p>
             Discover Dovetail Bar, where innovation meets charm in a welcoming setting. 
-            </p>
-            <p className="paddedTop">
-                <Link to="/covent-garden" className="buttonLink">Visit Covent Garden</Link>
-            </p>
-        </div>
-        <div>
-            <img src="/images/Dovetail-X-Ferrand-58-Large.jpg" className="sideBySide" />
-        </div>
+        </p>
     </>),
 
     overviewContent: (<>

@@ -4,7 +4,9 @@ interface HeroData {
 }
 
 interface BarData {
+    id: string;
     name: string;
+    venueName: string;
     openingHours: OpeningHours;
     googleMapsLink: string;
     designMyNightConfig: DesignMyNightConfig;
@@ -13,7 +15,8 @@ interface BarData {
 
     heroContent: HeroData;
 
-    homePageSpotlight: JSX.Element;
+    spotlightImage: string;
+    spotlightText: JSX.Element;
     overviewContent: JSX.Element;
     privateHireContent?: JSX.Element;
 }
