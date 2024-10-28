@@ -362,11 +362,32 @@ main {
     & .paddedTop {
       padding-top: var(--spacer);
     }
+
+    & .pagewide {
+      width: 100%;
+      background-size: cover;
+      background-position-x: right;
+      background-position-y: center;
+      background-repeat: no-repeat;
+      min-height: 40vh;
+
+      & .centerAligned {
+        padding-top: 3vh;
+      }
+
+      & .spotlightText {
+        padding: var(--spacer);
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 50px;
+        color: white;
+        text-align: center;
+      }
+    }
   }
 
 }
 
-.fullWidth {
+.menufullWidth {
   width: 60vw;
 }
 
@@ -610,7 +631,6 @@ textarea {
 		transform: translateY(0px) translateX(-50%) scaleX(1.3);
 	}
 }
-
 
 /* gallery */
 

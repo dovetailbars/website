@@ -4,6 +4,7 @@ import IntroSection from "../components/IntroSection";
 import InstagramEmbed from "../components/InstagramEmbed";
 import BarSpotlight from "../components/BarSpotlight";
 import { getAllBars } from "../../data";
+import BarSpotlightVisual from "../components/BarSpotlightVisual";
 
 export default function() {
     const allBars = getAllBars();
@@ -21,7 +22,7 @@ export default function() {
 
     const barSpotlightList = allBars.map((barData, index) => {
         const position = index % 2 === 0 ? "right" : "left";
-        return (<BarSpotlight key={barData.id} barId={barData.id} imagePosition={position} />);
+        return (<BarSpotlightVisual key={barData.id} barId={barData.id} imagePosition={position} />);
     });
 
     return (<>
@@ -39,11 +40,8 @@ export default function() {
             </IntroSection>            
 
             <section className="secondary">
-
-            <div className="centeredContent">
                 <h2 id="bars" className="sectionTitle">The Bars</h2>
-                { barSpotlightList }
-            </div>
+                { barSpotlightList }                
             </section>
 
             <section className="primary">

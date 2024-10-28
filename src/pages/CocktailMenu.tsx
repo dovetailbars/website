@@ -11,7 +11,7 @@ export default function() {
         <Layout hero={hero}>
             <section className="secondary">
                 <div className="centeredContent centerAligned">
-                    <img src="/images/Dovetail-Menu.jpg" alt="Cocktail Menu" className="fullWidth" />
+                    <img src="/images/Dovetail-Menu.jpg" alt="Cocktail Menu" className="menufullWidth" />
                 </div>
             </section>
         </Layout>
