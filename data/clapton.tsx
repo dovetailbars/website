@@ -26,16 +26,9 @@ export default {
     },
 
     location: "11 Chatsworth Road, Clapton, London E5 0LH",
-
-    heroContent: {
-        image: "/images/clapton.jpg",
-        content: (<>
-            <img src="/images/logo-white.png" alt="Dovetail" className="heroLogo" />
-            <h1 className="title">{name}</h1>
-        </>),
-    },
-
+    heroImage: "/images/clapton.jpg",
     spotlightImage: "/images/clapton.jpg",
+    
     spotlightText: (
     <>
         <p>

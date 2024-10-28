@@ -1,17 +1,20 @@
 import { Link } from "react-router-dom";
 import DovetailInfo from "../../data/dovetail-info";
+import { getAllBars } from "../../data";
 
 type Props = {
     children?: React.ReactNode;
 };
+
+const allBars = getAllBars();
+const allBarLinks = allBars.map(bar => <><Link key={bar.id} to={`/${bar.id}`}>London - {bar.venueName}</Link><br/></>);
 
 export default function Footer({ children = null }: Props) {
     const defaultFooterContent = (<>
         <section>
             <h2>Locations</h2>
             <p>
-                <Link to="/covent-garden">London - Covent Garden</Link><br />
-                <Link to="/clapton">London - Clapton</Link>
+                { allBarLinks }
             </p>
             <p>
                 <Link to={{ pathname: "/", hash: "#bars" }} reloadDocument>Visit Our Bars</Link>

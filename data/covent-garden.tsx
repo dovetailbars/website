@@ -25,16 +25,9 @@ export default {
     },
 
     location: "2nd Floor, 9 Russell St, London WC2B 5HZ",
-
-    heroContent: {
-        image: "/images/DTB-Initial-Cocktail-Shoot-LR-012-sm.jpg",
-        content: (<>
-            <img src="/images/logo-white.png" alt="Dovetail" className="heroLogo" />
-            <h1 className="title">{name}</h1>
-        </>)
-    },
-
+    heroImage: "/images/DTB-Initial-Cocktail-Shoot-LR-012-sm.jpg",
     spotlightImage: "/images/Dovetail-X-Ferrand-58-Large.jpg",
+    
     spotlightText: (
     <>
         <p>

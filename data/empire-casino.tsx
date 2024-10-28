@@ -22,16 +22,9 @@ export default {
     },
 
     location: "Balcony Bar, 5-6 Leicester Square, London WC2H 7NA",
-
-    heroContent: {
-        image: "/images/DTB-Initial-Cocktail-Shoot-LR-012-sm.jpg",
-        content: (<>
-            <img src="/images/logo-white.png" alt="Dovetail" className="heroLogo" />
-            <h1 className="title">{name}</h1>
-        </>)
-    },
-
+    heroImage: "/images/DTB-Initial-Cocktail-Shoot-LR-012-sm.jpg",
     spotlightImage: "/images/empire-casino.png",
+    
     spotlightText: (
     <>
         <p>

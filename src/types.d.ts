@@ -13,8 +13,7 @@ interface BarData {
 
     location: string;
 
-    heroContent: HeroData;
-
+    heroImage: string;
     spotlightImage: string;
     spotlightText: JSX.Element;
     overviewContent: JSX.Element;
