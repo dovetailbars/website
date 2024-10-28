@@ -155,16 +155,13 @@ nav {
 
 .tightButtonLink {
   display: block;
-  width: max-content;
+  width: fit-content;
   margin: auto;
-  line-height: 1rem;
-  padding: 1rem 2rem;
-  border: 1px solid var(--secondary-color);
+  line-height: 1.5rem;
   color: var(--secondary-color);
   cursor: pointer;
   text-transform: uppercase;
   transition: 0.5s;
-  text-wrap: nowrap;
   
   &:hover {
     box-shadow: inset 0 -3.25em 0 0 var(--secondary-color);
