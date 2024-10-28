@@ -1,6 +1,7 @@
 import { Layout } from "../components/Layout";
 import StandardHero from "../components/StandardHero";
 import { ContactForm } from "../components/ContactForm";
+import DesignMyNight from "../components/DesignMyNight";
 
 export default function() {
     const hero = {
@@ -22,23 +23,19 @@ export default function() {
                         You can create a unique and personal experience for birthdays, private events, and cocktail masterclasses.
                     </p>
                     <p>
-                        Perfect for:
+                        Perfect for birthdays, private events, and cocktail masterclasses.
                     </p>
-                    <ul>
-                        <li>Birthdays</li>
-                        <li>Private Events</li>
-                        <li>Cocktail Masterclasses</li>
-                    </ul>
                 </div>
             </section>
 
             <section className="primary">                
-                <div id="contact" className="centeredContent centerAligned">
-                    <p>
-                        Please use the form below to inquire about private hire.
-                    </p>
-                    <ContactForm />
-                </div>
+                
+            <DesignMyNight 
+                    venueId="660d42467122fe5177534b13,64d62f0640e99c3d6732462e,671909df81884a4d4032ffca" 
+                    gtmCode="GTM-MQ6Z6QJ7"
+                    returnUrl="https://dovetailbars.co.uk/bookings/confirmation"
+                />
+
             </section>
         </Layout>
     );
