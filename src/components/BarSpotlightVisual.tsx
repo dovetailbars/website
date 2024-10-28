@@ -13,7 +13,7 @@ export default function (props: {
     <>
     <div className="pagewide" 
         style={{ 
-          backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.08)), url(${spotlightImage})` 
+          backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url(${spotlightImage})` 
         }}
     >
       <div className="centerAligned">

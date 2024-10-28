@@ -157,7 +157,7 @@ nav {
   display: block;
   width: fit-content;
   margin: auto;
-  line-height: 1.5rem;
+  line-height: 2rem;
   color: var(--secondary-color);
   cursor: pointer;
   text-transform: uppercase;
@@ -363,19 +363,17 @@ main {
     & .pagewide {
       width: 100%;
       background-size: cover;
-      background-position-x: right;
-      background-position-y: center;
+      background-position: center;
       background-repeat: no-repeat;
-      min-height: 40vh;
+      min-height: 50vh;
 
       & .centerAligned {
-        padding-top: 3vh;
+        padding-top: 15vh;
       }
 
       & .spotlightText {
         padding: 1vw;
-        background-color: rgba(0, 0, 0, 0.7);
-        border-radius: 25px;
+        background-color: rgba(0, 0, 0, 0.8);
         color: white;
         text-align: center;
       }
