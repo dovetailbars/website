@@ -35,7 +35,7 @@ export function Layout({ children, hero = null, footerContent, bookNowMenuItem =
                     <li><Link to="/cocktail-making-class">Masterclasses</Link></li>
                     <li><Link to="/whats-on">What's On</Link></li>
                 </ul>
-                <Link to="/bookings" className="buttonLink">Book Now</Link>
+                { bookNowMenuItem && <Link to="/bookings" className="buttonLink">Book Now</Link> }
             </nav>
             <CarouselBackground items={carouselItems}>
                 <div className="hero">
