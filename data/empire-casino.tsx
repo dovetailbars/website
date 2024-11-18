@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import IntroSection from "../src/components/IntroSection";
+import SplitContent from "../src/components/SplitContent";
 
 const id = "empire-casino";
 const venueName = "Empire Casino";
@@ -22,7 +23,7 @@ export default {
     },
 
     location: "Balcony Bar, 5-6 Leicester Square, London WC2H 7NA",
-    heroImage: "/images/DTB-Initial-Cocktail-Shoot-LR-012-sm.jpg",
+    heroImage: "/images/empire-hero2-sm.jpg",
     spotlightImage: "/images/empire-casino.png",
     
     spotlightText: (
@@ -48,6 +49,16 @@ export default {
         <section className="primary">
             <Link to="bookings" className="buttonLink">Book Now</Link>
         </section>
+
+        
+        <SplitContent>
+            <div>
+                <img src="/images/empire1.jpg" alt="Private Hire" />
+            </div>
+            <div>
+                <img src="/images/empire2.jpg" alt="Private Hire" />
+            </div>
+        </SplitContent>
     </>)
 
 } as BarData;
