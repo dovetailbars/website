@@ -123,6 +123,7 @@ nav {
   height: 100svh;
 
   & .heroLogo {
+    
     min-width: 120px;
     max-width: 80%;
     max-height: 40vh;
@@ -132,6 +133,19 @@ nav {
 
 .homeHeader .hero {
   padding-top: 25vh;
+}
+
+
+@media (max-width: 248px) {
+  .homeHeader .hero {
+    padding-top: 45vh;
+  }
+}
+
+@media (min-width: 249px) and (max-width: 767px) {
+  .homeHeader .hero {
+    padding-top: 35vh;
+  }
 }
 
 .buttonLink {
