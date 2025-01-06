@@ -38,7 +38,9 @@ export default function Routes() {
         <Route path="/:barId/bookings" element={<BarBookings />} />
         <Route path="/:barId/private-hire" element={<BarPrivateHire />}  />
 
+        {/* Redirects */}
         <Route path="*" element={<Navigate to="/" />} />
+        <Route path="/empire-casino" element={<Navigate to="/leicester-square" />} />
       </ReactRoutes>
     </BrowserRouter>
     </>

@@ -31,7 +31,7 @@ export function ContactForm() {
                 <select name="venue" id="venue" required>
                     <option value="Covent Garden" selected>Covent Garden</option>
                     <option value="Clapton">Clapton</option>
-                    <option value="Clapton">Empire Casino</option>
+                    <option value="Leicester Square">Leicester Square</option>
                 </select>
 
                 <label htmlFor="date" className="invisible">Date</label>

@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 import IntroSection from "../src/components/IntroSection";
 import SplitContent from "../src/components/SplitContent";
 
-const id = "empire-casino";
-const venueName = "Empire Casino";
+const id = "leicester-square";
+const venueName = "Leicester Square";
 const name = "Dovetail " + venueName;
 
 export default {
