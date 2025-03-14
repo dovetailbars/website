@@ -5,13 +5,13 @@ import { Link } from "react-router-dom";
 
 export default function() {
     const hero = {
-        image: "/images/DTB-Initial-Cocktail-Shoot-LR-052.jpg",
+        image: "/images/DTB-Initial-Cocktail-Shoot-LR-052.webp",
         content: (<StandardHero heading="Bookings"/>)
     };
 
     return (        
         <Layout hero={hero} bookNowMenuItem={false}>
-            <section className="secondary">
+            <section id="booking" className="secondary">
                 <h2>Make a reservation</h2>
 
                 <AllVenueDesignMyNight />

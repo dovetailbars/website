@@ -2,6 +2,9 @@ import { Link } from "react-router-dom";
 import SplitContent from "./SplitContent";
 import { getBarData } from "../../data";
 
+import "./BarSpotlightVisual.css";
+
+
 export default function (props: {
   barId: string;
   imagePosition: "left" | "right";
@@ -11,17 +14,21 @@ export default function (props: {
   
   return (
     <>
-    <div className="pagewide" 
-        style={{ 
-          backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url(${spotlightImage})` 
-        }}
-    >
-      <div className="centerAligned">
-      <div className="spotlightText">
-      <h3><Link to={url} className="tightButtonLink">{venueName}</Link></h3>
-      {spotlightText}
+    <div className="barSpotlightContainer fullHeight">
+      <div className="barSpotlight fullHeight" 
+          style={{ 
+            backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url(${spotlightImage})` 
+          }}
+          >
         </div>
-      </div>
+        <div className="centerAligned">
+        <Link to={url}>
+          <div className="spotlightText">
+            <h3>{venueName}</h3>
+            {spotlightText}
+          </div>
+        </Link>
+      </div>  
     </div>
 
     </>

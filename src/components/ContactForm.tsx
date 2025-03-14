@@ -1,4 +1,5 @@
 import { useForm, ValidationError } from "@formspree/react";
+import "./ContactForm.css";
 
 export function ContactForm() {
     const [state, handleSubmit] = useForm("mbjnzzgz");
@@ -28,11 +29,13 @@ export function ContactForm() {
             <ValidationError prefix="Company" field="company" errors={state.errors} />
 
             <div className="formGroup">
-                <select name="venue" id="venue" required>
-                    <option value="Covent Garden" selected>Covent Garden</option>
-                    <option value="Clapton">Clapton</option>
-                    <option value="Clapton">Empire Casino</option>
-                </select>
+                <div className="selectWrapper">
+                    <select name="venue" id="venue" required>
+                        <option value="Covent Garden" selected>Covent Garden</option>
+                        <option value="Clapton">Clapton</option>
+                        <option value="Clapton">Leicester Square</option>
+                    </select>
+                </div>
 
                 <label htmlFor="date" className="invisible">Date</label>
                 <input id="date" type="date" name="date" placeholder="Date" required />

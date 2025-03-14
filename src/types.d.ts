@@ -10,6 +10,7 @@ interface BarData {
     openingHours: OpeningHours;
     googleMapsLink: string;
     designMyNightConfig: DesignMyNightConfig;
+    menuURL?: string;
 
     location: string;
 
@@ -23,7 +24,7 @@ interface BarData {
 interface DesignMyNightConfig {
     venueId: string;
     gtmCode: string;
-    returnUrl: string;
+    // returnUrl: string;
 }
 
 interface OpeningHours {

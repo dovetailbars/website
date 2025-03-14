@@ -10,6 +10,8 @@ import CocktailMakingClass from './pages/CocktailMakingClass';
 import BarHome from "./pages/bars/Home";
 import BarBookings from "./pages/bars/Bookings";
 import BarPrivateHire from "./pages/bars/PrivateHire";
+import BarMenu from "./pages/bars/BarMenu";
+import BarGallery from "./pages/bars/BarGallery";
 import Gallery from "./pages/Gallery";
 import WhatsOn from "./pages/WhatsOn";
 import WorkWithUs from "./pages/WorkWithUs";
@@ -37,6 +39,8 @@ export default function Routes() {
         <Route path="/:barId" element={<BarHome />}  />
         <Route path="/:barId/bookings" element={<BarBookings />} />
         <Route path="/:barId/private-hire" element={<BarPrivateHire />}  />
+        <Route path="/:barId/menu" element={<BarMenu />}  />
+        <Route path="/:barId/gallery" element={<BarGallery />}  />
 
         <Route path="*" element={<Navigate to="/" />} />
       </ReactRoutes>

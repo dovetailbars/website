@@ -4,7 +4,7 @@ import StandardHero from "../components/StandardHero";
 
 export default function() {
     const hero = {
-        image: "/images/DTB-Initial-Cocktail-Shoot-LR-052.jpg",
+        image: "/images/DTB-Initial-Cocktail-Shoot-LR-052.webp",
         content: (<StandardHero heading="What's On"/>)
     };
 
