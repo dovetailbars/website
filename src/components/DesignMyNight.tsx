@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import "./DesignMyNight.css";
 
 export default function DesignMyNight({ venueId, gtmCode, returnUrl}: DesignMyNightConfig) {
     const inputRef = useRef(null);
@@ -26,7 +27,7 @@ export default function DesignMyNight({ venueId, gtmCode, returnUrl}: DesignMyNi
     <link 
         rel="stylesheet" 
         type="text/css" 
-        href="https://onsass.designmynight.com/?background-color=%23FFFFFF&primary-color=%236DA8A6&body-text-color=%23000000&outer-border-color=gray"></link>
+        href="https://onsass.designmynight.com/?theme=dark"></link>
     
     <div className="designMyNightTarget" ref={inputRef}></div>                		
     </>);
