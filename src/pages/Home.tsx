@@ -1,8 +1,6 @@
 import { Layout } from "../components/Layout";
 import { Link } from "react-router-dom";
 import IntroSection from "../components/IntroSection";
-import InstagramEmbed from "../components/InstagramEmbed";
-import BarSpotlight from "../components/BarSpotlight";
 import { getAllBars } from "../../data";
 import BarSpotlightVisual from "../components/BarSpotlightVisual";
 
@@ -39,16 +37,9 @@ export default function() {
                 </p>
             </IntroSection>            
 
-            <section className="secondary">
-                <h2 id="bars" className="sectionTitle">The Bars</h2>
+            <section id="bars" className="secondary">
                 { barSpotlightList }                
             </section>
-
-            {/* <section className="primary">
-                <div className="centeredContent centerAligned">
-                    <InstagramEmbed handle="dovetailbars" />
-                </div>
-            </section> */}
 
         </Layout>
     </>);
