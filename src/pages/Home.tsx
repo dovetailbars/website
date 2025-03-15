@@ -3,9 +3,11 @@ import { Link } from "react-router-dom";
 import IntroSection from "../components/IntroSection";
 import { getAllBars } from "../../data";
 import BarSpotlightVisual from "../components/BarSpotlightVisual";
+import { useScrollEffects } from "../components/useScrollEffects";
 
 export default function() {
     const allBars = getAllBars();
+    useScrollEffects();
 
     const hero = {
         image: "/images/DTB-Initial-Cocktail-Shoot-LR-012-sm.jpg",
