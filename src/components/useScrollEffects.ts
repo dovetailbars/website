@@ -121,9 +121,11 @@ export function useScrollEffects() {
         };
 
         window.addEventListener("scroll", handleScroll, { passive: true });
+        window.addEventListener("touchmove", handleScroll, { passive: true });
 
         return () => {
             window.removeEventListener("scroll", handleScroll);
+            window.removeEventListener("touchmove", handleScroll);
         };
     }, [snapElements]);
 }
