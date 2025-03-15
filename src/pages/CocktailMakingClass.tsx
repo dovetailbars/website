@@ -23,11 +23,9 @@ export default function() {
                     </p>
                     <p>
                         Our senior bar staff will run you through the recipes, techniques and history behind some of London’s most iconic drinks.
-                        Enjoy a welcome cocktail, followed by 3 drinks of your group’s choosing for just £45 per person.
+                        Enjoy a welcome cocktail, and 3 of our favaourite classics, for just £50 per person.
                     </p>
-                    <p className="paddedTop">
-                        <Link to="/bookings" className="buttonLink">Enquire now</Link>
-                    </p>
+                    <Link to="/bookings" className="buttonLink">Enquire now</Link>
                 </div>
             </SplitContent>
         </Layout>
