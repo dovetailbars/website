@@ -10,7 +10,7 @@ export default function() {
     const hero = {
         image: "/images/DTB-Initial-Cocktail-Shoot-LR-012-sm.jpg",
         content: (<>
-            <img src="/images/logo-white.png" alt="Dovetail" className="heroLogo" />
+            <img src="/images/logo-notext.png" alt="Dovetail" className="heroLogo" />
             <h1 className="title">Dovetail</h1>
             <h2>
                 <Link to="/covent-garden">Covent Garden</Link> | <Link to="/clapton">Clapton</Link> | <Link to="/leicester-square">Leicester Square</Link>
