@@ -29,13 +29,11 @@ export function ContactForm() {
             <ValidationError prefix="Company" field="company" errors={state.errors} />
 
             <div className="formGroup">
-                <div className="selectWrapper">
-                    <select name="venue" id="venue" required>
-                        <option value="Covent Garden" selected>Covent Garden</option>
-                        <option value="Clapton">Clapton</option>
-                        <option value="Clapton">Leicester Square</option>
-                    </select>
-                </div>
+                <select name="venue" id="venue" required>
+                    <option value="Covent Garden" selected>Covent Garden</option>
+                    <option value="Clapton">Clapton</option>
+                    <option value="Leicester Square">Empire Casino</option>
+                </select>
 
                 <label htmlFor="date" className="invisible">Date</label>
                 <input id="date" type="date" name="date" placeholder="Date" required />

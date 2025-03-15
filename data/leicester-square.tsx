@@ -36,14 +36,14 @@ export default {
             Dovetail's newest offering is a joint venture with Empire Casino, that sees us rebranding their balcony bar in time for Summer.
         </p>
         <p>
-            With views of the bustling crowds in Leicester Square, it's the perfect place to enjoy a spritz before coming inside for an evening of perfectly crafted cocktails.
+            With views of the bustling crowds in Leicester Square, it's the perfect place to enjoy a spritz before coming inside for an evening of live DJs and perfectly crafted cocktails.
         </p>
     </>),
 
     overviewContent: (<>
         <IntroSection title={name}>
             <p>
-                Dovetail's newest offering is a joint venture with Leicester Square, that sees us rebranding their balcony bar in time for Summer.
+                Dovetail's newest offering is a joint venture with Empire Casino, that sees us rebranding their balcony bar in time for Summer.
             </p>
             <p>
                 With views of the bustling crowds in Leicester Square, it's the perfect place to enjoy a spritz before coming inside for an evening of live DJs and perfectly crafted cocktails.

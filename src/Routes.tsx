@@ -42,7 +42,9 @@ export default function Routes() {
         <Route path="/:barId/menu" element={<BarMenu />}  />
         <Route path="/:barId/gallery" element={<BarGallery />}  />
 
+        {/* Redirects */}
         <Route path="*" element={<Navigate to="/" />} />
+        <Route path="/empire-casino" element={<Navigate to="/leicester-square" />} />
       </ReactRoutes>
     </BrowserRouter>
     </>
