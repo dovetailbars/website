@@ -1,11 +1,11 @@
 .barSpotlightContainer {
   width: 100%;
-  height: 100dvh;
+  height: 100vh;
   position: relative;
 
   .barSpotlight {
     width: 100%;
-    height: 100dvh;
+    height: 100vh;
     position: absolute;
     background-size: cover;
     background-position: center;
