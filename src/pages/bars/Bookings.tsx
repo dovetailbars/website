@@ -12,13 +12,14 @@ export default function() {
     }
 
     const { name, designMyNightConfig } = data;
-    const { venueId, gtmCode, returnUrl } = designMyNightConfig;
+    const { venueId, gtmCode } = designMyNightConfig;
 
     return (
         <BarPageLayout barData={data} bookNowMenuItem={false}>
-            <section className="reservation">
+            <section id="reservation">
                 <h2>Make a reservation at {name}</h2>
-                <DesignMyNight venueId={venueId} gtmCode={gtmCode} returnUrl={returnUrl} />                		
+                {/* <DesignMyNight venueId={venueId} gtmCode={gtmCode} returnUrl={returnUrl} />                		 */}
+                <DesignMyNight venueId={venueId} gtmCode={gtmCode} />                		
             </section>
         </BarPageLayout>
     );

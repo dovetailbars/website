@@ -1,8 +1,8 @@
 import "./Layout.css";
 import CarouselBackground from './CarouselBackground';
 import Footer from './Footer';
-
 import { Link } from "react-router-dom";
+import { useScrollEffects, useNavState, useHeroMargin } from "./hooks";
 
 type Props = {
     children: React.ReactNode;
@@ -13,12 +13,27 @@ type Props = {
 
 export function Layout({ children, hero = null, footerContent, bookNowMenuItem = true }: Props) {
     const isOnHomePage = window.location.pathname === "/";
-    const isHomePageClassName = isOnHomePage ? "home" : "nav";
-    const headerClassName = isOnHomePage ? "homeHeader" : "header";
+    const navState = isOnHomePage ? useNavState() : "navvis"; 
+    // isOnHomePage && useScrollEffects();
+    useScrollEffects();
+
+
     const heroContent = hero;
+    const isHomePageClassName = `${isOnHomePage ? "home" : "nav"} ${navState}`;
+    const headerClassName = isOnHomePage 
+    ? "header homeHeader" 
+    : heroContent 
+        ? "header" 
+        : "headerNoHero";
+
+    if (heroContent && !isOnHomePage) {
+        useHeroMargin();
+    }
 
     const carouselItems = [
-        heroContent?.image ? { src: heroContent.image, alt: "" } : { src: "/images/DTB-Initial-Cocktail-Shoot-LR-042.jpg", alt: "" }
+        heroContent?.image ? { src: heroContent.image, alt: "" } : { src: "/images/DTB-Initial-Cocktail-Shoot-LR-042.webp", alt: "" },
+        heroContent?.image ? { src: heroContent.image, alt: "" } : { src: "/images/DTB-Masterclass-LR-01.jpg", alt: "" }
+
     ];
 
     return (<>
@@ -33,15 +48,20 @@ export function Layout({ children, hero = null, footerContent, bookNowMenuItem =
                     <li><Link to="/gallery">Gallery</Link></li>
                     <li><Link to="/private-hire">Private Hire</Link></li>
                     <li><Link to="/cocktail-making-class">Masterclasses</Link></li>
-                    <li><Link to="/whats-on">What's On</Link></li>
+                    {/* <li><Link to="/whats-on">What's On</Link></li> */}
                 </ul>
-                { bookNowMenuItem && <Link to="/bookings" className="buttonLink">Book Now</Link> }
+                {/* { bookNowMenuItem && <Link to="/bookings" className="buttonLink">Book Now</Link> } */}
+                <Link to="/bookings#booking" className={`buttonLink ${!bookNowMenuItem ? "bookNo" : "" }`} >
+                    Book Now
+                </Link>
             </nav>
-            <CarouselBackground items={carouselItems}>
-                <div className="hero">
-                    {heroContent.content}
-                </div>
-            </CarouselBackground>
+            {heroContent && (
+                <CarouselBackground items={carouselItems}>
+                    <div className="hero">
+                        {heroContent.content}
+                    </div>
+                </CarouselBackground>
+            )}
         </header>
 
         <main>
@@ -49,7 +69,7 @@ export function Layout({ children, hero = null, footerContent, bookNowMenuItem =
         </main>
 
         <Footer>
-            { footerContent || null }
+                { footerContent || null }
         </Footer>
     </>);
 }

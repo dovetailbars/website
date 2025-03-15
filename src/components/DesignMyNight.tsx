@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
+import "./DesignMyNight.css";
 
-export default function DesignMyNight({ venueId, gtmCode, returnUrl}: DesignMyNightConfig) {
+export default function DesignMyNight({ venueId, gtmCode}: DesignMyNightConfig) {
     const inputRef = useRef(null);
 
     useEffect(() => {
@@ -16,7 +17,7 @@ export default function DesignMyNight({ venueId, gtmCode, returnUrl}: DesignMyNi
         script.setAttribute("monday-first", "true");
         script.setAttribute("locale", "undefined");
         script.setAttribute("google-tag-manager-code", gtmCode);
-        script.setAttribute("return-url", returnUrl);
+        // script.setAttribute("return-url", returnUrl);
 
         inputRef.current.innerHTML = "";
         inputRef.current.appendChild(script);
@@ -26,7 +27,7 @@ export default function DesignMyNight({ venueId, gtmCode, returnUrl}: DesignMyNi
     <link 
         rel="stylesheet" 
         type="text/css" 
-        href="https://onsass.designmynight.com/?background-color=%23FFFFFF&primary-color=%236DA8A6&body-text-color=%23000000&outer-border-color=gray"></link>
+        href="https://onsass.designmynight.com/?theme=dark"></link>
     
     <div className="designMyNightTarget" ref={inputRef}></div>                		
     </>);
@@ -37,7 +38,8 @@ export function AllVenueDesignMyNight() {
         <DesignMyNight 
             venueId="660d42467122fe5177534b13,64d62f0640e99c3d6732462e,671909df81884a4d4032ffca" 
             gtmCode="GTM-MQ6Z6QJ7"
-            returnUrl="https://dovetailbars.co.uk/bookings/confirmation"
+            // returnUrl="https://dovetailbars.co.uk/bookings/confirmation"
+            // commented out because its a POST request
         />
     );
 }

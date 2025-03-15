@@ -9,6 +9,8 @@ const name = "Dovetail " + venueName;
 
 export default {
     id, name, venueName,
+
+    menuURL: "/menus/Dovetail_CG_web.pdf",
     
     googleMapsLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.047340592473!2d-0.12412972225924557!3d51.51234747181459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760544d0fcad43%3A0xc6b47b94aca920c8!2sDovetail%20Bar%20-%20Covent%20Garden!5e0!3m2!1sen!2suk!4v1713575022090!5m2!1sen!2suk",
     
@@ -25,8 +27,8 @@ export default {
     },
 
     location: "2nd Floor, 9 Russell St, London WC2B 5HZ",
-    heroImage: "/images/DTB-Initial-Cocktail-Shoot-LR-012-sm.jpg",
-    spotlightImage: "/images/Dovetail-X-Ferrand-58-Large.jpg",
+    heroImage: "/images/DovetailBar-04.webp",
+    spotlightImage: "/images/DovetailMain49.webp",
     
     spotlightText: (
     <>
@@ -52,14 +54,14 @@ export default {
             <p>
                 Discover Dovetail Bar, the West End’s best kept secret.
             </p>
+                <Link to={{ pathname: "bookings", hash: "#reservation" }} className="buttonLink">Book Now</Link>
         </IntroSection>
-
-        <section className="primary">
-            <Link to="bookings" className="buttonLink">Book Now</Link>
-        </section>
 
         <SplitContent>
             <div>
+                <img src="/images/Dovetail-X-Ferrand-58-Large.jpg" alt="Private Hire" />
+            </div>
+            <div className="framed">
                 <h2>Perfect for private hire</h2>
                 <p>
                     Whether you're planning an intimate gathering, a celebration to remember, or a corporate meeting, Dovetail offers a unique setting that combines the charm of a secret speakeasy with the warmth of hospitality.
@@ -69,18 +71,15 @@ export default {
                 </p>
                 <Link to="/covent-garden/private-hire" className="buttonLink">See the space</Link>
             </div>
-            <div>
-                <img src="/images/Dovetail-X-Ferrand-58-Large.jpg" alt="Private Hire" />
-            </div>
         </SplitContent>
     </>),
 
     privateHireContent: (<>
         <SplitContent>
-            <div>
+            <div className="framed">
                 <h2>The Venue</h2>
                 <p>
-                    Nestled comfortably above the bustling Covent Garden Market, by the West End, The Dovetail Bar is your hideaway for all private affairs. In a hidden room, we serve creative yet unpretentious cocktails in a refined intimate environment. The ultimate hideaway from London’s busy streets, the West End’s best kept secret. 
+                    Nestled dicreetely above the bustling Covent Garden Market, in the heart of the West End, Dovetail Bar is your secret getaway. In a hidden room, we serve creative yet unpretentious cocktails in a refined intimate environment. The ultimate escape from London’s busy streets, the West End’s best kept secret. 
                 </p>
                 <p>
                     Perfect for:

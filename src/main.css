@@ -15,13 +15,15 @@ body {
     border: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-family: "Montserrat", sans-serif;
     line-height: 1.7em;
-}
+    font-family: var(--font-secondary)
 
-h1, h2, h3 {
-  font-family: "Alice", serif;
-  font-weight: 400;
+  }
+  
+  h1, h2, h3 {
+  font-family: var(--font-primary);
+  font-weight: 700;
   font-style: normal;
+  text-transform: uppercase;
   line-height: 1.2em;
 }

@@ -1,0 +1,98 @@
+#setup
+#venue id's taken from data/venue.tsx
+sections:
+  - general:
+      dir: /images/gallery/general
+  - drinks:
+      dir: /images/gallery/drinks
+  - covent-garden:
+      dir: "/images/gallery/venues/coventgarden"
+  - clapton:
+      dir: /images/gallery/venues/clapton
+  - leicester-square:
+      dir: /images/gallery/venues/leicestersquare
+
+general:
+  - filename: image_4-min.webp
+  - filename: iceblock.webp
+  - filename: image_12-min.webp
+
+drinks:
+  - filename: "armyandnavy.webp"
+    desc: "The Army and Navy"
+  - filename: "bloodymary.webp"
+    desc: "The Bloody Mary"
+  - filename: "bramble.webp"
+    desc: "The Bramble"
+  - filename: "bramble2.webp"
+    desc: "The Bramble"
+  - filename: "cubalibre.webp"
+    desc: "The Cuba Libre"
+  - filename: "cubalibre2.webp"
+    desc: "The Cuba Libre"
+  - filename: "DSC04255.webp"
+    desc: "Manhattan"
+  - filename: "DSC06366.webp"
+    desc: "Amaretto Sour"
+  - filename: "image_8-min.webp"
+    desc: "Turkish Delight"
+  - filename: "image_11-min.webp"
+    desc: "The Mojito"
+  - filename: "margarita.webp"
+    desc: "The Margarita"
+  - filename: "margarita2.webp"
+    desc: "The Margarita"
+  - filename: "oldfashioned.webp"
+    desc: "The Old Fashioned"
+  - filename: "oldfashioned2.webp"
+    desc: "The Old Fashioned"
+  - filename: "pinacolada.webp"
+    desc: "The Piña Colada"
+  - filename: "pinklady.webp"
+    desc: "The Pink Lady"
+  - filename: "pornstar.webp"
+    desc: "The Pornstar"
+  - filename: "redhook.webp"
+    desc: "The Redhook"
+
+leicester-square:
+  - filename: DSC05743.webp 
+  - filename: DSC05750.webp 
+  - filename: DSC05751.webp 
+  - filename: DSC05759.webp 
+  - filename: DSC05771.webp 
+  - filename: DSC05840.webp 
+  - filename: leicester1.webp 
+  - filename: leicester2.webp
+
+clapton:
+  - filename: 20240701Clapton3.webp 
+  - filename: 20240701Clapton4.webp 
+  - filename: 20240701Clapton5.webp 
+  - filename: 20240701Clapton6.webp 
+  - filename: 20240701Clapton7.webp 
+  - filename: 20240701Clapton8.webp 
+  - filename: 20240701Clapton9.webp 
+  - filename: 20240701Clapton10.webp 
+  - filename: 20240701Clapton11.webp 
+  - filename: 20240701Clapton12.webp 
+  - filename: 20240701Clapton13.webp 
+  - filename: 20240701Clapton14.webp 
+  - filename: 20240701Clapton15.webp
+  
+covent-garden:
+  - filename: DovetailMain47.webp 
+  - filename: DovetailMain48.webp 
+  - filename: DovetailMain49.webp 
+  - filename: DovetailMain50.webp 
+  - filename: DovetailMain51.webp 
+  - filename: DovetailMain52.webp 
+  - filename: DovetailMain54.webp 
+  - filename: DSC05916.webp 
+  - filename: DSC05934.webp 
+  - filename: DSC05940.webp 
+  - filename: DSC05947.webp 
+  - filename: DSC05950.webp 
+  - filename: DSC05962.webp 
+  - filename: DSC05965.webp 
+  - filename: DSC05968.webp

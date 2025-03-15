@@ -1,0 +1,212 @@
+.designMyNightTarget {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    #dmn-partner-widget {
+        width: 100vw;
+        max-width: 1000px;
+
+        #dmn-widget-inner {
+            border: none;
+
+            .stage {
+                background-color: var(--primary-color);
+
+                .dropdown {
+                    background-color: var(--primary-color);
+
+                    .dropdown__icon {
+                        g path {
+                            fill: white;
+                        }
+                    }
+
+                    .dropdown__title {
+                        font-family: var(--font-primary);
+                        font-weight: 700;
+                        font-style: normal;
+                        text-transform: uppercase;
+                        font-size: 1rem;
+                        color: white;
+                    }
+
+                    .dropdown__edit-btn {
+                        font-family: var(--font-primary);
+                        font-weight: 700;
+                        font-style: normal;
+                        text-transform: uppercase;
+                        font-size: 1rem;
+                        border-left: none;
+                    }
+                }
+
+                .dropdown--open:not(.dropdown--no-shadow) {
+                    border-bottom: none;
+                }
+
+                .contents {
+                    .list-slot {
+                        border: none;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        position: relative;
+
+                        &::after {
+                            content: "";
+                            display: block;
+                            width: 22em;
+                            height: 2px;
+                            background-color: var(--secondary-color);
+                            position: absolute;
+                            bottom: 0;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            border-radius: 5px;
+                        }
+
+                        &:hover {
+                            .list-slot__title {
+                                color: var(--secondary-color);
+                            }
+
+                            .list-slot__arrow svg path {
+                                display: block;
+                                fill: var(--secondary-color);
+                                stroke: var(--secondary-color);
+                            }
+                        }
+                    }
+
+                    .list-slot__inner {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+                        position: relative;
+                        width: max-content;
+                        min-width: fit-content;
+                        padding: 10px;
+                    }
+
+                    .list-slot__title {
+                        font-family: var(--font-primary);
+                        font-weight: 700;
+                        font-style: normal;
+                        text-transform: uppercase;
+                        margin: 0 auto;
+                        width: 100%;
+                        text-align: center;
+                        color: var(--secondary-color);
+                        font-size: clamp(1.1rem, 1vw + 0.5rem, 2rem);
+                        max-width: 85vw;
+                        display: block;
+                    }
+
+                    .list-slot__subtitle {
+                        margin: 0 auto;
+                        width: 100%;
+                        color: white;
+                        font-family: var(--font-secondary);
+                        font-size: clamp(0.8rem, 1vw + 0.5rem, 1.2rem);
+                        text-align: center;
+                        max-width: 85vw;
+                        display: block;
+                    }
+
+                    .list-slot__arrow {
+                        right: -30px;
+
+                        svg path {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            button,
+            input,
+            select,
+            textarea {
+                border: none;
+            }
+        }
+    }
+    #dmn-partner-widget .date-selector .vdp-datepicker .vdp-datepicker__calendar 
+    .cell:not(.blank):not(.disabled).day{
+        font-size: 1.5rem;
+        font-weight: 500;
+        &:hover {
+            border-color: transparent;
+            background: var(--secondary-color);
+            color: --primary-color;
+        }
+    }
+    #dmn-partner-widget #dmn-widget-inner .date-selector .date-selector__quick-buttons button {
+        background-color: transparent;
+        color: white;
+        &:hover {
+            color: var(--secondary-color);
+            background-color: transparent;
+        }
+      }
+
+    #dmn-partner-widget #dmn-widget-inner .number-people.number-people-dropdown .number-people-dropdown-facade, #dmn-partner-widget #dmn-widget-inner .number-people-dropdown.number-people-dropdown .number-people-dropdown-facade {
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-align: left;
+        padding: 5px 1em;
+        border-bottom: 2px solid var(--secondary-color);
+        color: #fff;
+    }
+    #dmn-partner-widget #dmn-widget-inner .number-people.number-people-dropdown .number-people-dropdown--caret, #dmn-partner-widget #dmn-widget-inner .number-people-dropdown.number-people-dropdown .number-people-dropdown--caret {
+        border-top: 8px solid var(--secondary-color);
+    }
+    #dmn-partner-widget #dmn-widget-inner .number-people.number-people-dropdown .number-people-dropdown--caret::after, #dmn-partner-widget #dmn-widget-inner .number-people-dropdown.number-people-dropdown .number-people-dropdown--caret::after {
+        border-top: 8px solid var(--primary-color);
+    }
+    #dmn-partner-widget .date-selector .vdp-datepicker .vdp-datepicker__calendar header .prev.next:not(.disabled), 
+    #dmn-partner-widget .date-selector .vdp-datepicker .vdp-datepicker__calendar header .next.next:not(.disabled) {
+        &::after {
+            border-left-color: white;
+        }
+        &:hover{
+            background: transparent;
+            &::after {
+                border-left-color: var(--secondary-color);
+            }
+        }
+    }
+
+    #dmn-partner-widget #dmn-widget-inner .time-selection-columns .from-list .time-list--blurred, #dmn-partner-widget #dmn-widget-inner .time-selection-columns .until-list .time-list--blurred {
+        background-color: var(--primary-color);
+    }
+    #dmn-partner-widget #dmn-widget-inner .time-selection-columns .until-list {
+        border-left: 1px solid var(--secondary-color);
+    }
+    #dmn-partner-widget #dmn-widget-inner .time-header {
+        color: #fff;
+        background-color: transparent;
+        border-bottom: 1px solid var(--secondary-color);
+        box-shadow: unset;
+        div {
+            text-align: center;
+            font-size: 1rem;
+        }
+    }
+    #dmn-partner-widget #dmn-widget-inner .time-selection-columns .from-list .time-list--blurred .time-list--blurred-details .current-selection strong, #dmn-partner-widget #dmn-widget-inner .time-selection-columns .until-list .time-list--blurred .time-list--blurred-details .current-selection strong {
+        color: var(--secondary-color);
+    }
+
+    #dmn-partner-widget .stage .dropdown.dropdown--clickable:hover .dropdown__edit-btn {
+        color: var(--secondary-color);
+    }
+    & .list-slot__title,
+    & .list-slot__subtitle {
+        max-width: 85vw;
+        display: block;
+    }
+}
