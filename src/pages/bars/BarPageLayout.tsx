@@ -7,7 +7,7 @@ export default function({ barData, children, bookNowMenuItem }: { barData: BarDa
     const heroContent = {
         image: barData.heroImage,
         content: (<>
-            <img src="/images/logo-white.png" alt="Dovetail" className="heroLogo" />
+            <img src="/images/logo-notext.png" alt="Dovetail" className="heroLogo" />
             <h1 className="title">{barData.name}</h1>
         </>)
     };
