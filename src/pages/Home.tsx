@@ -10,7 +10,7 @@ export default function() {
     const hero = {
         image: "/images/DTB-Initial-Cocktail-Shoot-LR-012-sm.jpg",
         content: (<>
-            <img src="/images/logo-notext.png" alt="Dovetail" className="heroLogo" />
+            <img src="/images/logo-white.png" alt="Dovetail" className="heroLogo" />
             <h1 className="title">Dovetail</h1>
             <h2>
                 <Link to="/covent-garden">Covent Garden</Link> | <Link to="/clapton">Clapton</Link> | <Link to="/leicester-square">Leicester Square</Link>
@@ -25,7 +25,7 @@ export default function() {
 
     return (<>
         <Layout hero={hero}>
-            <IntroSection title="Discover Dovetail">
+            <IntroSection title="Discover Dovetail" className="fullHeight verticalCenter">
                 <p>
                     A collection of hidden gems that blend innovation with libations.
                     From the original Covent Garden spot, nestled in London’s West End, to its spirited siblings

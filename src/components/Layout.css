@@ -38,11 +38,15 @@ header {
   overflow: hidden;
 }
 
-
 nav {
-  min-height: 100px;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
   width: 100%;
-  padding: var(--spacer);
+  padding: calc( var(--spacer) / 2);
   font-family: alice, serif;
   font-size: clamp(1rem, 2vw, 20px);
   text-transform: uppercase;
@@ -83,16 +87,19 @@ nav {
   }
 }
 
+.fullHeight {
+  height: 100vh;
+}
+
+.verticalCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .carousel {
   position: relative;
   z-index: 1;
-}
-
-.home {
-  position: absolute;
-  .logoLink {
-    display: none;
-  }
 }
 
 .headerTitle {
@@ -151,7 +158,6 @@ nav {
 .buttonLink {
   display: block;
   width: max-content;
-  margin: 2rem auto;
   line-height: 1rem;
   padding: 1rem 2rem;
   border: 1px solid var(--secondary-color);
@@ -192,6 +198,23 @@ nav {
   }
 }
 
+.bookingLink {
+  position: fixed;
+  bottom: 0rem;
+  right: 1rem;
+  background-color: #000;
+  z-index: 1000;
+}
+
+@media screen and (min-width: 1050px) {
+  .bookingLink {
+    position: relative;
+    bottom: auto;
+    right: auto;
+  }
+  
+}
+
 .hero {
   text-align: center;
   font-family: oxtail, sans-serif;
@@ -204,27 +227,23 @@ nav {
 }
 
 .logoLink { 
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.nav {
-  & .navLogo {
-    max-width: 100px;
-  }
-
-  & .logoLink {
-    width: 100%;
-    text-align: center;
-  }
+.navLogo {
+  max-width: 60px;
 }
+
 
 
 .header {
   position: relative;
-  min-height: 300px;
+  min-height: 400px;
 
   & .hero {
-    min-height: 300px;
+    min-height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -518,7 +537,7 @@ textarea {
 @media (min-width: 1050px) {
   nav {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     top: 0;
     white-space: nowrap;
@@ -536,43 +555,19 @@ textarea {
     }
   }
 
-  .nav {
-    display: flex;
-    position: relative;
-    min-height: auto;
-    align-items: center;
-    padding: 0;
-    & .buttonLink {
-      margin: var(--spacer);
-    }
-
-    & .navLogo {
-      max-width: calc(100px + var(--spacer) * 2);
-      max-height: calc(80px + var(--spacer) * 2);
-      padding: 10px var(--spacer)
-    }
-
-    & .logoLink {
-      max-width: 165px;
-    }
-  }
-
   .hero {
     margin: 0;
-
   }
   
   .homeHeader {
-    height: 70vh;
+    height: 100vh;
     
     .hero {
-      padding-top: 160px;
+      padding-top: 28vh;
     }
   }
 
   .home {
-    top: 0;
-  
     & .buttonLink {
       margin: 0;
     }
