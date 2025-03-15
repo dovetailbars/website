@@ -23,8 +23,8 @@ export default function Footer({ children = null }: Props) {
         <section>
             <h2>Contact Us</h2>
             <p>
-                {DovetailInfo.email}<br />
-                {DovetailInfo.phone}
+                <a href={`mailto:${DovetailInfo.email}`}>{DovetailInfo.email}</a><br />
+                <a href={`tel:${DovetailInfo.phone.replace(/\s+/g, '')}`}>{DovetailInfo.phone}</a>
             </p>
             <p>
                 <Link to="/work-with-us">Work With Us</Link>
