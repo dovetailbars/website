@@ -25,17 +25,17 @@ export default function() {
 
     return (<>
         <Layout hero={hero}>
-            <IntroSection title="We are Dovetail">
+            <IntroSection title="Discover Dovetail">
                 <p>
-                    Discover Dovetail Bars, a collection of hidden gems that blend innovation with libations.
-                    From the original Covent Garden spot, nestled in London’s West End, to its spirited sibling,
-                    Dovetail Clapton, each venue invites patrons to unwind, savor the art of good company,
+                    A collection of hidden gems that blend innovation with libations.
+                    From the original Covent Garden spot, nestled in London’s West End, to its spirited siblings
+                    in Clapton and Leicester Square, each venue invites patrons to unwind, savor the art of good company,
                     and explore unique experiences. 
                 </p>
                 <p> Whether seeking refuge from the city’s frenzy or celebrating life’s moments,
                     Dovetail Bars promise an oasis where creativity thrives and great drinks flourish.
                 </p>
-            </IntroSection>            
+            </IntroSection>           
 
             <section id="bars" className="secondary">
                 { barSpotlightList }                
