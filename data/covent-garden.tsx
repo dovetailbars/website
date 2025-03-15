@@ -25,8 +25,8 @@ export default {
     },
 
     location: "2nd Floor, 9 Russell St, London WC2B 5HZ",
-    heroImage: "/images/DTB-Initial-Cocktail-Shoot-LR-012-sm.jpg",
-    spotlightImage: "/images/Dovetail-X-Ferrand-58-Large.jpg",
+    heroImage: "/images/DovetailBar-04.webp",
+    spotlightImage: "/images/DovetailMain49.webp",
     
     spotlightText: (
     <>
@@ -60,6 +60,9 @@ export default {
 
         <SplitContent>
             <div>
+                <img src="/images/Dovetail-X-Ferrand-58-Large.jpg" alt="Private Hire" />
+            </div>
+            <div>
                 <h2>Perfect for private hire</h2>
                 <p>
                     Whether you're planning an intimate gathering, a celebration to remember, or a corporate meeting, Dovetail offers a unique setting that combines the charm of a secret speakeasy with the warmth of hospitality.
@@ -69,9 +72,6 @@ export default {
                 </p>
                 <Link to="/covent-garden/private-hire" className="buttonLink">See the space</Link>
             </div>
-            <div>
-                <img src="/images/Dovetail-X-Ferrand-58-Large.jpg" alt="Private Hire" />
-            </div>
         </SplitContent>
     </>),
 
@@ -80,7 +80,7 @@ export default {
             <div>
                 <h2>The Venue</h2>
                 <p>
-                    Nestled comfortably above the bustling Covent Garden Market, by the West End, The Dovetail Bar is your hideaway for all private affairs. In a hidden room, we serve creative yet unpretentious cocktails in a refined intimate environment. The ultimate hideaway from London’s busy streets, the West End’s best kept secret. 
+                    Nestled dicreetely above the bustling Covent Garden Market, in the heart of the West End, Dovetail Bar is your secret getaway. In a hidden room, we serve creative yet unpretentious cocktails in a refined intimate environment. The ultimate escape from London’s busy streets, the West End’s best kept secret. 
                 </p>
                 <p>
                     Perfect for:

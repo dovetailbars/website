@@ -21,13 +21,13 @@ export default {
         "Monday to Tuesday": "Closed",        
         "Wednesday to Thursday": "5pm – 11.00pm",    
         "Friday": "4pm - 12:00am",
-        "Saturday": "2pm – 12:00am",
-        "Sunday": "1pm – 10:30 pm"
+        "Saturday": "4pm – 12:00am",
+        "Sunday": "3pm – 10:30 pm"
     },
 
     location: "11 Chatsworth Road, Clapton, London E5 0LH",
-    heroImage: "/images/clapton.jpg",
-    spotlightImage: "/images/clapton.jpg",
+    heroImage: "/images/20240701Clapton13.webp",
+    spotlightImage: "/images/20240701Clapton4.webp",
     
     spotlightText: (
     <>
@@ -54,6 +54,9 @@ export default {
 
         <SplitContent>
             <div>
+                <img src="/images/20240701Clapton13.webp" alt="Private Hire" />
+            </div>
+            <div>
                 <h2>Come for Spritz Hour!</h2>
                 <p>
                     A rotating selection of creative and rotating spritz specials that are priced at £8 every day until 7pm.
@@ -61,9 +64,6 @@ export default {
                 <p>
                     Dovetail is more than just a venue; it's an experience waiting to be tailored to your every need. Our creative cocktails, served with a flair for the unpretentious, promise to enchant your guests, while our refined yet cozy environment ensures a memorable occasion for all.
                 </p>
-            </div>
-            <div>
-                <img src="/images/clapton.jpg" alt="Private Hire" />
             </div>
         </SplitContent>
     </>)
