@@ -13,7 +13,6 @@ export default function (props: {
   const url = `/${id}`;
   
   return (
-    <>
     <div className="barSpotlightContainer fullHeight">
       <div className="barSpotlight fullHeight" 
           style={{ 
@@ -30,7 +29,5 @@ export default function (props: {
         </Link>
       </div>  
     </div>
-
-    </>
   );
 }
