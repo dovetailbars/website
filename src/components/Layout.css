@@ -431,7 +431,7 @@ main {
 } 
 
 .map {
-  min-height: 35vh;
+  min-height: 50dvh;
 }
 
 .instagramFeed {
