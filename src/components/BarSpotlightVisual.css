@@ -52,7 +52,6 @@
         font-size: 2rem;
         letter-spacing: 0.5px;
         line-height: 1.2;
-        transition: transform 0.3s ease, color 0.3s ease;
       
         &::after {
           content: "";
@@ -63,7 +62,6 @@
           position: absolute;
           left: 0;
           bottom: -5px;
-          transition: background-color 0.3s ease, transform 0.3s ease;
         }
       }
 
@@ -72,33 +70,14 @@
         left: 0;
         max-width: none;
         padding: 10px 20px;
-        transform: none;
         border-radius: 8px;
         background: none;
         backdrop-filter: none;
         -webkit-backdrop-filter: none;
         box-shadow: none;
         width: 100%;
-
-        p {
-          font-size: 1.4rem;
-          line-height: 1.4rem;
-          margin: auto;
-          margin-top: 1rem;
-        }
-
-        &:hover {
-          transform: none;
-          box-shadow: none;
-
-          h3 {
-            transform: none;
-
-            &::after {
-              transform: none;
-            }
-          }
-        }
+        bottom: 0;
+        transform: translate(0, 0%);
       }      
     }
   }
