@@ -1,0 +1,25 @@
+.hero {
+    height: 100vh;
+
+    h2 {
+        margin: 2rem;
+        font-size: clamp(1rem, 3vw, 1.8rem);
+        line-height: 1.8rem;
+    }
+
+}
+
+.heroLogo {
+    width: 90vw;
+    max-width: 500px
+}
+
+.heroLink {
+    white-space: nowrap;
+    transition: all 0.3s ease-in-out 0s;
+    &:hover {
+        color: var(--secondary-color);
+    }
+}
+
+

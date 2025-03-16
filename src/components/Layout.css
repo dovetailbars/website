@@ -24,69 +24,6 @@ img {
   max-width: 100%;
 }
 
-header {
-  position: relative;
-  background-size: contain;
-  background-position: center;
-  background-position-y: center;
-  background-repeat: no-repeat;
-      
-  vertical-align: middle;
-  align-content: center;
-  align-items: center;
-
-  overflow: hidden;
-}
-
-nav {
-  background: rgba(0, 0, 0, 0.6);
-  position: fixed;
-  top: 0;
-  display: flex;
-  justify-content: space-between;
-  gap: 2rem;
-  width: 100%;
-  padding: calc( var(--spacer) / 2);
-  font-family: alice, serif;
-  font-size: clamp(1rem, 2vw, 20px);
-  text-transform: uppercase;
-  z-index: 2;
-  
-  & ul { 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    list-style: none;
-    gap: 1rem;
-    
-    & li {
-      margin: 0rem;
-
-      & a::after {
-        content: "";
-        display: block;
-        background: white;
-        height: 2px;
-        width: 0%;
-        transition: transform 0.3s ease-in-out 0s;
-        transform: scale(0);
-      }
-    
-      & a:hover::after {
-        transform: scale(1);
-        width: auto;
-      }
-    
-      & a, a:visited {
-        color:  white;
-      }
-    }
-  }
-}
-
 .fullHeight {
   height: 100vh;
 }
@@ -95,64 +32,6 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.carousel {
-  position: relative;
-  z-index: 1;
-}
-
-.headerTitle {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  bottom: 3rem;
-  margin: 1rem auto;
-  line-height: 1.4em;
-
-  &::after {
-    content: "▿";
-    position: absolute;
-    bottom: -2rem;
-    left: 50%;
-    font-size: 1.5rem;
-    animation: float 3s ease-in-out infinite;
-    transform: translateX(50%) ;
-
-  }
-}
-
-.heroLogo {
-  max-width: 200px;
-}
-
-.homeHeader {
-  height: 100svh;
-
-  & .heroLogo {
-    
-    min-width: 120px;
-    max-width: 80%;
-    max-height: 40vh;
-    object-fit: contain;
-  }
-}
-
-.homeHeader .hero {
-  padding-top: 25vh;
-}
-
-
-@media (max-width: 248px) {
-  .homeHeader .hero {
-    padding-top: 45vh;
-  }
-}
-
-@media (min-width: 249px) and (max-width: 767px) {
-  .homeHeader .hero {
-    padding-top: 35vh;
-  }
 }
 
 .buttonLink {
@@ -198,23 +77,6 @@ nav {
   }
 }
 
-.bookingLink {
-  position: fixed;
-  bottom: 0rem;
-  right: 1rem;
-  background-color: #000;
-  z-index: 1000;
-}
-
-@media screen and (min-width: 1050px) {
-  .bookingLink {
-    position: relative;
-    bottom: auto;
-    right: auto;
-  }
-  
-}
-
 .hero {
   text-align: center;
   font-family: oxtail, sans-serif;
@@ -226,18 +88,6 @@ nav {
   display: none;
 }
 
-.logoLink { 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.navLogo {
-  max-width: 60px;
-}
-
-
-
 .header {
   position: relative;
   min-height: 400px;
@@ -248,14 +98,6 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    & h2 {
-      font-size: clamp(2rem, 3vw, 4rem);
-    }
-
-    & h3 {
-      text-transform: none;
-    }
   }
 }
 
@@ -535,56 +377,6 @@ textarea {
 }
 
 @media (min-width: 1050px) {
-  nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    top: 0;
-    white-space: nowrap;
-
-    & ul {
-      flex-wrap: nowrap;
-  
-      & li {
-        margin: 0 1rem; 
-      }
-    }
-
-    & .buttonLink {
-      justify-self: flex-end;
-    }
-  }
-
-  .hero {
-    margin: 0;
-  }
-  
-  .homeHeader {
-    height: 100vh;
-    
-    .hero {
-      padding-top: 28vh;
-    }
-  }
-
-  .home {
-    & .buttonLink {
-      margin: 0;
-    }
-  }
-
-  .headerTitle::after {
-    display: none;
-  }
-
-  .centeredContent {
-    text-align: left;
-
-    & h2 {
-      margin-top: 0;
-    }
-  }
-
   .split {
     display: flex;
     flex-flow: row wrap;

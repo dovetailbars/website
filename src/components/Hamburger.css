@@ -1,0 +1,56 @@
+.hamburger-checkbox {
+  display: none;
+}
+
+.hamburger-label {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  height: 3rem;
+  width: 3rem;
+  z-index: 13;
+}
+
+.hamburger-icon {
+  :focus {
+    border: 2px solid white;
+  }
+}
+
+.hamburger-bar {
+  display: block;
+  position: absolute;
+  top: 50%;
+  margin-top: -1px;
+  left: 1rem;
+  width: 2rem;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s ease;
+  border-radius: 1px;
+}
+
+.hamburger-bar--top {
+  transform: translate(0, -9px);
+}
+.hamburger-bar--bottom {
+  transform: translate(0, 9px);
+}
+
+.hamburger-label:has(+ .hamburger-checkbox:checked) {
+  .hamburger-bar--top {
+    transform: translate(0, 0) rotate(45deg);
+  }
+  .hamburger-bar--middle {
+    opacity: 0;
+  }
+  .hamburger-bar--bottom {
+    transform: translate(0, 0) rotate(-45deg);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hamburger-label {
+    display: none;
+  }
+}
