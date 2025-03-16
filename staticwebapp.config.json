@@ -6,7 +6,8 @@
     },
     "globalHeaders": {
       "content-security-policy": "default-src https: 'unsafe-eval' 'unsafe-inline'; object-src 'none'",
-      "Access-Control-Allow-Origin": "*"
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "GET, POST, OPTIONS"
     },
     "routes": [
       {
