@@ -1,3 +1,4 @@
+import IntroSection from "../components/IntroSection";
 import { Layout } from "../components/Layout";
 import StandardHero from "../components/StandardHero";
 
@@ -9,15 +10,14 @@ export default function() {
 
     return (        
         <Layout hero={hero}>
-            <section>
-                <h2>Booking Confirmation</h2>
+             <IntroSection title="Booking Confirmation" className="">
                 <p>
                     Thank you for booking with us at Dovetails Bar Covent Garden. Please keep an eye out for an email with further details on your booking.
                 </p>
                 <p>
                     Stay up to date by following us on social media <a href="https://www.instagram.com/dovetailbars/">@dovetailbars</a>.
                 </p>            		
-            </section>
+            </IntroSection>
         </Layout>
     );
 }
