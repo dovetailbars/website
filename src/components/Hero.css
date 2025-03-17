@@ -1,12 +1,23 @@
 .hero {
-    height: 100vh;
+    background-color: var(--primary-color);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
     h2 {
         margin: 2rem;
         font-size: clamp(1rem, 3vw, 1.8rem);
         line-height: 1.8rem;
     }
+}
+h2.headerTitle {
+    transform: translateY(4rem);
+    font-size: clamp(2em, 5vw, 3rem);
+    line-height: 2.2rem;
+}
 
+.hero.tall {
+    height: 100vh;
 }
 
 .heroLogo {
@@ -22,4 +33,11 @@
     }
 }
 
+@media screen and (min-width: 1000px) {
+    h2.headerTitle {
+        font-size: 3rem;
+        line-height: 2.4rem;
+    }
+    
+}
 

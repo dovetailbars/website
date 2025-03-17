@@ -9,10 +9,10 @@ type Props = {
     bookNowMenuItem?: boolean;
 };
 
-export function Layout({ children, hero = null, footerContent, bookNowMenuItem = true }: Props) {
+export function Layout({ children, hero = null, footerContent }: Props) {
 
     return (<>
-       <Header />
+       <Header {...hero} />
         <main>
             {children}
         </main>

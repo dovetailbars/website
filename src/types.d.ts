@@ -1,6 +1,7 @@
 interface HeroData {
     image: string;
     content: JSX.Element;
+    class?: string;
 }
 
 interface BarData {

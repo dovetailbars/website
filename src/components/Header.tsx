@@ -3,7 +3,7 @@ import Hero from './Hero';
 import { Link } from "react-router-dom";
 import "./Header.css";
 
-export default function Header() {
+export default function Header(hero: HeroData) {
     return (
         <header className="header">
             <nav className="nav">
@@ -19,7 +19,7 @@ export default function Header() {
                 </ul>
                 <Link to="/bookings" className="buttonLink bookingLink">Book Now</Link>
             </nav>
-            <Hero />
+            <Hero {...hero}/>
         </header>
     );
 }
