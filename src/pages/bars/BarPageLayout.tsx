@@ -8,8 +8,9 @@ export default function({ barData, children, bookNowMenuItem }: { barData: BarDa
         image: barData.heroImage,
         content: (<>
             <img src="/images/logo-notext.png" alt="Dovetail" className="heroLogo" />
-            <h1 className="title">{barData.name}</h1>
-        </>)
+            <h1 className="">{barData.name.replace("Dovetail ", "")}</h1>
+        </>),
+        class: "tall"
     };
 
     return (
