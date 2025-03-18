@@ -2,10 +2,22 @@ import { Link } from "react-router-dom";
 import IntroSection from "../src/components/IntroSection";
 import SplitContent from "../src/components/SplitContent";
 import { ContactForm } from "../src/components/ContactForm";
+import ImageCarousel from "../src/components/ImageCarousel";
 
 const id = "leicester-square";
 const venueName = "Leicester Square";
 const name = "Dovetail " + venueName;
+
+const galleryImages = [
+    "/images/gallery/venues/leicestersquare/DSC05743.webp",
+    "/images/gallery/venues/leicestersquare/DSC05750.webp",
+    "/images/gallery/venues/leicestersquare/DSC05751.webp",
+    "/images/gallery/venues/leicestersquare/DSC05759.webp",
+    "/images/gallery/venues/leicestersquare/DSC05771.webp",
+    "/images/gallery/venues/leicestersquare/DSC05840.webp",
+    "/images/gallery/venues/leicestersquare/leicester1.webp",
+    "/images/gallery/venues/leicestersquare/leicester2.webp",
+];
 
 export default {
     id, name, venueName,
@@ -78,6 +90,8 @@ export default {
                 <Link to="/leicester-square/private-hire" className="buttonLink">See the space</Link>
             </div>
         </SplitContent>
+        
+        <ImageCarousel images={galleryImages} />
     </>),
 
 
