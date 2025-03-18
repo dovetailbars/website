@@ -1,0 +1,125 @@
+header {
+    background-color: var(--primary-color);
+    color: white;
+    font-family: "Alice", serif;
+    text-transform: uppercase;
+}
+
+nav {
+    position: fixed;
+    height: 5rem;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    padding: 1rem;
+}
+
+.logoLink {
+    display: block;
+    height: 3rem;
+    width: 5rem;
+    background: url(../images/logo-notext.png) no-repeat left center;
+    background-size: contain;
+    color: transparent;
+    font-size: 0;
+}
+
+.navTitle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navList {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    background: rgba(0, 0, 0);
+    width: 100%;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.navList-link {
+    display: block;
+    padding: 1rem;
+    font-size: 1.6rem;
+    border-top: 1px solid var(--secondary-color);
+}
+
+.bookingLink {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: #000;
+  z-index: 1000;
+}
+
+@media (max-width: 1000px) {
+    .navList {
+        transition: transform 200ms ease-in-out;
+        transform: scaleY(0);
+        transform-origin: top;
+    }
+
+    .hamburger-checkbox:checked + .navList {
+        transform: scaleY(1);
+    }
+}
+
+@media (min-width: 1000px) {
+    .hamburger-checkbox, .hamburger-label, .navTitle {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navList {
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        top: 0;
+        left: 0;
+        background: none;
+        border: none;
+        width: auto;
+    }
+
+    .navList-link {
+        border: none;
+        font-size: 1rem;
+
+        &::after {
+            content: "";
+            display: block;
+            background: white;
+            height: 2px;
+            width: 0%;
+            transition: transform 0.3s ease-in-out 0s;
+            transform: scale(0);
+        }
+        
+        &:hover::after {
+            transform: scale(1);
+            width: auto;
+        }
+        
+        &:visited {
+            color:  white;
+        }
+    }
+
+    .bookingLink {
+        position: relative;
+        bottom: auto;
+        right: auto;
+    }
+}

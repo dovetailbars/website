@@ -15,9 +15,10 @@ export default function() {
             <img src="/images/logo-white.png" alt="Dovetail" className="heroLogo" />
             <h1 className="title">Dovetail</h1>
             <h2>
-                <Link to="/covent-garden">Covent Garden</Link> | <Link to="/clapton">Clapton</Link> | <Link to="/leicester-square">Leicester Square</Link>
+                <Link to="/covent-garden" className="heroLink">Covent Garden</Link> | <Link to="/clapton" className="heroLink">Clapton</Link> | <Link to="/leicester-square" className="heroLink">Leicester Square</Link>
             </h2>
-        </>)
+        </>),
+        class: "tall"
     };
 
     const barSpotlightList = allBars.map((barData, index) => {
