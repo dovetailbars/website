@@ -4,10 +4,13 @@ import { Link } from "react-router-dom";
 import "./Header.css";
 
 export default function Header(hero: HeroData) {
+    const isOnHomePage = window.location.pathname === "/";
+    const logoLinkStyle = isOnHomePage ? "0" : "100";
+
     return (
         <header className="header">
             <nav className="nav">
-                <Link to="/" className="logoLink">Dovetail</Link>
+                <Link to="/" className="logoLink" style={{ opacity: logoLinkStyle }}>Dovetail</Link>
                 <h1 className="navTitle">Dovetail</h1>
                 <Hamburger />
                 <ul className="navList">
