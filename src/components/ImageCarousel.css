@@ -12,7 +12,7 @@
     overflow: hidden;
     position: relative;
     min-height: 60vh;
-    max-height: 60vh; /* added to cap the main image height */
+    max-height: 60vh;
 }
 
 .main-image img {
@@ -48,6 +48,21 @@
     padding: 0.5rem 0;
     overflow-x: auto;
     justify-content: center;
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: rgba(0,0,0,0.3) transparent; /* Firefox */
+}
+
+.thumbnails::-webkit-scrollbar {
+    height: 6px;
+}
+
+.thumbnails::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.thumbnails::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 3px;
 }
 
 .thumbnail {
@@ -76,5 +91,13 @@
 @media (max-width: 768px) {
     .thumbnails {
         grid-template-columns: repeat(4, 1fr);
+    }
+    .carousel {
+        max-width: 100%; /* full width on mobile */
+        margin: 0;       /* remove side margins */
+    }
+    .main-image {
+        width: 100vw; /* span full viewport width */
+        margin-left: calc(-50vw + 50%); /* center the image */
     }
 }
