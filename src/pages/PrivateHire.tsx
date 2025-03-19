@@ -1,12 +1,12 @@
 import { Layout } from "../components/Layout";
 import StandardHero from "../components/StandardHero";
-import { ContactForm } from "../components/ContactForm";
 import DesignMyNight, { AllVenueDesignMyNight } from "../components/DesignMyNight";
 
 export default function() {
     const hero = {
         image: "/images/DTB-Initial-Cocktail-Shoot-LR-055.png",
-        content: (<StandardHero heading="Private Hire" subheading="Planning an event? We've got you covered!" />)
+        content: (<StandardHero heading="Private Hire" subheading="Planning an event? We've got you covered!" />),
+        class: "half"
     };
 
     return (        

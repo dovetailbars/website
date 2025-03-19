@@ -6,7 +6,8 @@ import SplitContent from "../components/SplitContent";
 export default function() {
     const hero = {
         image: "/images/DTB-Masterclass-LR-01.jpg",
-        content: (<StandardHero heading="Cocktail Masterclass" subheading="Bespoke Cocktail Experiences" />)
+        content: (<StandardHero heading="Cocktail Masterclass" subheading="Bespoke Cocktail Experiences" />),
+        class: "half"
     };
 
     return (        

@@ -16,6 +16,10 @@ h2.headerTitle {
     line-height: 2.2rem;
 }
 
+.hero.half {
+    height: 50vh;
+}
+
 .hero.tall {
     height: 100vh;
 }
