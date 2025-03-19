@@ -1,9 +1,10 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import './ImageCarousel.css';
 
 export default function({ images }: { images: string[] }) {
     const [selectedIndex, setSelectedIndex] = useState(0);
     const [autoProgress, setAutoProgress] = useState(true);
+    const touchStartX = useRef<number | null>(null); // added for swipe detection
 
     const handlePrev = () => {
         setAutoProgress(false);
@@ -20,6 +21,27 @@ export default function({ images }: { images: string[] }) {
         setSelectedIndex(index);
     };
 
+    const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
+        touchStartX.current = e.touches[0].clientX;
+    };
+
+    const handleTouchEnd = (e: React.TouchEvent<HTMLDivElement>) => {
+        if (touchStartX.current === null) {
+            return
+        };
+
+        const deltaX = touchStartX.current - e.changedTouches[0].clientX;
+        const threshold = 50;
+
+        if (deltaX > threshold) {
+            handleNext();
+        } else if (deltaX < -threshold) {
+            handlePrev();
+        }
+        
+        touchStartX.current = null;
+    };
+
     useEffect(() => {
         if (!autoProgress) return;
         const interval = setInterval(() => {
@@ -30,7 +52,11 @@ export default function({ images }: { images: string[] }) {
 
     return (
         <div className="carousel">
-            <div className="main-image">
+            <div 
+                className="main-image"
+                onTouchStart={handleTouchStart}
+                onTouchEnd={handleTouchEnd}
+            >
                 <button type="button" className="arrow left-arrow" onClick={handlePrev}>
                     &#8592;
                 </button>
