@@ -1,5 +1,7 @@
 import { Layout } from "../../components/Layout";
 import DovetailInfo from "../../../data/dovetail-info";
+import { BarData, OpeningHours } from "../../types";
+import { JSX } from "react";
 
 export default function({ barData, children, bookNowMenuItem }: { barData: BarData, children: JSX.Element, bookNowMenuItem?: boolean}) {
     const footer = <BarFooterContent openingHours={barData.openingHours} location={barData.location} />;

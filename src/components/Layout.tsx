@@ -1,6 +1,7 @@
 import "./Layout.css";
 import Header from './Header';
 import Footer from './Footer';
+import type { HeroData } from "../types";
 
 type Props = {
     children: React.ReactNode;

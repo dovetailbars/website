@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
 import { Layout } from "./Layout";
 import GoogleMaps from "./GoogleMaps";
+import type { HeroData } from "../types";
 
 type Props = {
     children: React.ReactNode;

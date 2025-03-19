@@ -1,6 +1,6 @@
 import { Layout } from "../components/Layout";
 import StandardHero from "../components/StandardHero";
-import DesignMyNight, { AllVenueDesignMyNight } from "../components/DesignMyNight";
+import { AllVenueDesignMyNight } from "../components/DesignMyNight";
 
 export default function() {
     const hero = {

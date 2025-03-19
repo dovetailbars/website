@@ -1,7 +1,6 @@
 import { AllVenueDesignMyNight } from "../components/DesignMyNight";
 import { Layout } from "../components/Layout";
 import StandardHero from "../components/StandardHero";
-import { Link } from "react-router-dom";
 
 export default function() {
     const hero = {

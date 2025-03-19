@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import "./DesignMyNight.css";
+import type { DesignMyNightConfig } from "../types";
 
 export default function DesignMyNight({ venueId, gtmCode, returnUrl}: DesignMyNightConfig) {
     const inputRef = useRef(null);

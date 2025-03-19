@@ -1,3 +1,5 @@
+import type { JSX } from "react";
+
 interface HeroData {
     image: string;
     content: JSX.Element;
