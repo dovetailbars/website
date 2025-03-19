@@ -4,7 +4,7 @@ import './ImageCarousel.css';
 export default function({ images }: { images: string[] }) {
     const [selectedIndex, setSelectedIndex] = useState(0);
     const [autoProgress, setAutoProgress] = useState(true);
-    const touchStartX = useRef<number | null>(null); // added for swipe detection
+    const touchStartX = useRef<number | null>(null);
 
     const handlePrev = () => {
         setAutoProgress(false);
@@ -38,7 +38,7 @@ export default function({ images }: { images: string[] }) {
         } else if (deltaX < -threshold) {
             handlePrev();
         }
-        
+
         touchStartX.current = null;
     };
 
