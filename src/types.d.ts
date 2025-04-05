@@ -1,5 +1,13 @@
 import type { JSX } from "react";
 
+interface Drink {
+    type: "cocktail" | "spritz" | "wine" | "beer", 
+    name: string; 
+    subname?: string, 
+    description: string; 
+    image: string; 
+}
+
 interface HeroData {
     image: string;
     content: JSX.Element;
@@ -21,6 +29,8 @@ interface BarData {
     spotlightText: JSX.Element;
     overviewContent: JSX.Element;
     privateHireContent?: JSX.Element;
+
+    menu: Drink[];
 }
 
 interface DesignMyNightConfig {

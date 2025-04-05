@@ -3,6 +3,7 @@ import IntroSection from "../src/components/IntroSection";
 import SplitContent from "../src/components/SplitContent";
 import ImageCarousel from "../src/components/ImageCarousel";
 import type { BarData } from "../src/types";
+import drinks from "./drinks";
 
 const id = "clapton";
 const venueName = "Clapton";
@@ -84,6 +85,21 @@ export default {
             "/images/gallery/venues/clapton/20240701Clapton15.webp"
         ]} />
         
-    </>)
+    </>),
+
+    menu: [
+        drinks.get("Old Fashioned")!,
+        drinks.get("Bloody Mary")!,
+        drinks.get("Mimosa")!,
+        drinks.get("Pornstar Martini")!,
+        drinks.get("Bramble")!,
+        drinks.get("Mojito")!,
+        drinks.get("Pina Colada")!,
+        drinks.get("Margarita")!,
+        drinks.get("Cuba Libra")!,
+        drinks.get("Espresso Martini")!,
+        drinks.get("The Hemmingway Daiquiri")!,
+        drinks.get("The Dirty Martini")!,
+    ],
     
 } as BarData;
