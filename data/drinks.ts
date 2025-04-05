@@ -75,7 +75,7 @@ allDrinks.set("Espresso Martini", {
 
 allDrinks.set("The Hemingway Daiquiri", {
     type: "cocktail",
-    name: "The Hemmingway Daiquiri",
+    name: "The Hemingway Daiquiri",
     description: "Planteray 3 Star – Maraschino – grapefruit",
     image: "/images/menu/hemingway-daiquiri.jpg"
 });
