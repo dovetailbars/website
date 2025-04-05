@@ -58,6 +58,7 @@ export default {
         </IntroSection>
 
         <section className="primary">
+            <Link to="cocktail-menu" className="buttonLink">Drinks Menu</Link>
             <Link to="bookings" className="buttonLink">Book Now</Link>
         </section>
 
