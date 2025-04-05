@@ -2,25 +2,11 @@ import { Link } from "react-router-dom";
 import IntroSection from "../src/components/IntroSection";
 import SplitContent from "../src/components/SplitContent";
 import ImageCarousel from "../src/components/ImageCarousel";
+import type { BarData } from "../src/types";
 
 const id = "clapton";
 const venueName = "Clapton";
 const name = "Dovetail " + venueName;
-
-const galleryImages = [
-    "/images/gallery/venues/clapton/20240701Clapton3.webp", 
-    "/images/gallery/venues/clapton/20240701Clapton4.webp",
-    "/images/gallery/venues/clapton/20240701Clapton5.webp",
-    "/images/gallery/venues/clapton/20240701Clapton7.webp", 
-    "/images/gallery/venues/clapton/20240701Clapton8.webp", 
-    "/images/gallery/venues/clapton/20240701Clapton9.webp", 
-    "/images/gallery/venues/clapton/20240701Clapton10.webp",
-    "/images/gallery/venues/clapton/20240701Clapton11.webp",
-    "/images/gallery/venues/clapton/20240701Clapton12.webp",
-    "/images/gallery/venues/clapton/20240701Clapton13.webp",
-    "/images/gallery/venues/clapton/20240701Clapton14.webp",
-    "/images/gallery/venues/clapton/20240701Clapton15.webp"
-];
 
 export default {
     id, name, venueName,
@@ -83,7 +69,20 @@ export default {
             </div>
         </SplitContent>
         
-        <ImageCarousel images={galleryImages} />
+        <ImageCarousel images={[
+            "/images/gallery/venues/clapton/20240701Clapton3.webp", 
+            "/images/gallery/venues/clapton/20240701Clapton4.webp",
+            "/images/gallery/venues/clapton/20240701Clapton5.webp",
+            "/images/gallery/venues/clapton/20240701Clapton7.webp", 
+            "/images/gallery/venues/clapton/20240701Clapton8.webp", 
+            "/images/gallery/venues/clapton/20240701Clapton9.webp", 
+            "/images/gallery/venues/clapton/20240701Clapton10.webp",
+            "/images/gallery/venues/clapton/20240701Clapton11.webp",
+            "/images/gallery/venues/clapton/20240701Clapton12.webp",
+            "/images/gallery/venues/clapton/20240701Clapton13.webp",
+            "/images/gallery/venues/clapton/20240701Clapton14.webp",
+            "/images/gallery/venues/clapton/20240701Clapton15.webp"
+        ]} />
         
     </>)
     

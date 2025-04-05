@@ -3,28 +3,11 @@ import IntroSection from "../src/components/IntroSection";
 import SplitContent from "../src/components/SplitContent";
 import { ContactForm } from "../src/components/ContactForm";
 import ImageCarousel from "../src/components/ImageCarousel";
+import type { BarData } from "../src/types";
 
 const id = "covent-garden";
 const venueName = "Covent Garden";
 const name = "Dovetail " + venueName;
-
-const galleryImages = [
-    "/images/gallery/venues/coventgarden/DovetailMain47.webp",
-    "/images/gallery/venues/coventgarden/DovetailMain48.webp",
-    "/images/gallery/venues/coventgarden/DovetailMain49.webp",
-    "/images/gallery/venues/coventgarden/DovetailMain50.webp",
-    "/images/gallery/venues/coventgarden/DovetailMain51.webp",
-    "/images/gallery/venues/coventgarden/DovetailMain52.webp",
-    "/images/gallery/venues/coventgarden/DovetailMain54.webp",
-    "/images/gallery/venues/coventgarden/DSC05916.webp",
-    "/images/gallery/venues/coventgarden/DSC05934.webp",
-    "/images/gallery/venues/coventgarden/DSC05940.webp",
-    "/images/gallery/venues/coventgarden/DSC05947.webp",
-    "/images/gallery/venues/coventgarden/DSC05950.webp",
-    "/images/gallery/venues/coventgarden/DSC05962.webp",
-    "/images/gallery/venues/coventgarden/DSC05965.webp",
-    "/images/gallery/venues/coventgarden/DSC05968.webp",
-];
 
 export default {
     id, name, venueName,
@@ -93,7 +76,23 @@ export default {
             </div>
         </SplitContent>
 
-        <ImageCarousel images={galleryImages} />
+        <ImageCarousel images={[
+            "/images/gallery/venues/coventgarden/DovetailMain47.webp",
+            "/images/gallery/venues/coventgarden/DovetailMain48.webp",
+            "/images/gallery/venues/coventgarden/DovetailMain49.webp",
+            "/images/gallery/venues/coventgarden/DovetailMain50.webp",
+            "/images/gallery/venues/coventgarden/DovetailMain51.webp",
+            "/images/gallery/venues/coventgarden/DovetailMain52.webp",
+            "/images/gallery/venues/coventgarden/DovetailMain54.webp",
+            "/images/gallery/venues/coventgarden/DSC05916.webp",
+            "/images/gallery/venues/coventgarden/DSC05934.webp",
+            "/images/gallery/venues/coventgarden/DSC05940.webp",
+            "/images/gallery/venues/coventgarden/DSC05947.webp",
+            "/images/gallery/venues/coventgarden/DSC05950.webp",
+            "/images/gallery/venues/coventgarden/DSC05962.webp",
+            "/images/gallery/venues/coventgarden/DSC05965.webp",
+            "/images/gallery/venues/coventgarden/DSC05968.webp",
+        ]} />
     </>),
 
     privateHireContent: (<>

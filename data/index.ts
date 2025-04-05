@@ -1,3 +1,4 @@
+import type { BarData } from '../src/types';
 import ClaptonData from './clapton';
 import CoventGardenData from './covent-garden';
 import LeicesterSquareData from './leicester-square';
