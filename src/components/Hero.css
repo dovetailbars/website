@@ -28,6 +28,14 @@ h2.headerTitle {
     height: 100vh;
 }
 
+.header:has(.hero.short) {
+    height: 7rem;
+    min-height: auto;
+}
+.hero.short {
+    min-height: auto;
+}
+
 .heroLogo {
     width: 90vw;
     max-width: 750px;

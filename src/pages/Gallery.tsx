@@ -2,10 +2,11 @@ import ImageCarousel from "../components/ImageCarousel";
 import { Layout } from "../components/Layout";
 import StandardHero from "../components/StandardHero";
 
-export default function() {
+export default function () {
     const hero = {
         image: "",
-        content: <StandardHero heading="Gallery" />
+        content: <StandardHero heading="Gallery" />,
+        class: "short"
     };
 
     const galleryImages = [
