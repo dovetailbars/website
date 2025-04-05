@@ -14,7 +14,7 @@ export default function BarCocktailMenu() {
 
     const hero = {
         image: bar.heroImage || "/images/DTB-Initial-Cocktail-Shoot-LR-020.jpg",
-        content: <StandardHero heading={bar.name} subheading="Cocktail Menu" />
+        content: <StandardHero heading={bar.name} />
     };
 
     return (
