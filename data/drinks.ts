@@ -2,39 +2,11 @@ import type { Drink } from "../src/types";
 
 const allDrinks = new Map<string, Drink>();
 
-allDrinks.set("Old Fashioned", {
+allDrinks.set("Cuba Libra", {
     type: "cocktail",
-    name: "The Old Fashioned",
-    description: "Wild Turkey 101 – Picon Amer – shortbread – spiced maple – lapsang & orange tea",
-    image: "/images/menu/old-fashioned.jpg"
-});
-
-allDrinks.set("Bloody Mary", {
-    type: "cocktail",
-    name: "The Bloody Mary",
-    description: "Vodka – Noilly Prat – tomato – harissa – olive brine – dark soy",
-    image: "/images/menu/bloody-mary.jpg"
-});
-
-allDrinks.set("Mimosa", {
-    type: "cocktail",
-    name: "The Mimosa",
-    description: "Sipsmith London Dry Gin – Campari – blood orange – tonic",
-    image: "/images/menu/mimosa.jpg"
-});
-
-allDrinks.set("Pornstar Martini", {
-    type: "cocktail",
-    name: "The Pornstar Martini",
-    description: "Vanilla Vodka – Marlborough Sauvignon Blanc – apricot preserve – dry cider",
-    image: "/images/menu/pornstar-martini.jpg"
-});
-
-allDrinks.set("Bramble", {
-    type: "cocktail",
-    name: "The Bramble",
-    description: "Bombay Bramble – port wine – prosecco – lemon sorbet",
-    image: "/images/menu/bramble.jpg"
+    name: "The Cuba Libra",
+    description: "Cane Rock Spiced Rum – Velvet Falernum – cherry & vanilla – kola nut",
+    image: "/images/menu/cuba-libra.jpg"
 });
 
 allDrinks.set("Mojito", {
@@ -44,11 +16,32 @@ allDrinks.set("Mojito", {
     image: "/images/menu/mojito.jpg"
 });
 
-allDrinks.set("Pina Colada", {
+allDrinks.set("Pornstar Martini", {
     type: "cocktail",
-    name: "The Pina Colada",
-    description: "Pusser’s Navy Rum – Crème de Banane – Pedro Ximenez – dulce de leche – orange",
-    image: "/images/menu/pina-colada.jpg"
+    name: "The Pornstar Martini",
+    description: "Vanilla Vodka – Marlborough Sauvignon Blanc – apricot preserve – dry cider",
+    image: "/images/menu/pornstar-martini.jpg"
+});
+
+allDrinks.set("Old Fashioned", {
+    type: "cocktail",
+    name: "The Old Fashioned",
+    description: "Wild Turkey 101 – Picon Amer – shortbread – spiced maple – lapsang & orange tea",
+    image: "/images/menu/old-fashioned.jpg"
+});
+
+allDrinks.set("Mimosa", {
+    type: "cocktail",
+    name: "The Mimosa",
+    description: "Sipsmith London Dry Gin – Campari – blood orange – tonic",
+    image: "/images/menu/mimosa.jpg"
+});
+
+allDrinks.set("Bramble", {
+    type: "cocktail",
+    name: "The Bramble",
+    description: "Bombay Bramble – port wine – prosecco – lemon sorbet",
+    image: "/images/menu/bramble.jpg"
 });
 
 allDrinks.set("Margarita", {
@@ -58,11 +51,18 @@ allDrinks.set("Margarita", {
     image: "/images/menu/margarita.jpg"
 });
 
-allDrinks.set("Cuba Libra", {
+allDrinks.set("Bloody Mary", {
     type: "cocktail",
-    name: "The Cuba Libra",
-    description: "Cane Rock Spiced Rum – Velvet Falernum – cherry & vanilla – kola nut",
-    image: "/images/menu/cuba-libra.jpg"
+    name: "The Bloody Mary",
+    description: "Vodka – Noilly Prat – tomato – harissa – olive brine – dark soy",
+    image: "/images/menu/bloody-mary.jpg"
+});
+
+allDrinks.set("Pina Colada", {
+    type: "cocktail",
+    name: "The Pina Colada",
+    description: "Pusser’s Navy Rum – Crème de Banane – Pedro Ximenez – dulce de leche – orange",
+    image: "/images/menu/pina-colada.jpg"
 });
 
 allDrinks.set("Espresso Martini", {
