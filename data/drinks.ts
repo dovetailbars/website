@@ -23,18 +23,18 @@ allDrinks.set("Pornstar Martini", {
     image: "/images/menu/pornstar-martini.jpg"
 });
 
-allDrinks.set("Old Fashioned", {
-    type: "cocktail",
-    name: "The Old Fashioned",
-    description: "Wild Turkey 101 – Picon Amer – shortbread – spiced maple – lapsang & orange tea",
-    image: "/images/menu/old-fashioned.jpg"
-});
-
 allDrinks.set("Mimosa", {
     type: "cocktail",
     name: "The Mimosa",
     description: "Sipsmith London Dry Gin – Campari – blood orange – tonic",
     image: "/images/menu/mimosa.jpg"
+});
+
+allDrinks.set("Old Fashioned", {
+    type: "cocktail",
+    name: "The Old Fashioned",
+    description: "Wild Turkey 101 – Picon Amer – shortbread – spiced maple – lapsang & orange tea",
+    image: "/images/menu/old-fashioned.jpg"
 });
 
 allDrinks.set("Bramble", {
