@@ -34,8 +34,30 @@ img {
   justify-content: center;
 }
 
+.bar_buttons {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 600px) {
+ .bar_buttons {
+  flex-direction: row;
+  justify-content: center;
+}
+}
+.bar_buttons {
+  margin-top: 2rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
 .buttonLink {
-  display: block;
+  display: inline-block;
   width: max-content;
   line-height: 1rem;
   padding: 1rem 2rem;

@@ -55,12 +55,11 @@ export default {
             <p>
                 Discover Dovetail Bar, the West End’s best kept secret.
             </p>
+            <div className="bar_buttons">
+                <Link to="cocktail-menu" className="buttonLink">Drinks Menu</Link> 
+                <Link to="bookings" className="buttonLink">Book Now</Link>
+            </div>
         </IntroSection>
-
-        <section className="primary">
-            <Link to="cocktail-menu" className="buttonLink">Drinks Menu</Link>
-            <Link to="bookings" className="buttonLink">Book Now</Link>
-        </section>
 
         <SplitContent>
             <div>

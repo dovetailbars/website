@@ -58,7 +58,6 @@
     .cocktailmenu_container {
         margin: 0 auto;
     }
-
     
     .cocktailmenu_item {
         gap: 4rem;
@@ -67,7 +66,6 @@
     .cocktailmenu_text {
         max-width: 500px;
     }
-
 
     .cocktailmenu_img {
         max-height: 200px;

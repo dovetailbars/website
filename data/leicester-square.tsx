@@ -12,9 +12,9 @@ const name = "Dovetail " + venueName;
 
 export default {
     id, name, venueName,
-    
+
     googleMapsLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.1239543567253!2d-0.13305262195072406!3d51.510941871814346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487605ad4d2c62ef%3A0xfad514e573027f97!2sDovetail%20Bar%20at%20Empire%20Casino!5e0!3m2!1sen!2suk!4v1731952901311!5m2!1sen!2suk",
-    
+
     designMyNightConfig: {
         venueId: "671909df81884a4d4032ffca",
         gtmCode: "GTM-MQ6Z6QJ7",
@@ -29,16 +29,16 @@ export default {
     location: "Balcony Bar, 5-6 Leicester Square, London WC2H 7NA",
     heroImage: "/images/leicester-hero2-sm.webp",
     spotlightImage: "/images/DSC05840.webp",
-    
+
     spotlightText: (
-    <>
-        <p>
-            Dovetail's newest offering is a joint venture with Empire Casino, that sees us rebranding their balcony bar in time for Summer.
-        </p>
-        <p>
-            With views of the bustling crowds in Leicester Square, it's the perfect place to enjoy a spritz before coming inside for an evening of perfectly crafted cocktails.
-        </p>
-    </>),
+        <>
+            <p>
+                Dovetail's newest offering is a joint venture with Empire Casino, that sees us rebranding their balcony bar in time for Summer.
+            </p>
+            <p>
+                With views of the bustling crowds in Leicester Square, it's the perfect place to enjoy a spritz before coming inside for an evening of perfectly crafted cocktails.
+            </p>
+        </>),
 
     overviewContent: (<>
         <IntroSection title={name}>
@@ -48,13 +48,12 @@ export default {
             <p>
                 With views of the bustling crowds in Leicester Square, it's the perfect place to enjoy a spritz before coming inside for an evening of live DJs and perfectly crafted cocktails.
             </p>
+            <div className="bar_buttons">
+                <Link to="cocktail-menu" className="buttonLink">Drinks Menu</Link>
+                <Link to="bookings" className="buttonLink">Book Now</Link>
+            </div>
         </IntroSection>
 
-        <section className="primary">
-            <Link to="cocktail-menu" className="buttonLink">Drinks Menu</Link>
-            <Link to="bookings" className="buttonLink">Book Now</Link>
-        </section>
-        
         <SplitContent>
             <div>
                 <img src="/images/DSC05743.webp" alt="Private Hire" />
@@ -62,7 +61,7 @@ export default {
             <div>
                 <h2>The Balcony</h2>
                 <p>
-                   The balcony overlooks the heart of Leicester Square, in what was once the The Empire Theatre. Reminiscent of a Parisian boulevard, this architecturally stunning space will elevate any event.
+                    The balcony overlooks the heart of Leicester Square, in what was once the The Empire Theatre. Reminiscent of a Parisian boulevard, this architecturally stunning space will elevate any event.
                 </p>
             </div>
         </SplitContent>
@@ -82,7 +81,7 @@ export default {
                 <Link to="/leicester-square/private-hire" className="buttonLink">See the space</Link>
             </div>
         </SplitContent>
-        
+
         <ImageCarousel images={[
             "/images/gallery/venues/leicestersquare/DSC05743.webp",
             "/images/gallery/venues/leicestersquare/DSC05750.webp",
