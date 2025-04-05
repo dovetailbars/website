@@ -98,7 +98,7 @@ export default {
         drinks.get("Margarita")!,
         drinks.get("Cuba Libra")!,
         drinks.get("Espresso Martini")!,
-        drinks.get("The Hemmingway Daiquiri")!,
+        drinks.get("The Hemingway Daiquiri")!,
         drinks.get("The Dirty Martini")!,
     ],
     
