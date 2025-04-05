@@ -30,6 +30,7 @@ interface BarData {
     overviewContent: JSX.Element;
     privateHireContent?: JSX.Element;
 
+    cocktailPrice: number,
     menu: Drink[];
 }
 

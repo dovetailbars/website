@@ -87,6 +87,8 @@ export default {
         
     </>),
 
+    cocktailPrice: 11,
+
     menu: [
         drinks.get("Cuba Libra")!,
         drinks.get("Mojito")!,

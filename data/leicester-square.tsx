@@ -120,6 +120,8 @@ export default {
         </SplitContent>
     </>),
 
+    cocktailPrice: 13,
+
     menu: [
         drinks.get("Cuba Libra")!,
         drinks.get("Mojito")!,
