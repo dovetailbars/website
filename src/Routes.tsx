@@ -1,4 +1,3 @@
-
 import { BrowserRouter, Navigate, Routes as ReactRoutes, Route } from "react-router-dom";
 
 import Home from './pages/Home';
@@ -10,6 +9,7 @@ import CocktailMakingClass from './pages/CocktailMakingClass';
 import BarHome from "./pages/bars/Home";
 import BarBookings from "./pages/bars/Bookings";
 import BarPrivateHire from "./pages/bars/PrivateHire";
+import BarCocktailMenu from "./pages/bars/CocktailMenu";
 import Gallery from "./pages/Gallery";
 import WhatsOn from "./pages/WhatsOn";
 import WorkWithUs from "./pages/WorkWithUs";
@@ -37,6 +37,7 @@ export default function Routes() {
         <Route path="/:barId" element={<BarHome />}  />
         <Route path="/:barId/bookings" element={<BarBookings />} />
         <Route path="/:barId/private-hire" element={<BarPrivateHire />}  />
+        <Route path="/:barId/cocktail-menu" element={<BarCocktailMenu />}  />
 
         {/* Redirects */}
         <Route path="*" element={<Navigate to="/" />} />
