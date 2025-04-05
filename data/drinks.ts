@@ -44,13 +44,6 @@ allDrinks.set("Bramble", {
     image: "/images/menu/bramble.jpg"
 });
 
-allDrinks.set("Margarita", {
-    type: "cocktail",
-    name: "The Margarita",
-    description: "El Jimador Blanco – Crème de Fraise des bois – prosecco",
-    image: "/images/menu/margarita.jpg"
-});
-
 allDrinks.set("Bloody Mary", {
     type: "cocktail",
     name: "The Bloody Mary",
@@ -58,11 +51,11 @@ allDrinks.set("Bloody Mary", {
     image: "/images/menu/bloody-mary.jpg"
 });
 
-allDrinks.set("Pina Colada", {
+allDrinks.set("Margarita", {
     type: "cocktail",
-    name: "The Pina Colada",
-    description: "Pusser’s Navy Rum – Crème de Banane – Pedro Ximenez – dulce de leche – orange",
-    image: "/images/menu/pina-colada.jpg"
+    name: "The Margarita",
+    description: "El Jimador Blanco – Crème de Fraise des bois – prosecco",
+    image: "/images/menu/margarita.jpg"
 });
 
 allDrinks.set("Espresso Martini", {
@@ -73,11 +66,11 @@ allDrinks.set("Espresso Martini", {
     image: "/images/menu/espresso-martini.jpg"
 });
 
-allDrinks.set("The Hemingway Daiquiri", {
+allDrinks.set("Pina Colada", {
     type: "cocktail",
-    name: "The Hemingway Daiquiri",
-    description: "Planteray 3 Star – Maraschino – grapefruit",
-    image: "/images/menu/hemingway-daiquiri.jpg"
+    name: "The Pina Colada",
+    description: "Pusser’s Navy Rum – Crème de Banane – Pedro Ximenez – dulce de leche – orange",
+    image: "/images/menu/pina-colada.jpg"
 });
 
 allDrinks.set("The Dirty Martini", {
@@ -85,6 +78,13 @@ allDrinks.set("The Dirty Martini", {
     name: "The Dirty Martini",
     description: "London Dry Gin – Cocchi Americano – Manzanilla olive brine",
     image: "/images/menu/dirty-martini.jpg"
+});
+
+allDrinks.set("The Hemingway Daiquiri", {
+    type: "cocktail",
+    name: "The Hemingway Daiquiri",
+    description: "Planteray 3 Star – Maraschino – grapefruit",
+    image: "/images/menu/hemingway-daiquiri.jpg"
 });
 
 export default allDrinks;
