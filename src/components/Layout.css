@@ -45,15 +45,11 @@ img {
 
 @media (min-width: 600px) {
  .bar_buttons {
-  flex-direction: row;
-  justify-content: center;
-}
-}
-.bar_buttons {
-  margin-top: 2rem;
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    z-index: 1;
+  }
 }
 
 .buttonLink {
