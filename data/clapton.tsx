@@ -94,12 +94,12 @@ export default {
         drinks.get("Mimosa")!,
         drinks.get("Old Fashioned")!,
         drinks.get("Bramble")!,
-        drinks.get("Margarita")!,
         drinks.get("Bloody Mary")!,
-        drinks.get("Pina Colada")!,
+        drinks.get("Margarita")!,
         drinks.get("Espresso Martini")!,
-        drinks.get("The Hemingway Daiquiri")!,
+        drinks.get("Pina Colada")!,
         drinks.get("The Dirty Martini")!,
+        drinks.get("The Hemingway Daiquiri")!,
     ],
     
 } as BarData;
