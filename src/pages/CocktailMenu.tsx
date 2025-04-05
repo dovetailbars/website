@@ -9,7 +9,7 @@ export default function() {
         content: <StandardHero heading="Cocktail Menu" />
     };
 
-    const menu = drinks.values();
+    const menu = [...drinks.values()];
 
     return (
         <Layout hero={hero}>
