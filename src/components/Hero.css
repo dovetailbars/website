@@ -6,8 +6,12 @@
 
     h2 {
         margin: 2rem;
-        font-size: clamp(1rem, 3vw, 1.8rem);
+        font-size: clamp(1rem, 3vw, 3rem);
         line-height: 1.8rem;
+    }
+    h3 {
+        text-transform: none;
+        font-size: clamp(1rem, 3vw, 1.6rem);
     }
 }
 h2.headerTitle {

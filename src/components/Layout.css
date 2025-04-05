@@ -80,8 +80,10 @@ img {
 .hero {
   text-align: center;
   font-family: oxtail, sans-serif;
-  text-transform: uppercase;
   color: white;
+  h2 {
+    text-transform: uppercase;
+  }
 }
 
 .title {
