@@ -43,6 +43,11 @@ export default function Footer({ children = null }: Props) {
             <div className="copyright">
                 © Dovetail Bar | Company No. 14991262
             </div>
+
+            <div className="copyright">
+                Over 18s Only | Challenge 25 Policy in Operation.<br />
+                Take Time To Think. Visit gambleaware.org | bedrinkaware.co.uk
+            </div>
         </footer>
     );
 }
