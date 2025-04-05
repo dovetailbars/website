@@ -22,7 +22,7 @@ export default function BarCocktailMenu() {
             <section className="cocktailmenu">
                 <h1>House Cocktails</h1>
                 <p>All house cocktails £{bar.cocktailPrice}, classics available on request</p>
-                <p></p>
+                <p>Our drinks are playful reimaginings of London’s most popular drinks. We have taken the best of the familiar, reworking them into new and exciting concoctions, whilst respecting the flavours that made them beloved.</p>
                 <div className="cocktailmenu_container">
                     {bar.menu.map((cocktail) => (
                         <CocktailItem key={cocktail.name} cocktail={cocktail} />
