@@ -56,6 +56,29 @@ export default {
 
         <SplitContent>
             <div>
+                <iframe
+                    style={{ height: "320px", width: "100%" }}
+                    src="https://www.youtube.com/embed/VDzWKYF4Ncg?si=lb6XW8axz-wEkGgU" 
+                    title="YouTube video player" 
+                    frameBorder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerPolicy="strict-origin-when-cross-origin" 
+                    allowFullScreen>                    
+                </iframe>
+            </div>
+            <div>
+                <h2>Where to find us</h2>
+                <p>
+                    The bar is located on the first floor and balcony of Empire Casino, 5-6 Leicester Square.
+                </p>
+                <p>
+                    Come through the main entrance of Empire Casino, and take the stairs to the first floor on your right to experience the hidden gem that is Dovetail Bar.
+                </p>
+            </div>
+        </SplitContent>
+
+        <SplitContent>
+            <div>
                 <img src="/images/DSC05743.webp" alt="Private Hire" />
             </div>
             <div>
