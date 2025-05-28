@@ -101,7 +101,7 @@ export default {
             <div>
                 <h2>The Venue</h2>
                 <p>
-                    Nestled dicreetely above the bustling Covent Garden Market, in the heart of the West End, Dovetail Bar is your secret getaway. In a hidden room, we serve creative yet unpretentious cocktails in a refined intimate environment. The ultimate escape from London’s busy streets, the West End’s best kept secret. 
+                    Nestled discreetly above the bustling Covent Garden Market, in the heart of the West End, Dovetail Bar is your secret getaway. In a hidden room, we serve creative yet unpretentious cocktails in a refined intimate environment. The ultimate escape from London’s busy streets, the West End’s best kept secret. 
                 </p>
                 <p>
                     Perfect for:
@@ -117,7 +117,16 @@ export default {
             </div>
             <div>
                 <h2>Walkthrough</h2>
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/jjHQq6TpoUo?si=TLL7W-orQ4OxbyHx" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin"></iframe>
+                <div className="responsive-iframe-container">
+                    <iframe 
+                        className="responsive-iframe"
+                        src="https://www.youtube.com/embed/jjHQq6TpoUo?si=TLL7W-orQ4OxbyHx" 
+                        title="YouTube video player" 
+                        frameBorder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerPolicy="strict-origin-when-cross-origin"
+                    ></iframe>
+                </div>
                 <p>
                     Watch the short video above that gives you an idea of the unique intimate space.
                 </p>

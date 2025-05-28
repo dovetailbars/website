@@ -114,8 +114,18 @@ export default {
                     <Link to="/private-hire#contact" className="buttonLink">Hire the space</Link>
                 </p>
             </div>
-            <div>
-                <img src="/images/gallery/venues/leicestersquare/leicester2.webp" alt="Private Hire" />
+            <div style={{ padding: "100px" }}>
+                <div className="responsive-iframe-container">
+                    <iframe 
+                        className="responsive-iframe"
+                        src="https://www.youtube.com/embed/VDzWKYF4Ncg?si=lb6XW8axz-wEkGgU" 
+                        title="YouTube video player" 
+                        frameBorder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerPolicy="strict-origin-when-cross-origin" 
+                        allowFullScreen>                    
+                    </iframe>
+                </div>
             </div>
         </SplitContent>
     </>),
