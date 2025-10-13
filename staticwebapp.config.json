@@ -1,5 +1,11 @@
 {
     "trailingSlash": "auto",
+    "routes": [
+      {
+        "route": "/*",
+        "methods": ["GET", "HEAD", "POST", "OPTIONS"]
+      }
+    ],
     "navigationFallback": {
       "rewrite": "index.html",
       "exclude": ["/images/*", "/public/*"]
