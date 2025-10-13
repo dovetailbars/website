@@ -1,12 +1,5 @@
 {
     "trailingSlash": "auto",
-    "routes": [
-      {
-        "route": "/bookings/confirmation",
-        "methods": ["GET", "POST", "OPTIONS"],
-        "rewrite": "/index.html"
-      }
-    ],
     "navigationFallback": {
       "rewrite": "index.html",
       "exclude": ["/images/*", "/public/*"]
@@ -17,7 +10,9 @@
       "Access-Control-Allow-Headers": "Content-Type, Authorization, X-Requested-With",
       "Access-Control-Max-Age": "86400"
     },
-    "mimeTypes": {
-      ".json": "application/json"
+    "responseOverrides": {
+      "405": {
+        "rewrite": "/bookings/confirmation"
+      }
     }
 }
