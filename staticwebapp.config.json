@@ -1,12 +1,19 @@
 {
     "trailingSlash": "auto",
+    "routes": [
+      {
+        "route": "/*",
+        "allowedRoles": ["anonymous"],
+        "methods": ["GET", "HEAD", "POST", "OPTIONS"]
+      }
+    ],
     "navigationFallback": {
       "rewrite": "index.html",
       "exclude": ["/images/*", "/public/*"]
     },
     "globalHeaders": {
-      "content-security-policy": "",
       "Access-Control-Allow-Origin": "*",
-      "Access-Control-Allow-Methods": "GET, POST, OPTIONS"
+      "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+      "Access-Control-Allow-Headers": "Content-Type"
     }
 }
