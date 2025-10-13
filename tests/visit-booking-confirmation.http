@@ -10,3 +10,8 @@ Accept: text/html
 ### POST Visit Bookings Confirmation Page
 POST {{baseUrl}}/bookings/confirmation HTTP/1.1
 Accept: text/html
+
+
+### POST Visit Bookings Created API
+POST {{baseUrl}}/api/booking-created HTTP/1.1
+Accept: text/html

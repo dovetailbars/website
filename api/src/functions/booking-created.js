@@ -5,7 +5,7 @@ app.http('booking-created', {
     authLevel: 'anonymous',
     handler: async (request, context) => {
         return { 
-            status: 200,
+            status: 301,
             headers: {
                 'location': '/bookings/confirmation',
             }
