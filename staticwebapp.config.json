@@ -2,14 +2,9 @@
     "trailingSlash": "auto",
     "routes": [
       {
-        "route": "/*",
-        "methods": ["GET", "HEAD", "POST", "PUT", "DELETE", "OPTIONS"],
-        "headers": {
-          "Access-Control-Allow-Origin": "*",
-          "Access-Control-Allow-Methods": "GET, HEAD, POST, PUT, DELETE, OPTIONS",
-          "Access-Control-Allow-Headers": "Content-Type, Authorization, X-Requested-With, Accept, Origin",
-          "Access-Control-Max-Age": "86400"
-        }
+        "route": "/bookings/confirmation",
+        "methods": ["GET", "POST", "OPTIONS"],
+        "rewrite": "/index.html"
       }
     ],
     "navigationFallback": {
