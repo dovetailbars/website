@@ -6,13 +6,7 @@
     },
     "globalHeaders": {
       "Access-Control-Allow-Origin": "*",
-      "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
-      "Access-Control-Allow-Headers": "Content-Type, Authorization, X-Requested-With",
-      "Access-Control-Max-Age": "86400"
-    },
-    "responseOverrides": {
-      "405": {
-        "rewrite": "/bookings/confirmation"
-      }
+      "Access-Control-Allow-Methods": "POST, GET, OPTIONS, HEAD",
+      "X-Clacks-Overhead": "GNU Terry Pratchett"
     }
 }
