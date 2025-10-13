@@ -3,7 +3,13 @@
     "routes": [
       {
         "route": "/*",
-        "methods": ["GET", "HEAD", "POST", "OPTIONS"]
+        "methods": ["GET", "HEAD", "POST", "PUT", "DELETE", "OPTIONS"],
+        "headers": {
+          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Methods": "GET, HEAD, POST, PUT, DELETE, OPTIONS",
+          "Access-Control-Allow-Headers": "Content-Type, Authorization, X-Requested-With, Accept, Origin",
+          "Access-Control-Max-Age": "86400"
+        }
       }
     ],
     "navigationFallback": {
@@ -12,6 +18,11 @@
     },
     "globalHeaders": {
       "Access-Control-Allow-Origin": "*",
-      "Access-Control-Allow-Methods": "GET, POST, OPTIONS"
+      "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+      "Access-Control-Allow-Headers": "Content-Type, Authorization, X-Requested-With",
+      "Access-Control-Max-Age": "86400"
+    },
+    "mimeTypes": {
+      ".json": "application/json"
     }
 }

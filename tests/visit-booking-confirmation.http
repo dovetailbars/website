@@ -1,7 +1,7 @@
 ### Variables
 # Switch between local and production by commenting/uncommenting
-@baseUrl = http://localhost:8080
- @baseUrl = https://dovetailbars.co.uk
+# @baseUrl = http://localhost:8080
+@baseUrl = https://dovetailbars.co.uk
 
 ### GET Visit Bookings Confirmation Page
 GET {{baseUrl}}/bookings/confirmation HTTP/1.1
