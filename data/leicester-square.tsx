@@ -18,7 +18,7 @@ export default {
     designMyNightConfig: {
         venueId: "671909df81884a4d4032ffca",
         gtmCode: "GTM-MQ6Z6QJ7",
-        returnUrl: "http://dovetailbars.co.uk/bookings/confirmation"
+        returnUrl: "https://dovetailbars.co.uk/api/booking-created"
     },
 
     openingHours: {
