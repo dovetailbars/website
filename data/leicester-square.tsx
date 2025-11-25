@@ -50,7 +50,7 @@ export default {
                 With views of the bustling crowds in Leicester Square, it's the perfect place to enjoy a spritz before coming inside for an evening of live DJs and perfectly crafted cocktails.
             </p>
             <div className="bar_buttons">
-                <Link to="cocktail-menu" className="buttonLink">Drinks Menu</Link>
+                <a href="/menus/leicester-square.pdf" className="buttonLink">Drinks Menu</a>
                 <Link to="bookings" className="buttonLink">Book Now</Link>
             </div>
         </IntroSection>
