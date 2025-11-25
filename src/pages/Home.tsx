@@ -15,7 +15,7 @@ export default function() {
             <img src="/images/logo_full_white_nofill_trans.png" alt="Dovetail" className="heroLogo" />
             <h1 className="title">Dovetail</h1>
             <h2>
-                <Link to="/covent-garden" className="heroLink">Covent Garden</Link> | <Link to="/clapton" className="heroLink">Clapton</Link> | <Link to="/leicester-square" className="heroLink">Leicester Square</Link>
+                <Link to="/leicester-square" className="heroLink">Leicester Square</Link> | <Link to="/covent-garden" className="heroLink">Covent Garden</Link> | <Link to="/clapton" className="heroLink">Clapton</Link>
             </h2>
         </>),
         class: "tall"

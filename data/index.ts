@@ -4,9 +4,9 @@ import CoventGardenData from './covent-garden';
 import LeicesterSquareData from './leicester-square';
 
 const data = [
+    { id: 'leicester-square', data: LeicesterSquareData },
     { id: 'covent-garden', data: CoventGardenData },
     { id: 'clapton', data: ClaptonData },
-    { id: 'leicester-square', data: LeicesterSquareData },
 ];
 
 export function getBarData(id: string): BarData | null {
