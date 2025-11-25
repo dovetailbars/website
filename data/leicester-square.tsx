@@ -113,16 +113,26 @@ export default {
             <div>
                 <h2>The Venue</h2>
                 <p>
-                    Dovetail Bar - Leicester Square is the perfect venue for your West End visit, a Soho gem in the making. Enjoy a perfectly crafted cocktail in the sun on our balcony overlooking the bustling crowds below, then head inside for an evening of DJs, good drinks and great company.
+                    Dovetail Bar - Leicester Square offers a quietly distinguished setting
+                    for gatherings that call for a touch of character. Inside, the room
+                    settles into deep leather, soft lamplight and the calm presence of oil
+                    paintings—an inviting contrast to the energy of the West End outside.
+                    It’s a space designed for conversation, for lingering, and for those
+                    who appreciate a well-made drink.
                 </p>
                 <p>
-                    Perfect for:
+                    Our Parisian-style terrace offers a
+                    bright, welcoming outlook throughout the day and long into the night.
+                    It’s an ideal spot for relaxed al fresco drinking, moments away from
+                    the square yet pleasantly removed from its bustle.
                 </p>
-                <ul>
-                    <li>Birthdays</li>
-                    <li>Private Events</li>
-                    <li>Cocktail Masterclasses</li>
-                </ul>
+                <p>
+                    The venue is licensed late, until 5am, making it well suited to
+                    celebrations that naturally stretch beyond the usual hours. For
+                    cocktails and an atmosphere that remains inviting long after midnight,
+                    we would be delighted to host your next occasion.
+                </p>
+
                 <p className="paddedTop">
                     <Link to="/private-hire#contact" className="buttonLink">Hire the space</Link>
                 </p>
@@ -141,6 +151,17 @@ export default {
                 </div>
             </div>
         </SplitContent>
+
+        
+        <ImageCarousel images={[
+            "/images/ls-private-hire/Dovetail Bar-02.jpg",
+            "/images/ls-private-hire/Dovetail Bar-06.jpg",
+            "/images/ls-private-hire/Dovetail Bar-11.jpg",
+            "/images/ls-private-hire/Dovetail Bar-14.jpg",
+            "/images/ls-private-hire/Dovetail Bar-15.jpg",
+            "/images/ls-private-hire/Dovetail Bar-21.jpg",
+            "/images/ls-private-hire/Dovetail Bar-39.jpg",
+        ]} />
     </>),
 
     cocktailPrice: 13,
