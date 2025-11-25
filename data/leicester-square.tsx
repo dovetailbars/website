@@ -34,7 +34,7 @@ export default {
     spotlightText: (
         <>
             <p>
-                Dovetail's newest offering is a joint venture with Empire Casino, that sees us rebranding their balcony bar in time for Summer.
+                Dovetail Bar - Leicester Square is the West End destination. A late-night balcony bar with views over the iconic Leicester Square, Dovetail offers the best of both worlds. Immaculate service, perfectly crafted cocktails, and no need end in sight.
             </p>
             <p>
                 With views of the bustling crowds in Leicester Square, it's the perfect place to enjoy a spritz before coming inside for an evening of perfectly crafted cocktails.
@@ -47,7 +47,7 @@ export default {
                 Dovetail's newest offering is a joint venture with Empire Casino, that sees us rebranding their balcony bar in time for Summer.
             </p>
             <p>
-                With views of the bustling crowds in Leicester Square, it's the perfect place to enjoy a spritz before coming inside for an evening of live DJs and perfectly crafted cocktails.
+                With views of the bustling crowds in Leicester Square, it's the perfect place to enjoy an afternoon in the sun, and we're open until 4am on weekends. Enjoy a night brought to you by London's most creative mixologists.
             </p>
             <div className="bar_buttons">
                 <a href="/menus/leicester-square.pdf" className="buttonLink">Drinks Menu</a>
