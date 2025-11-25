@@ -1,9 +1,9 @@
 import { useState, useEffect, useRef } from 'react';
 import './ImageCarousel.css';
 
-export default function({ images }: { images: string[] }) {
+export default function({ images, autoScroll = true, previews = true }: { images: string[], autoScroll?: boolean, previews?: boolean }) {
     const [selectedIndex, setSelectedIndex] = useState(0);
-    const [autoProgress, setAutoProgress] = useState(true);
+    const [autoProgress, setAutoProgress] = useState(autoScroll);
     const touchStartX = useRef<number | null>(null);
 
     const handlePrev = () => {
@@ -65,6 +65,8 @@ export default function({ images }: { images: string[] }) {
                     &#8594;
                 </button>
             </div>
+            
+            {previews && (
             <div className="thumbnails">
                 { images.map((image, index) => (
                     <div 
@@ -75,7 +77,7 @@ export default function({ images }: { images: string[] }) {
                         <img src={image} alt={`Thumbnail ${index}`} />
                     </div>
                 )) }
-            </div>
+            </div>)}
         </div>
     );
 }

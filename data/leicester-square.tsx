@@ -44,10 +44,10 @@ export default {
     overviewContent: (<>
         <IntroSection title={name}>
             <p>
-                Dovetail's newest offering is a joint venture with Empire Casino, that sees us rebranding their balcony bar in time for Summer.
+                Dovetail's flagship offering sits in the heart of London's famous Leicester Square. Spend an afternoon on the balcony, before heading inside to for a warm evening of beautiful cocktails and better company. 
             </p>
             <p>
-                With views of the bustling crowds in Leicester Square, it's the perfect place to enjoy an afternoon in the sun, and we're open until 4am on weekends. Enjoy a night brought to you by London's most creative mixologists.
+            Open until 4am on weekends, the perfect place to spend an evening with great company and London's most creative mixologists.
             </p>
             <div className="bar_buttons">
                 <a href="/menus/leicester-square.pdf" className="buttonLink">Drinks Menu</a>
@@ -57,30 +57,7 @@ export default {
 
         <SplitContent>
             <div>
-                <iframe
-                    style={{ height: "320px", width: "100%" }}
-                    src="https://www.youtube.com/embed/VDzWKYF4Ncg?si=lb6XW8axz-wEkGgU" 
-                    title="YouTube video player" 
-                    frameBorder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    referrerPolicy="strict-origin-when-cross-origin" 
-                    allowFullScreen>                    
-                </iframe>
-            </div>
-            <div>
-                <h2>Where to find us</h2>
-                <p>
-                    The bar is located on the first floor and balcony of Empire Casino, 5-6 Leicester Square.
-                </p>
-                <p>
-                    Come through the main entrance of Empire Casino, and take the stairs to the first floor on your right to experience the hidden gem that is Dovetail Bar.
-                </p>
-            </div>
-        </SplitContent>
-
-        <SplitContent>
-            <div>
-                <img src="/images/DSC05743.webp" alt="Private Hire" />
+                <img src="/images/DovetailLSVenue_3.jpg" alt="Private Hire" />
             </div>
             <div>
                 <h2>The Balcony</h2>
@@ -107,14 +84,26 @@ export default {
         </SplitContent>
 
         <ImageCarousel images={[
-            "/images/gallery/venues/leicestersquare/DSC05743.webp",
-            "/images/gallery/venues/leicestersquare/DSC05750.webp",
-            "/images/gallery/venues/leicestersquare/DSC05751.webp",
-            "/images/gallery/venues/leicestersquare/DSC05759.webp",
-            "/images/gallery/venues/leicestersquare/DSC05771.webp",
-            "/images/gallery/venues/leicestersquare/DSC05840.webp",
-            "/images/gallery/venues/leicestersquare/leicester1.webp",
-            "/images/gallery/venues/leicestersquare/leicester2.webp",
+            "/images/gallery/venues/leicestersquare-2/DovetailLSVenue_2.jpg",
+            "/images/gallery/venues/leicestersquare-2/DovetailLSVenue_21.jpg",
+
+            "/images/gallery/venues/leicestersquare-2/DovetailLSVenue_5.jpg",
+            "/images/gallery/venues/leicestersquare-2/DovetailLSVenue_29.jpg",
+
+            "/images/gallery/venues/leicestersquare-2/DovetailLSVenue_7.jpg",
+            "/images/gallery/venues/leicestersquare-2/DovetailLSVenue_36.jpg",
+
+            "/images/gallery/venues/leicestersquare-2/DovetailLSVenue_9.jpg",
+            "/images/gallery/venues/leicestersquare-2/DovetailLSVenue_38.jpg",
+
+            "/images/gallery/venues/leicestersquare-2/DovetailLSVenue_39.jpg",
+            "/images/gallery/venues/leicestersquare-2/DovetailLSVenue_1.jpg",
+            "/images/gallery/venues/leicestersquare-2/DovetailLSVenue_40.jpg",
+            "/images/gallery/venues/leicestersquare-2/DovetailLSVenue_10.jpg",
+            "/images/gallery/venues/leicestersquare-2/DovetailLSVenue_41.jpg",
+            "/images/gallery/venues/leicestersquare-2/DovetailLSVenue_14.jpg",
+            "/images/gallery/venues/leicestersquare-2/DovetailLSVenue_25.jpg",
+            "/images/gallery/venues/leicestersquare-2/DovetailLSVenue.jpg",
         ]} />
     </>),
 
