@@ -28,8 +28,8 @@ export default {
     },
 
     location: "Balcony Bar, 5-6 Leicester Square, London WC2H 7NA",
-    heroImage: "/images/leicester-hero-2025-dec.jpg",
-    spotlightImage: "/images/DSC05840.webp",
+    heroImage: "/images/DovetailLSVenue_24.jpg",
+    spotlightImage: "/images/leicester-hero-2025-dec.jpg",
 
     spotlightText: (
         <>
