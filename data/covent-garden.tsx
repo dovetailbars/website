@@ -56,7 +56,7 @@ export default {
                 Discover Dovetail Bar, the West End’s best kept secret.
             </p>
             <div className="bar_buttons">
-                <Link to="cocktail-menu" className="buttonLink">Drinks Menu</Link> 
+                <a href="/menus/covent-garden.pdf" className="buttonLink">Drinks Menu</a>
                 <Link to="bookings" className="buttonLink">Book Now</Link>
             </div>
         </IntroSection>
