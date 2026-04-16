@@ -22,9 +22,7 @@ export default {
     },
 
     openingHours: {
-        "Monday to Friday": "5pm – 12.30am",
-        "Saturday": "2pm – 12:30 am",
-        "Sunday": "5pm – 11:30 pm"
+        "Temporarily Closed": "",
     },
 
     location: "2nd Floor, 9 Russell St, London WC2B 5HZ",
@@ -57,7 +55,7 @@ export default {
             </p>
             <div className="bar_buttons">
                 <a href="/menus/covent-garden.pdf" className="buttonLink">Drinks Menu</a>
-                <Link to="bookings" className="buttonLink">Book Now</Link>
+                <span className="buttonLink disabled">Temporarily Closed</span>
             </div>
         </IntroSection>
 

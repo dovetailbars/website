@@ -37,7 +37,7 @@ export default function DesignMyNight({ venueId, gtmCode, returnUrl}: DesignMyNi
 export function AllVenueDesignMyNight() {
     return (
         <DesignMyNight 
-            venueId="660d42467122fe5177534b13,64d62f0640e99c3d6732462e,671909df81884a4d4032ffca" 
+            venueId="671909df81884a4d4032ffca" 
             gtmCode="GTM-MQ6Z6QJ7"
             returnUrl="http://dovetailbars.co.uk/bookings/confirmation"
         />

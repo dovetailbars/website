@@ -30,8 +30,7 @@ export function ContactForm() {
 
             <div className="formGroup">
                 <select className="selectWrapper" name="venue" id="venue" required>
-                    <option value="Covent Garden" selected>Covent Garden</option>
-                    <option value="Leicester Square">Leicester Square</option>
+                    <option value="Leicester Square" selected>Leicester Square</option>
                 </select>
 
                 <label htmlFor="date" className="invisible">Date</label>

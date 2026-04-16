@@ -24,7 +24,7 @@ export default function({ barData, children, bookNowMenuItem }: { barData: BarDa
 
 function BarFooterContent({ openingHours, location } : { openingHours: OpeningHours, location: string }) {
     const openingHoursElements = Object.entries(openingHours).map(([label, hours]) => (
-        <>{hours} - {label}<br /></>
+        <>{hours ? `${hours} - ${label}` : label}<br /></>
     ));
 
     const addressParts = location.split(',').map(part => <>{part}<br /></>);
