@@ -15,7 +15,7 @@ export default function() {
             <img src="/images/logo_full_white_nofill_trans.png" alt="Dovetail" className="heroLogo" />
             <h1 className="title">Dovetail</h1>
             <h2>
-                <Link to="/leicester-square" className="heroLink">Leicester Square</Link> | <Link to="/covent-garden" className="heroLink">Covent Garden</Link> | <Link to="/clapton" className="heroLink">Clapton</Link>
+                <Link to="/leicester-square" className="heroLink">Leicester Square</Link> | <Link to="/covent-garden" className="heroLink">Covent Garden</Link>
             </h2>
         </>),
         class: "tall"
@@ -31,9 +31,9 @@ export default function() {
             <IntroSection title="Discover Dovetail" className="fullHeight verticalCenter">
                 <p>
                     A collection of hidden gems that blend innovation with libations.
-                    From the original Covent Garden spot, nestled in London’s West End, to its spirited siblings
-                    in Clapton and Leicester Square, each venue invites patrons to unwind, savor the art of good company,
-                    and explore unique experiences. 
+                    From the original Covent Garden spot, nestled in London’s West End, to its spirited sibling
+                    in Leicester Square, each venue invites patrons to unwind, savor the art of good company,
+                    and explore unique experiences.
                 </p>
                 <p> Whether seeking refuge from the city’s frenzy or celebrating life’s moments,
                     Dovetail Bars promise an oasis where creativity thrives and great drinks flourish.

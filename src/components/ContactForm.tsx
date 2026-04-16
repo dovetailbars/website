@@ -31,7 +31,6 @@ export function ContactForm() {
             <div className="formGroup">
                 <select className="selectWrapper" name="venue" id="venue" required>
                     <option value="Covent Garden" selected>Covent Garden</option>
-                    <option value="Clapton">Clapton</option>
                     <option value="Leicester Square">Leicester Square</option>
                 </select>
 

@@ -40,8 +40,10 @@ export default function Routes() {
         <Route path="/:barId/cocktail-menu" element={<BarCocktailMenu />}  />
 
         {/* Redirects */}
-        <Route path="*" element={<Navigate to="/" />} />
+        <Route path="/clapton" element={<Navigate replace to="/#bars" />} />
+        <Route path="/clapton/*" element={<Navigate replace to="/#bars" />} />
         <Route path="/empire-casino" element={<Navigate to="/leicester-square" />} />
+        <Route path="*" element={<Navigate to="/" />} />
       </ReactRoutes>
     </BrowserRouter>
     </>
