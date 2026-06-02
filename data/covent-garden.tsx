@@ -13,7 +13,7 @@ const name = "Dovetail " + venueName;
 export default {
     id, name, venueName,
     
-    googleMapsLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.047340592473!2d-0.12412972225924557!3d51.51234747181459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760544d0fcad43%3A0xc6b47b94aca920c8!2sDovetail%20Bar%20-%20Covent%20Garden!5e0!3m2!1sen!2suk!4v1713575022090!5m2!1sen!2suk",
+    googleMapsLink: "https://www.google.com/maps?q=3+Henrietta+St,+London+WC2E+8PS&output=embed",
     
     designMyNightConfig: {
         venueId: "64d62f0640e99c3d6732462e",
@@ -22,18 +22,21 @@ export default {
     },
 
     openingHours: {
-        "Temporarily Closed": "",
+        "Monday to Thursday": "4pm – 11:30pm",
+        "Friday": "4pm – 12am",
+        "Saturday": "1pm – 12am",
+        "Sunday": "4pm – 10:30pm",
     },
 
-    location: "2nd Floor, 9 Russell St, London WC2B 5HZ",
-    heroImage: "/images/DovetailBar-04.webp",
-    spotlightImage: "/images/DovetailMain49.webp",
+    location: "3 Henrietta St, London WC2E 8PS",
+    heroImage: "/images/20260602_194948.jpg",
+    spotlightImage: "/images/20260602_194948.jpg",
     
     spotlightText: (
     <>
         <p>
-            Nestled in the heart of London’s West End, Dovetail Bar awaits those seeking a cozy and clandestine
-            escape. In collaboration with RedFarm, this intimate spot harmoniously blends creativity and cocktails,
+            Nestled just off the Covent Garden Piazza, in the heart of London’s West End, Dovetail Bar awaits those seeking a cozy and clandestine
+            escape. In partnership with El Ta'koy, this intimate spot harmoniously blends creativity and cocktails,
             inviting patrons to unwind and savor the art of good company.
         </p>
         <p>
@@ -44,18 +47,14 @@ export default {
     overviewContent: (<>
         <IntroSection title={name}>
             <p>
-                Tucked away above the lively Covent Garden Market, right in the heart of London's West End, you'll find The Dovetail Bar - a cozy secret just waiting to be shared.
+                Tucked away, just off the Covent Garden Piazza, and right in the heart of the West End, you'll find Dovetail Bar - a cozy secret just waiting to be shared. It's your escape from the city's frenzy, a place where everyone is invited to enjoy the simplicity of good company and great drinks. This hidden spot is where creativity meets cocktails, offering a unique blend of innovation and charm in a welcoming, intimate setting.
             </p>
             <p>
-                In partnership with RedFarm, this hidden spot is where creativity meets cocktails, offering a unique blend of innovation and charm in a welcoming, intimate setting.
-                It's your escape from the city's frenzy, a place where everyone is invited to enjoy the simplicity of good company and great drinks.
-            </p>
-            <p>
-                Discover Dovetail Bar, the West End’s best kept secret.
+                If we had the pleasure of serving you at our original Russell Street location, please be aware that we have moved 2 minutes around the corner to 3 Henrietta Street where we've partnered with El Ta'koy to offer their signature Hawaiian Street food alongside our signature cocktails.
             </p>
             <div className="bar_buttons">
                 <a href="/menus/covent-garden.pdf" className="buttonLink">Drinks Menu</a>
-                <span className="buttonLink disabled">Temporarily Closed</span>
+                <Link to="bookings" className="buttonLink">Book Now</Link>
             </div>
         </IntroSection>
 
@@ -75,7 +74,8 @@ export default {
             </div>
         </SplitContent>
 
-        <ImageCarousel images={[
+        {/* Gallery hidden for now — these photos are of the old Russell Street venue. Restore with new venue shots. */}
+        {/* <ImageCarousel images={[
             "/images/gallery/venues/coventgarden/DovetailMain47.webp",
             "/images/gallery/venues/coventgarden/DovetailMain48.webp",
             "/images/gallery/venues/coventgarden/DovetailMain49.webp",
@@ -91,7 +91,7 @@ export default {
             "/images/gallery/venues/coventgarden/DSC05962.webp",
             "/images/gallery/venues/coventgarden/DSC05965.webp",
             "/images/gallery/venues/coventgarden/DSC05968.webp",
-        ]} />
+        ]} /> */}
     </>),
 
     privateHireContent: (<>
@@ -99,7 +99,7 @@ export default {
             <div>
                 <h2>The Venue</h2>
                 <p>
-                    Nestled discreetly above the bustling Covent Garden Market, in the heart of the West End, Dovetail Bar is your secret getaway. In a hidden room, we serve creative yet unpretentious cocktails in a refined intimate environment. The ultimate escape from London’s busy streets, the West End’s best kept secret. 
+                    Nestled discreetly just off the Covent Garden Piazza, in the heart of the West End, Dovetail Bar is your secret getaway. In a hidden room, we serve creative yet unpretentious cocktails in a refined intimate environment. The ultimate escape from London’s busy streets, the West End’s best kept secret.
                 </p>
                 <p>
                     Perfect for:
