@@ -61,7 +61,7 @@ export default {
 
         <SplitContent>
             <div>
-                <img src="/images/Dovetail-X-Ferrand-58-Large.jpg" alt="Private Hire" />
+                <img src="/images/gallery/venues/coventgarden/DSC02066.jpg" alt="Private Hire" />
             </div>
             <div>
                 <h2>Perfect for private hire</h2>

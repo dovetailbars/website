@@ -10,7 +10,7 @@ export default function() {
     useScrollEffects();
 
     const hero = {
-        image: "/images/gallery/venues/coventgarden/DovetailMain47.webp",
+        image: "/images/gallery/venues/coventgarden/DSC02111.jpg",
         content: (<>
             <img src="/images/logo_full_white_nofill_trans.png" alt="Dovetail" className="heroLogo" />
             <h1 className="title">Dovetail</h1>
