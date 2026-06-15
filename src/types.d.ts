@@ -23,6 +23,7 @@ interface BarData {
     designMyNightConfig: DesignMyNightConfig;
 
     location: string;
+    phone?: string;
 
     heroImage: string;
     spotlightImage: string;

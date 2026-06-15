@@ -4,7 +4,7 @@ import { BarData, OpeningHours } from "../../types";
 import { JSX } from "react";
 
 export default function({ barData, children, bookNowMenuItem }: { barData: BarData, children: JSX.Element, bookNowMenuItem?: boolean}) {
-    const footer = <BarFooterContent openingHours={barData.openingHours} location={barData.location} />;
+    const footer = <BarFooterContent openingHours={barData.openingHours} location={barData.location} phone={barData.phone} />;
 
     const heroContent = {
         image: barData.heroImage,
@@ -22,7 +22,8 @@ export default function({ barData, children, bookNowMenuItem }: { barData: BarDa
     );
 }
 
-function BarFooterContent({ openingHours, location } : { openingHours: OpeningHours, location: string }) {
+function BarFooterContent({ openingHours, location, phone } : { openingHours: OpeningHours, location: string, phone?: string }) {
+    const contactPhone = phone ?? DovetailInfo.phone;
     const openingHoursElements = Object.entries(openingHours).map(([label, hours]) => (
         <>{hours ? `${hours} - ${label}` : label}<br /></>
     ));
@@ -46,7 +47,7 @@ function BarFooterContent({ openingHours, location } : { openingHours: OpeningHo
             <h2>Contact Us</h2>
             <p>
                 {DovetailInfo.email}<br />
-                {DovetailInfo.phone}
+                {contactPhone}
             </p>
         </section>
     </>);

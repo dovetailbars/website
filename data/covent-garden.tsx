@@ -29,8 +29,9 @@ export default {
     },
 
     location: "3 Henrietta St, London WC2E 8PS",
-    heroImage: "/images/20260602_194948.jpg",
-    spotlightImage: "/images/20260602_194948.jpg",
+    phone: "020 3011 4960",
+    heroImage: "/images/DSC02090.jpg",
+    spotlightImage: "/images/DSC02090.jpg",
     
     spotlightText: (
     <>
@@ -74,24 +75,24 @@ export default {
             </div>
         </SplitContent>
 
-        {/* Gallery hidden for now — these photos are of the old Russell Street venue. Restore with new venue shots. */}
-        {/* <ImageCarousel images={[
-            "/images/gallery/venues/coventgarden/DovetailMain47.webp",
-            "/images/gallery/venues/coventgarden/DovetailMain48.webp",
-            "/images/gallery/venues/coventgarden/DovetailMain49.webp",
-            "/images/gallery/venues/coventgarden/DovetailMain50.webp",
-            "/images/gallery/venues/coventgarden/DovetailMain51.webp",
-            "/images/gallery/venues/coventgarden/DovetailMain52.webp",
-            "/images/gallery/venues/coventgarden/DovetailMain54.webp",
-            "/images/gallery/venues/coventgarden/DSC05916.webp",
-            "/images/gallery/venues/coventgarden/DSC05934.webp",
-            "/images/gallery/venues/coventgarden/DSC05940.webp",
-            "/images/gallery/venues/coventgarden/DSC05947.webp",
-            "/images/gallery/venues/coventgarden/DSC05950.webp",
-            "/images/gallery/venues/coventgarden/DSC05962.webp",
-            "/images/gallery/venues/coventgarden/DSC05965.webp",
-            "/images/gallery/venues/coventgarden/DSC05968.webp",
-        ]} /> */}
+        <ImageCarousel images={[
+            "/images/gallery/venues/coventgarden/DSC02090.jpg",
+            "/images/gallery/venues/coventgarden/DSC01936.jpg",
+            "/images/gallery/venues/coventgarden/DSC01937.jpg",
+            "/images/gallery/venues/coventgarden/DSC01939.jpg",
+            "/images/gallery/venues/coventgarden/DSC01946.jpg",
+            "/images/gallery/venues/coventgarden/DSC01967.jpg",
+            "/images/gallery/venues/coventgarden/DSC01968.jpg",
+            "/images/gallery/venues/coventgarden/DSC02047.jpg",
+            "/images/gallery/venues/coventgarden/DSC02061.jpg",
+            "/images/gallery/venues/coventgarden/DSC02066.jpg",
+            "/images/gallery/venues/coventgarden/DSC02074.jpg",
+            "/images/gallery/venues/coventgarden/DSC02102.jpg",
+            "/images/gallery/venues/coventgarden/DSC02111.jpg",
+            "/images/gallery/venues/coventgarden/DSC02124.jpg",
+            "/images/gallery/venues/coventgarden/DSC02135.jpg",
+            "/images/gallery/venues/coventgarden/DSC02138.jpg",
+        ]} />
     </>),
 
     privateHireContent: (<>
@@ -115,10 +116,10 @@ export default {
             </div>
             <div>
                 <h2>Walkthrough</h2>
-                <div className="responsive-iframe-container">
-                    <iframe 
+                <div className="responsive-iframe-container portrait">
+                    <iframe
                         className="responsive-iframe"
-                        src="https://www.youtube.com/embed/jjHQq6TpoUo?si=TLL7W-orQ4OxbyHx" 
+                        src="https://www.youtube.com/embed/FnHc4tHbDe0"
                         title="YouTube video player" 
                         frameBorder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 

@@ -494,6 +494,13 @@ textarea {
     min-height: 250px;
 }
 
+/* Portrait variant for vertical clips (e.g. YouTube Shorts) */
+.responsive-iframe-container.portrait {
+    aspect-ratio: 9 / 16;
+    max-width: 360px;
+    margin: 0 auto;
+}
+
 .responsive-iframe {
   position: absolute;
   top: 0;
