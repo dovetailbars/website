@@ -1,10 +1,12 @@
 import type { BarData } from '../src/types';
 import CoventGardenData from './covent-garden';
 import LeicesterSquareData from './leicester-square';
+import BrassDoveData from './brass-dove';
 
 const data = [
     { id: 'leicester-square', data: LeicesterSquareData },
     { id: 'covent-garden', data: CoventGardenData },
+    { id: 'brass-dove', data: BrassDoveData },
 ];
 
 export function getBarData(id: string): BarData | null {
