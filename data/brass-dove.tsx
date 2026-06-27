@@ -24,8 +24,8 @@ export default {
 
     // TODO(brass-dove): replace with the real Design My Night venue + GTM ids once set up.
     designMyNightConfig: {
-        venueId: "REPLACE_ME",
-        gtmCode: "REPLACE_ME",
+        venueId: "660d42467122fe5177534b13",
+        gtmCode: "GTM-MQ6Z6QJ7",
         returnUrl: "https://dovetailbars.co.uk/api/booking-created"
     },
 
