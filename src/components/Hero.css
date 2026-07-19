@@ -41,6 +41,13 @@ h2.headerTitle {
     max-width: 750px;
 }
 
+/* Venue name under the hero logo — sized to hold its own against the logo above it. */
+h1.heroTitle {
+    margin: 0;
+    font-size: clamp(2.5rem, 9vw, 4.5rem);
+    line-height: 1.2em;
+}
+
 .heroLink {
     white-space: nowrap;
     transition: all 0.3s ease-in-out 0s;

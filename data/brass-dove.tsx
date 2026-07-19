@@ -2,8 +2,7 @@ import { Link } from "react-router-dom";
 import IntroSection from "../src/components/IntroSection";
 import SplitContent from "../src/components/SplitContent";
 import { ContactForm } from "../src/components/ContactForm";
-// TODO(brass-dove): re-enable when the gallery carousel is restored below.
-// import ImageCarousel from "../src/components/ImageCarousel";
+import ImageCarousel from "../src/components/ImageCarousel";
 import type { BarData } from "../src/types";
 import drinks from "./drinks";
 
@@ -13,9 +12,8 @@ const id = "brass-dove";
 const venueName = "Brass Dove";
 const name = venueName;
 
-// TODO(brass-dove): This is placeholder content for the new venue beneath Hotori.
-// Replace copy, images, menu PDF and the Design My Night / Google Maps config as
-// the real details are confirmed.
+// TODO(brass-dove): still to confirm — menu PDF, cocktail line-up, and the
+// Design My Night config below.
 
 export default {
     id, name, venueName,
@@ -37,9 +35,8 @@ export default {
 
     location: "Basement, Hotori, 1 New Fetter Ln, London EC4A 1AN",
 
-    // TODO(brass-dove): replace placeholder images with real Brass Dove photography.
-    heroImage: "/images/DovetailMain49.webp",
-    spotlightImage: "/images/DovetailMain49.webp",
+    heroImage: "/images/DSC05067.webp",
+    spotlightImage: "/images/DSC04973.webp",
 
     spotlightText: (
     <>
@@ -57,19 +54,33 @@ export default {
     overviewContent: (<>
         <IntroSection title={name}>
             <p>
-                Hidden away downstairs from Hotori at 1 New Fetter Lane, Brass Dove is our newest
-                cocktail bar — a calm, characterful retreat from the bustle of the City. Expect the same
-                creative, unpretentious drinks the Dovetail bars are known for, served in a snug and
-                welcoming space.
+                Brass Dove is an intimate cocktail bar specialising in classic serves, premium spirits
+                and a carefully curated collection of rare whiskies and rum. Hidden beneath Hotori, a
+                Japanese yakitori and Edomae sushi restaurant, the bar offers a refined yet relaxed
+                setting for walk-ins, pre- and post-dinner drinks, private hire, brand events and
+                cocktail masterclasses.
             </p>
             <p>
-                We're just getting started, so watch this space — more details on the room, the menu and
-                opening times are coming soon.
+                Guests can enjoy Brass Dove as a standalone late-night bar, or pair the experience with
+                Hotori's food offering, with Japanese yakitori and sushi available to cater on the night
+                or as part of a bespoke private event.
             </p>
             <div className="bar_buttons">
                 <a href="/menus/brass-dove.pdf" className="buttonLink">Drinks Menu</a>
                 <Link to="bookings" className="buttonLink">Book Now</Link>
             </div>
+        </IntroSection>
+
+        <IntroSection title="A Spirits Library">
+            <p>
+                At the heart of Brass Dove is our spirits selection - a constantly rotating collection
+                of rare, limited and hard-to-find rums and whiskies. Rather than a fixed back bar, our
+                cabinets are curated like a living archive, with bottles selected for their provenance,
+                character and story. Many are small releases, discontinued expressions or unusual cask
+                finishes - and once they are gone, they are gone. This gives you the chance to explore
+                something genuinely unique and intentionally selected on every visit, from sought-after
+                single malts to exceptional aged rums and one-off discoveries.
+            </p>
         </IntroSection>
 
         {/* TODO(brass-dove): re-enable the private hire teaser once we have real copy and imagery.
@@ -93,16 +104,27 @@ export default {
         </SplitContent>
         */}
 
-        {/* TODO(brass-dove): re-enable the gallery once we have real Brass Dove photography.
+        {/* Alternating venue-space and food/drink shots, per Tim's request. */}
         <ImageCarousel images={[
-            "/images/gallery/venues/coventgarden/DSC02090.jpg",
-            "/images/gallery/venues/coventgarden/DSC01936.jpg",
-            "/images/gallery/venues/coventgarden/DSC01967.jpg",
-            "/images/gallery/venues/coventgarden/DSC02047.jpg",
-            "/images/gallery/venues/coventgarden/DSC02074.jpg",
-            "/images/gallery/venues/coventgarden/DSC02124.jpg",
+            "/images/gallery/venues/brassdove/DSC05067.webp",
+            "/images/gallery/venues/brassdove/DSC05075.webp",
+            "/images/gallery/venues/brassdove/DSC05028.webp",
+            "/images/gallery/venues/brassdove/DSC05072.webp",
+            "/images/gallery/venues/brassdove/DSC04861.webp",
+            "/images/gallery/venues/brassdove/DSC05088.webp",
+            "/images/gallery/venues/brassdove/DSC05057.webp",
+            "/images/gallery/venues/brassdove/DSC04973.webp",
+            "/images/gallery/venues/brassdove/DSC05054.webp",
+            "/images/gallery/venues/brassdove/DSC05059.webp",
+            "/images/gallery/venues/brassdove/DSC04870.webp",
+            "/images/gallery/venues/brassdove/DSC05077.webp",
+            "/images/gallery/venues/brassdove/DSC05070.webp",
+            "/images/gallery/venues/brassdove/DSC04865.webp",
+            "/images/gallery/venues/brassdove/DSC05050.webp",
+            "/images/gallery/venues/brassdove/DSC05073.webp",
+            "/images/gallery/venues/brassdove/DSC05083.webp",
+            "/images/gallery/venues/brassdove/DSC04982.webp",
         ]} />
-        */}
     </>),
 
     privateHireContent: (<>
