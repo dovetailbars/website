@@ -39,7 +39,7 @@ export function AllVenueDesignMyNight() {
         <DesignMyNight 
             venueId="64d62f0640e99c3d6732462e,671909df81884a4d4032ffca,660d42467122fe5177534b13"
             gtmCode="GTM-MQ6Z6QJ7"
-            returnUrl="http://dovetailbars.co.uk/bookings/confirmation"
+            returnUrl="https://dovetailbars.co.uk/bookings/confirmation"
         />
     );
 }
