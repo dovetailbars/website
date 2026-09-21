@@ -29,6 +29,7 @@ export default {
     },
 
     location: "Balcony Bar, 5-6 Leicester Square, London WC2H 7NA",
+    phone: "020 3011 4962",
     heroImage: "/images/DovetailLSVenue_24.jpg",
     spotlightImage: "/images/leicester-hero-2025-dec.jpg",
 

@@ -34,6 +34,7 @@ export default {
     },
 
     location: "Basement, Hotori, 1 New Fetter Ln, London EC4A 1AN",
+    phone: "020 3011 4961",
 
     heroImage: "/images/DSC05067.webp",
     spotlightImage: "/images/DSC04973.webp",
