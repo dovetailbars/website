@@ -36,8 +36,8 @@ export default {
     location: "Basement, Hotori, 1 New Fetter Ln, London EC4A 1AN",
     phone: "020 3011 4961",
 
-    heroImage: "/images/DSC05067.webp",
-    spotlightImage: "/images/DSC04973.webp",
+    heroImage: "/images/DSC02083.webp",
+    spotlightImage: "/images/DSC01848.webp",
 
     spotlightText: (
     <>
@@ -105,26 +105,25 @@ export default {
         </SplitContent>
         */}
 
-        {/* Alternating venue-space and food/drink shots, per Tim's request. */}
         <ImageCarousel images={[
-            "/images/gallery/venues/brassdove/DSC05067.webp",
-            "/images/gallery/venues/brassdove/DSC05075.webp",
-            "/images/gallery/venues/brassdove/DSC05028.webp",
-            "/images/gallery/venues/brassdove/DSC05072.webp",
-            "/images/gallery/venues/brassdove/DSC04861.webp",
-            "/images/gallery/venues/brassdove/DSC05088.webp",
-            "/images/gallery/venues/brassdove/DSC05057.webp",
-            "/images/gallery/venues/brassdove/DSC04973.webp",
-            "/images/gallery/venues/brassdove/DSC05054.webp",
-            "/images/gallery/venues/brassdove/DSC05059.webp",
-            "/images/gallery/venues/brassdove/DSC04870.webp",
+            "/images/gallery/venues/brassdove/DSC02083.webp",
+            "/images/gallery/venues/brassdove/DSC02090.webp",
+            "/images/gallery/venues/brassdove/DSC01847.webp",
+            "/images/gallery/venues/brassdove/DSC01918.webp",
+            "/images/gallery/venues/brassdove/DSC02107.webp",
+            "/images/gallery/venues/brassdove/DSC01848.webp",
+            "/images/gallery/venues/brassdove/DSC02116.webp",
             "/images/gallery/venues/brassdove/DSC05077.webp",
-            "/images/gallery/venues/brassdove/DSC05070.webp",
+            "/images/gallery/venues/brassdove/DSC01863.webp",
+            "/images/gallery/venues/brassdove/DSC01859.webp",
+            "/images/gallery/venues/brassdove/DSC01862.webp",
+            "/images/gallery/venues/brassdove/DSC02120.webp",
+            "/images/gallery/venues/brassdove/DSC02130.webp",
             "/images/gallery/venues/brassdove/DSC04865.webp",
-            "/images/gallery/venues/brassdove/DSC05050.webp",
-            "/images/gallery/venues/brassdove/DSC05073.webp",
-            "/images/gallery/venues/brassdove/DSC05083.webp",
-            "/images/gallery/venues/brassdove/DSC04982.webp",
+            "/images/gallery/venues/brassdove/DSC01871.webp",
+            "/images/gallery/venues/brassdove/DSC01883.webp",
+            "/images/gallery/venues/brassdove/DSC05054-hire.webp",
+            "/images/gallery/venues/brassdove/DSC04861-hire.webp",
         ]} />
     </>),
 
