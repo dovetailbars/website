@@ -22,8 +22,7 @@ export default {
     },
 
     openingHours: {
-        "Monday to Wednesday": "5pm – 2.00am",
-        "Thursday to Friday": "5pm – 4.00am",
+        "Monday to Friday": "5pm – 4.00am",
         "Saturday": "2:30pm – 4.00am",
         "Sunday": "5pm – 4.00am",
     },
@@ -49,7 +48,7 @@ export default {
                 Dovetail's flagship offering sits in the heart of London's famous Leicester Square. Spend an afternoon on the balcony, before heading inside to for a warm evening of beautiful cocktails and better company. 
             </p>
             <p>
-            Open until 4am on weekends, the perfect place to spend an evening with great company and London's most creative mixologists.
+            Open until 4am every night, the perfect place to spend an evening with great company and London's most creative mixologists.
             </p>
             <div className="bar_buttons">
                 <a href="/menus/leicester-square.pdf" className="buttonLink">Drinks Menu</a>
